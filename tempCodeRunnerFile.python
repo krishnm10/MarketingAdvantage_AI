@@ -1,0 +1,13 @@
+def is_even(n):
+    """Returns True if n is even, False otherwise."""
+    global b
+    b = n
+    return n & 1 == 0
+    
+
+print(is_even(19119911919118))  # False
+print(bin(b))
+
+
+
+

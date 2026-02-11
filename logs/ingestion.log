@@ -756,3 +756,7 @@ DETAIL:  Key (id)=(471802ef-85bb-409e-a68c-68132e261961) already exists.
 2026-01-24T10:40:58.307075 | [SAVED] Crisil.pdf (fdd3debe5b549cf0247778383fd606bae66a32cc48490cb4135212331e51b590) → static\uploads\api\Crisil_2727148f8ffa4b9581b469ddb72e457c.pdf
 2026-01-24T10:40:59.856089 | [PARSED] Crisil.pdf using parse_pdf
 2026-01-24T10:41:14.862580 | [INGESTED] Crisil.pdf successfully processed.
+2026-02-08T21:55:21.181743 | [HASH] Phase-1_Marketing_Advantage_V1.docx → 11c9f634c9019728d9bb51bee664d08cc5bf702a53f72f46f9f7e7337f558fe9
+2026-02-08T21:55:21.196336 | [SAVED] Phase-1_Marketing_Advantage_V1.docx (11c9f634c9019728d9bb51bee664d08cc5bf702a53f72f46f9f7e7337f558fe9) → static\uploads\api\Phase-1_Marketing_Advantage_V1_48fcc20b5ce3418985eb814bc188ec25.docx
+2026-02-08T21:55:21.329552 | [PARSED] Phase-1_Marketing_Advantage_V1.docx using parse_docx
+2026-02-08T21:55:32.013628 | [INGESTED] Phase-1_Marketing_Advantage_V1.docx successfully processed.
