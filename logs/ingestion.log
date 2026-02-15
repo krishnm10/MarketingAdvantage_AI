@@ -760,6 +760,7 @@ DETAIL:  Key (id)=(471802ef-85bb-409e-a68c-68132e261961) already exists.
 2026-02-08T21:55:21.196336 | [SAVED] Phase-1_Marketing_Advantage_V1.docx (11c9f634c9019728d9bb51bee664d08cc5bf702a53f72f46f9f7e7337f558fe9) → static\uploads\api\Phase-1_Marketing_Advantage_V1_48fcc20b5ce3418985eb814bc188ec25.docx
 2026-02-08T21:55:21.329552 | [PARSED] Phase-1_Marketing_Advantage_V1.docx using parse_docx
 2026-02-08T21:55:32.013628 | [INGESTED] Phase-1_Marketing_Advantage_V1.docx successfully processed.
+<<<<<<< Updated upstream
 2026-02-14T22:51:37.063864 | [HASH] Crisil.pdf → fdd3debe5b549cf0247778383fd606bae66a32cc48490cb4135212331e51b590
 2026-02-14T22:51:37.075270 | [SAVED] Crisil.pdf (fdd3debe5b549cf0247778383fd606bae66a32cc48490cb4135212331e51b590) → static\uploads\api\Crisil_ac3928cdcce94021ada28686e177bd7b.pdf
 2026-02-14T22:51:38.864723 | [PARSED] Crisil.pdf using parse_pdf
@@ -814,3 +815,202 @@ DETAIL:  Key (id)=(471802ef-85bb-409e-a68c-68132e261961) already exists.
 2026-02-15T04:59:23.400395 | [SKIPPED_DB_DUPLICATE] testdata_v3.txt
 2026-02-15T04:59:32.627369 | [HASH] testdata_v3.txt → cca71414ca5a4fabc8952e07b819934edc49e5afb07396fd7278f9d1412402ff
 2026-02-15T04:59:32.633595 | [SKIPPED_DB_DUPLICATE] testdata_v3.txt
+=======
+2026-02-14T23:00:59.188877 | [HASH] TestCase2.txt → 9ae32e8b41ece6109a7612860c8b8c74acbad3b58ec25105abfa26f11dd40f25
+2026-02-14T23:00:59.294114 | [FAILED] TestCase2.txt: password authentication failed for user "postgres"
+2026-02-14T23:15:40.461577 | [HASH] TestCase2.txt → 9ae32e8b41ece6109a7612860c8b8c74acbad3b58ec25105abfa26f11dd40f25
+2026-02-14T23:15:40.664930 | [SAVED] TestCase2.txt (9ae32e8b41ece6109a7612860c8b8c74acbad3b58ec25105abfa26f11dd40f25) → static\uploads\api\TestCase2_dff1d23579b84f80b3979b7c52164295.txt
+2026-02-14T23:15:40.717398 | [PARSED] TestCase2.txt using parse_text
+2026-02-14T23:15:47.588383 | [INGESTED] TestCase2.txt successfully processed.
+2026-02-14T23:15:47.598141 | [HASH] TestCase2.txt → 9ae32e8b41ece6109a7612860c8b8c74acbad3b58ec25105abfa26f11dd40f25
+2026-02-14T23:15:47.601659 | [SKIPPED_DB_DUPLICATE] TestCase2.txt
+2026-02-14T23:25:19.995699 | [HASH] Phase-1_Marketing_Advantage_V1.docx → 11c9f634c9019728d9bb51bee664d08cc5bf702a53f72f46f9f7e7337f558fe9
+2026-02-14T23:25:20.005996 | [SAVED] Phase-1_Marketing_Advantage_V1.docx (11c9f634c9019728d9bb51bee664d08cc5bf702a53f72f46f9f7e7337f558fe9) → static\uploads\api\Phase-1_Marketing_Advantage_V1_198c99185fce43fd8bab76ff70484b84.docx
+2026-02-14T23:25:20.153366 | [PARSED] Phase-1_Marketing_Advantage_V1.docx using parse_docx
+2026-02-14T23:25:20.406772 | [INGESTED] Phase-1_Marketing_Advantage_V1.docx successfully processed.
+2026-02-14T23:25:20.439334 | [HASH] TestCase2.txt → 9ae32e8b41ece6109a7612860c8b8c74acbad3b58ec25105abfa26f11dd40f25
+2026-02-14T23:25:20.446870 | [SAVED] TestCase2.txt (9ae32e8b41ece6109a7612860c8b8c74acbad3b58ec25105abfa26f11dd40f25) → static\uploads\api\TestCase2_becce1039138411f9dfb927ff1593973.txt
+2026-02-14T23:25:20.496888 | [PARSED] TestCase2.txt using parse_text
+2026-02-14T23:25:20.580416 | [INGESTED] TestCase2.txt successfully processed.
+2026-02-14T23:25:54.904849 | [HASH] Learning_22jan2020.docx → 26de72a0d325120730ffc213694efc91c55153087dc37ef9859d9395cd18de7d
+2026-02-14T23:25:54.913388 | [SAVED] Learning_22jan2020.docx (26de72a0d325120730ffc213694efc91c55153087dc37ef9859d9395cd18de7d) → static\uploads\api\Learning_22jan2020_8be618526dc34c2c99bc7097824ebd2e.docx
+2026-02-14T23:25:55.068176 | [PARSED] Learning_22jan2020.docx using parse_docx
+2026-02-14T23:26:30.233283 | [INGESTED] Learning_22jan2020.docx successfully processed.
+2026-02-14T23:26:31.007891 | [HASH] DataSync.txt → 569d4078e777c7c6bedcb2b9dc3a9235327c4209e71fa49ddd6730e950631ab1
+2026-02-14T23:26:31.013458 | [SAVED] DataSync.txt (569d4078e777c7c6bedcb2b9dc3a9235327c4209e71fa49ddd6730e950631ab1) → static\uploads\api\DataSync_142f06104e3e4ed7ab7a29864b1bb6d2.txt
+2026-02-14T23:26:31.018813 | [PARSED] DataSync.txt using parse_text
+2026-02-14T23:26:34.050881 | [INGESTED] DataSync.txt successfully processed.
+2026-02-14T23:38:08.090104 | [HASH] Roshini.txt → 6a7a34062f84264e400889c88dc9abda7ab8bd4d0dcd34b5a7f69b9746b19e92
+2026-02-14T23:38:08.097188 | [SAVED] Roshini.txt (6a7a34062f84264e400889c88dc9abda7ab8bd4d0dcd34b5a7f69b9746b19e92) → static\uploads\api\Roshini_8ca69f2f25514b9c925a8ba354268ca1.txt
+2026-02-14T23:38:08.101742 | [PARSED] Roshini.txt using parse_text
+2026-02-14T23:38:08.941651 | [INGESTED] Roshini.txt successfully processed.
+2026-02-15T09:23:23.850320 | [HASH] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf → 98591f82e2c6440efb0c68f21e7e218d603536becfcb8231ca523d9c57328c4e
+2026-02-15T09:23:23.873618 | [SAVED] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf (98591f82e2c6440efb0c68f21e7e218d603536becfcb8231ca523d9c57328c4e) → static\uploads\api\Income Tax Slabs for FY 2025-26 (AY 2026-27)_42497cdc043b4ca1b73e70acf09e3054.pdf
+2026-02-15T09:23:27.575354 | [PARSED] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf using parse_pdf
+2026-02-15T09:24:35.506369 | [INGESTED] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf successfully processed.
+2026-02-15T09:24:36.155308 | [HASH] Finance_Bill.pdf → 5c98701714c4c473bcd097e376124a4c075881836fe92a5fc4615613c09edabf
+2026-02-15T09:24:36.155308 | [SAVED] Finance_Bill.pdf (5c98701714c4c473bcd097e376124a4c075881836fe92a5fc4615613c09edabf) → static\uploads\api\Finance_Bill_ea3eaab68a7c4355a31ba31310cf5b00.pdf
+2026-02-15T09:25:21.192670 | [PARSED] Finance_Bill.pdf using parse_pdf
+2026-02-15T09:37:12.725477 | [INGESTED] Finance_Bill.pdf successfully processed.
+2026-02-15T09:37:12.934345 | [HASH] Finance_Bill.pdf → 5c98701714c4c473bcd097e376124a4c075881836fe92a5fc4615613c09edabf
+2026-02-15T09:37:12.942041 | [SKIPPED_DB_DUPLICATE] Finance_Bill.pdf
+>>>>>>> Stashed changes
+2026-02-15T10:17:01.934405 | [HASH] Roshini.txt → 6a7a34062f84264e400889c88dc9abda7ab8bd4d0dcd34b5a7f69b9746b19e92
+2026-02-15T10:17:01.959622 | [SAVED] Roshini.txt (6a7a34062f84264e400889c88dc9abda7ab8bd4d0dcd34b5a7f69b9746b19e92) → static\uploads\api\Roshini_45f0ed9b49af40e6b3501e9bf4dd8168.txt
+2026-02-15T10:17:01.976687 | [PARSED] Roshini.txt using parse_text
+2026-02-15T10:17:02.225711 | [INGESTED] Roshini.txt successfully processed.
+2026-02-15T10:20:31.946921 | [HASH] Learning_22jan2020.docx → 26de72a0d325120730ffc213694efc91c55153087dc37ef9859d9395cd18de7d
+2026-02-15T10:20:32.132416 | [SAVED] Learning_22jan2020.docx (26de72a0d325120730ffc213694efc91c55153087dc37ef9859d9395cd18de7d) → static\uploads\api\Learning_22jan2020_b4b59893cb64419aa95ab9a7f75ce53a.docx
+2026-02-15T10:20:32.334753 | [PARSED] Learning_22jan2020.docx using parse_docx
+2026-02-15T10:30:11.191338 | [HASH] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf → b9cfb5c645a1b98b27c6425c07287a132c2df3d66a9c588922c3c37fbe4b9503
+2026-02-15T10:30:11.209940 | [SAVED] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf (b9cfb5c645a1b98b27c6425c07287a132c2df3d66a9c588922c3c37fbe4b9503) → static\uploads\api\022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen_1acebf9e926d46498bd53e70a503198d.pdf
+2026-02-15T10:30:13.683953 | [PARSED] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf using parse_pdf
+2026-02-15T10:33:28.353487 | [INGESTED] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf successfully processed.
+2026-02-15T10:33:32.254343 | [HASH] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf → b9cfb5c645a1b98b27c6425c07287a132c2df3d66a9c588922c3c37fbe4b9503
+2026-02-15T10:33:32.261181 | [SKIPPED_DB_DUPLICATE] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf
+2026-02-15T10:34:39.866315 | [HASH] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf → 9c18cf9d516bd60de0b8bc23b66eb848624a15cf4f398b228bd5debd2a95201c
+2026-02-15T10:34:39.878312 | [SAVED] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf (9c18cf9d516bd60de0b8bc23b66eb848624a15cf4f398b228bd5debd2a95201c) → static\uploads\api\023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen_ad4c2283e8f14feba858cb50fc4bdf84.pdf
+2026-02-15T10:34:42.832912 | [PARSED] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf using parse_pdf
+2026-02-15T10:34:49.665279 | [INGESTED] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf successfully processed.
+2026-02-15T10:34:52.964812 | [HASH] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf → 9c18cf9d516bd60de0b8bc23b66eb848624a15cf4f398b228bd5debd2a95201c
+2026-02-15T10:34:52.970825 | [SKIPPED_DB_DUPLICATE] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf
+2026-02-15T10:38:50.426573 | [HASH] Roshini.txt → 6a7a34062f84264e400889c88dc9abda7ab8bd4d0dcd34b5a7f69b9746b19e92
+2026-02-15T10:38:50.432746 | [SKIPPED_DB_DUPLICATE] Roshini.txt
+2026-02-15T10:38:50.498369 | [HASH] tttttt_v1.txt → bcf32dafe18bab752f6b01b0843d142a7997b4da1e1b524f872d1795ecb0ec47
+2026-02-15T10:38:50.506112 | [SAVED] tttttt_v1.txt (bcf32dafe18bab752f6b01b0843d142a7997b4da1e1b524f872d1795ecb0ec47) → static\uploads\api\tttttt_v1_35dc601f014645afb0c4db01a0c915b6.txt
+2026-02-15T10:38:50.580783 | [PARSED] tttttt_v1.txt using parse_text
+2026-02-15T10:38:52.440522 | [INGESTED] tttttt_v1.txt successfully processed.
+2026-02-15T10:38:52.462259 | [HASH] testdata_v3.txt → cca71414ca5a4fabc8952e07b819934edc49e5afb07396fd7278f9d1412402ff
+2026-02-15T10:38:52.466802 | [SAVED] testdata_v3.txt (cca71414ca5a4fabc8952e07b819934edc49e5afb07396fd7278f9d1412402ff) → static\uploads\api\testdata_v3_07cfd866431744abb6875c49eb5a10a2.txt
+2026-02-15T10:38:52.470810 | [PARSED] testdata_v3.txt using parse_text
+2026-02-15T10:38:53.059524 | [INGESTED] testdata_v3.txt successfully processed.
+2026-02-15T10:38:53.080682 | [HASH] TestCase2.txt → 9ae32e8b41ece6109a7612860c8b8c74acbad3b58ec25105abfa26f11dd40f25
+2026-02-15T10:38:53.084893 | [SAVED] TestCase2.txt (9ae32e8b41ece6109a7612860c8b8c74acbad3b58ec25105abfa26f11dd40f25) → static\uploads\api\TestCase2_f62a63459bfa464f81eea5ed831fd1ba.txt
+2026-02-15T10:38:53.107048 | [PARSED] TestCase2.txt using parse_text
+2026-02-15T10:38:53.867150 | [INGESTED] TestCase2.txt successfully processed.
+2026-02-15T10:39:22.774211 | [HASH] Learning_22jan2020.docx → 26de72a0d325120730ffc213694efc91c55153087dc37ef9859d9395cd18de7d
+2026-02-15T10:39:22.781793 | [SKIPPED_DB_DUPLICATE] Learning_22jan2020.docx
+2026-02-15T10:39:22.819713 | [HASH] DataSync.txt → 569d4078e777c7c6bedcb2b9dc3a9235327c4209e71fa49ddd6730e950631ab1
+2026-02-15T10:39:22.826762 | [SAVED] DataSync.txt (569d4078e777c7c6bedcb2b9dc3a9235327c4209e71fa49ddd6730e950631ab1) → static\uploads\api\DataSync_d24942cf6aec4cbcbde535c2166c8955.txt
+2026-02-15T10:39:22.835880 | [PARSED] DataSync.txt using parse_text
+2026-02-15T10:39:28.079683 | [INGESTED] DataSync.txt successfully processed.
+2026-02-15T10:39:28.468731 | [HASH] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf → 98591f82e2c6440efb0c68f21e7e218d603536becfcb8231ca523d9c57328c4e
+2026-02-15T10:39:28.475278 | [SAVED] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf (98591f82e2c6440efb0c68f21e7e218d603536becfcb8231ca523d9c57328c4e) → static\uploads\api\Income Tax Slabs for FY 2025-26 (AY 2026-27)_af867b76a9474e8f8c1fc79270099d94.pdf
+2026-02-15T10:39:33.554472 | [PARSED] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf using parse_pdf
+2026-02-15T10:40:32.183261 | [INGESTED] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf successfully processed.
+2026-02-15T10:40:33.021677 | [HASH] Phase-1_Marketing_Advantage_V1.docx → 11c9f634c9019728d9bb51bee664d08cc5bf702a53f72f46f9f7e7337f558fe9
+2026-02-15T10:40:33.028009 | [SAVED] Phase-1_Marketing_Advantage_V1.docx (11c9f634c9019728d9bb51bee664d08cc5bf702a53f72f46f9f7e7337f558fe9) → static\uploads\api\Phase-1_Marketing_Advantage_V1_64fc78ca77c84837876814c3cc2ed500.docx
+2026-02-15T10:40:33.288006 | [PARSED] Phase-1_Marketing_Advantage_V1.docx using parse_docx
+2026-02-15T10:40:47.333119 | [INGESTED] Phase-1_Marketing_Advantage_V1.docx successfully processed.
+2026-02-15T10:48:13.470628 | [HASH] Finance_Bill.pdf → 5c98701714c4c473bcd097e376124a4c075881836fe92a5fc4615613c09edabf
+2026-02-15T10:48:13.478648 | [SAVED] Finance_Bill.pdf (5c98701714c4c473bcd097e376124a4c075881836fe92a5fc4615613c09edabf) → static\uploads\api\Finance_Bill_dcc8b07eff9849a598a94f51532ba452.pdf
+2026-02-15T10:49:04.480186 | [PARSED] Finance_Bill.pdf using parse_pdf
+2026-02-15T10:57:44.049434 | [INGESTED] Finance_Bill.pdf successfully processed.
+2026-02-15T10:57:44.275624 | [HASH] Crisil.pdf → fdd3debe5b549cf0247778383fd606bae66a32cc48490cb4135212331e51b590
+2026-02-15T10:57:44.281791 | [SAVED] Crisil.pdf (fdd3debe5b549cf0247778383fd606bae66a32cc48490cb4135212331e51b590) → static\uploads\api\Crisil_b1ca09853d19480eb4ce4e634c5f3185.pdf
+2026-02-15T10:57:48.707602 | [PARSED] Crisil.pdf using parse_pdf
+2026-02-15T10:58:16.502836 | [INGESTED] Crisil.pdf successfully processed.
+2026-02-15T15:51:04.076406 | [HASH] Crisil.pdf → fdd3debe5b549cf0247778383fd606bae66a32cc48490cb4135212331e51b590
+2026-02-15T15:51:04.100849 | [SAVED] Crisil.pdf (fdd3debe5b549cf0247778383fd606bae66a32cc48490cb4135212331e51b590) → static\uploads\api\Crisil_ec39d294468a418b9fe8fa96b2d17af8.pdf
+2026-02-15T15:51:07.569552 | [PARSED] Crisil.pdf using parse_pdf
+2026-02-15T15:51:56.874001 | [INGESTED] Crisil.pdf successfully processed.
+2026-02-15T15:51:58.891191 | [HASH] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf → b9cfb5c645a1b98b27c6425c07287a132c2df3d66a9c588922c3c37fbe4b9503
+2026-02-15T15:51:58.901980 | [SAVED] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf (b9cfb5c645a1b98b27c6425c07287a132c2df3d66a9c588922c3c37fbe4b9503) → static\uploads\api\022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen_4802d224256047eba31e66d3a6d8919e.pdf
+2026-02-15T15:52:01.592947 | [PARSED] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf using parse_pdf
+2026-02-15T15:52:10.482043 | [INGESTED] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf successfully processed.
+2026-02-15T15:52:13.427202 | [HASH] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf → 9c18cf9d516bd60de0b8bc23b66eb848624a15cf4f398b228bd5debd2a95201c
+2026-02-15T15:52:13.433716 | [SAVED] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf (9c18cf9d516bd60de0b8bc23b66eb848624a15cf4f398b228bd5debd2a95201c) → static\uploads\api\023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen_1fe5197963ec44539ee94040508aca52.pdf
+2026-02-15T15:52:16.003760 | [PARSED] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf using parse_pdf
+2026-02-15T15:52:22.959622 | [INGESTED] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf successfully processed.
+2026-02-15T15:52:26.052866 | [HASH] TestCase2.txt → 9ae32e8b41ece6109a7612860c8b8c74acbad3b58ec25105abfa26f11dd40f25
+2026-02-15T15:52:26.057372 | [SAVED] TestCase2.txt (9ae32e8b41ece6109a7612860c8b8c74acbad3b58ec25105abfa26f11dd40f25) → static\uploads\api\TestCase2_bd222797b59f46d2afa230c2442280ee.txt
+2026-02-15T15:52:26.080302 | [PARSED] TestCase2.txt using parse_text
+2026-02-15T15:52:26.841586 | [INGESTED] TestCase2.txt successfully processed.
+2026-02-15T15:52:26.907552 | [HASH] Learning_22jan2020.docx → 26de72a0d325120730ffc213694efc91c55153087dc37ef9859d9395cd18de7d
+2026-02-15T15:52:26.912603 | [SAVED] Learning_22jan2020.docx (26de72a0d325120730ffc213694efc91c55153087dc37ef9859d9395cd18de7d) → static\uploads\api\Learning_22jan2020_627a9a6ddb5d4f4c92964e6e9ef674ff.docx
+2026-02-15T15:52:26.989621 | [PARSED] Learning_22jan2020.docx using parse_docx
+2026-02-15T15:53:26.061852 | [INGESTED] Learning_22jan2020.docx successfully processed.
+2026-02-15T15:53:27.024170 | [HASH] Phase-1_Marketing_Advantage_V1.docx → 11c9f634c9019728d9bb51bee664d08cc5bf702a53f72f46f9f7e7337f558fe9
+2026-02-15T15:53:27.032497 | [SAVED] Phase-1_Marketing_Advantage_V1.docx (11c9f634c9019728d9bb51bee664d08cc5bf702a53f72f46f9f7e7337f558fe9) → static\uploads\api\Phase-1_Marketing_Advantage_V1_f1eabd3caf404d0892531c9ad68140ef.docx
+2026-02-15T15:53:27.301320 | [PARSED] Phase-1_Marketing_Advantage_V1.docx using parse_docx
+2026-02-15T15:53:41.150663 | [INGESTED] Phase-1_Marketing_Advantage_V1.docx successfully processed.
+2026-02-15T15:53:41.213724 | [HASH] Roshini.txt → 6a7a34062f84264e400889c88dc9abda7ab8bd4d0dcd34b5a7f69b9746b19e92
+2026-02-15T15:53:41.224077 | [SAVED] Roshini.txt (6a7a34062f84264e400889c88dc9abda7ab8bd4d0dcd34b5a7f69b9746b19e92) → static\uploads\api\Roshini_7f0368cd52634e5486afef26c27a29ef.txt
+2026-02-15T15:53:41.236948 | [PARSED] Roshini.txt using parse_text
+2026-02-15T15:53:42.508886 | [INGESTED] Roshini.txt successfully processed.
+2026-02-15T15:53:42.556278 | [HASH] tttttt_v1.txt → bcf32dafe18bab752f6b01b0843d142a7997b4da1e1b524f872d1795ecb0ec47
+2026-02-15T15:53:42.565838 | [SAVED] tttttt_v1.txt (bcf32dafe18bab752f6b01b0843d142a7997b4da1e1b524f872d1795ecb0ec47) → static\uploads\api\tttttt_v1_0919e8959f644b018cf9cc8e3b09d8a0.txt
+2026-02-15T15:53:42.637250 | [PARSED] tttttt_v1.txt using parse_text
+2026-02-15T15:53:45.150049 | [INGESTED] tttttt_v1.txt successfully processed.
+2026-02-15T15:53:45.188378 | [HASH] testdata_v3.txt → cca71414ca5a4fabc8952e07b819934edc49e5afb07396fd7278f9d1412402ff
+2026-02-15T15:53:45.197492 | [SAVED] testdata_v3.txt (cca71414ca5a4fabc8952e07b819934edc49e5afb07396fd7278f9d1412402ff) → static\uploads\api\testdata_v3_c9b5dead7f994cd6b245b8dfd66186f1.txt
+2026-02-15T15:53:45.203670 | [PARSED] testdata_v3.txt using parse_text
+2026-02-15T15:53:45.280140 | [INGESTED] testdata_v3.txt successfully processed.
+2026-02-15T16:27:58.254015 | [HASH] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf → 98591f82e2c6440efb0c68f21e7e218d603536becfcb8231ca523d9c57328c4e
+2026-02-15T16:27:58.277223 | [SAVED] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf (98591f82e2c6440efb0c68f21e7e218d603536becfcb8231ca523d9c57328c4e) → static\uploads\api\Income Tax Slabs for FY 2025-26 (AY 2026-27)_6eedc1fc38a84157a41631272fdd20e1.pdf
+2026-02-15T16:28:02.997298 | [PARSED] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf using parse_pdf
+2026-02-15T16:28:41.898066 | [INGESTED] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf successfully processed.
+2026-02-15T16:44:48.057461 | [HASH] Phase-1_Marketing_Advantage_V1.docx → 11c9f634c9019728d9bb51bee664d08cc5bf702a53f72f46f9f7e7337f558fe9
+2026-02-15T16:44:48.063494 | [SAVED] Phase-1_Marketing_Advantage_V1.docx (11c9f634c9019728d9bb51bee664d08cc5bf702a53f72f46f9f7e7337f558fe9) → static\uploads\api\Phase-1_Marketing_Advantage_V1_a1b060e516384a0ab8ba4598227d6ba8.docx
+2026-02-15T16:44:48.152356 | [PARSED] Phase-1_Marketing_Advantage_V1.docx using parse_docx
+2026-02-15T16:44:48.304869 | [INGESTED] Phase-1_Marketing_Advantage_V1.docx successfully processed.
+2026-02-15T16:44:48.322644 | [HASH] Roshini.txt → 6a7a34062f84264e400889c88dc9abda7ab8bd4d0dcd34b5a7f69b9746b19e92
+2026-02-15T16:44:48.329356 | [SAVED] Roshini.txt (6a7a34062f84264e400889c88dc9abda7ab8bd4d0dcd34b5a7f69b9746b19e92) → static\uploads\api\Roshini_dc6fd26ec4cd42f2b8d7a528f0f3e1bb.txt
+2026-02-15T16:44:48.334724 | [PARSED] Roshini.txt using parse_text
+2026-02-15T16:44:48.378517 | [INGESTED] Roshini.txt successfully processed.
+2026-02-15T16:44:48.410962 | [HASH] testdata_v3.txt → cca71414ca5a4fabc8952e07b819934edc49e5afb07396fd7278f9d1412402ff
+2026-02-15T16:44:48.417492 | [SAVED] testdata_v3.txt (cca71414ca5a4fabc8952e07b819934edc49e5afb07396fd7278f9d1412402ff) → static\uploads\api\testdata_v3_5d9a6b5901f0484c81b09ca0cbe38aba.txt
+2026-02-15T16:44:48.422500 | [PARSED] testdata_v3.txt using parse_text
+2026-02-15T16:44:48.457349 | [INGESTED] testdata_v3.txt successfully processed.
+2026-02-15T16:44:48.513676 | [HASH] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf → b9cfb5c645a1b98b27c6425c07287a132c2df3d66a9c588922c3c37fbe4b9503
+2026-02-15T16:44:48.519404 | [SAVED] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf (b9cfb5c645a1b98b27c6425c07287a132c2df3d66a9c588922c3c37fbe4b9503) → static\uploads\api\022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen_ad78d3c29b5a48b9b655ca9412c760ba.pdf
+2026-02-15T16:44:50.335949 | [PARSED] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf using parse_pdf
+2026-02-15T16:44:50.467107 | [INGESTED] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf successfully processed.
+2026-02-15T16:44:52.649250 | [HASH] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf → 98591f82e2c6440efb0c68f21e7e218d603536becfcb8231ca523d9c57328c4e
+2026-02-15T16:44:52.653754 | [SAVED] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf (98591f82e2c6440efb0c68f21e7e218d603536becfcb8231ca523d9c57328c4e) → static\uploads\api\Income Tax Slabs for FY 2025-26 (AY 2026-27)_840a286b40b64d3595f9384d9ae8d1c1.pdf
+2026-02-15T16:44:54.918422 | [PARSED] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf using parse_pdf
+2026-02-15T16:44:55.470726 | [INGESTED] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf successfully processed.
+2026-02-15T16:44:55.837482 | [HASH] Crisil.pdf → fdd3debe5b549cf0247778383fd606bae66a32cc48490cb4135212331e51b590
+2026-02-15T16:44:55.842485 | [SAVED] Crisil.pdf (fdd3debe5b549cf0247778383fd606bae66a32cc48490cb4135212331e51b590) → static\uploads\api\Crisil_e2200ee4db45420fbef42daa48cc0974.pdf
+2026-02-15T16:44:57.454026 | [PARSED] Crisil.pdf using parse_pdf
+2026-02-15T16:44:58.039353 | [INGESTED] Crisil.pdf successfully processed.
+2026-02-15T16:44:58.750527 | [HASH] TestCase2.txt → 9ae32e8b41ece6109a7612860c8b8c74acbad3b58ec25105abfa26f11dd40f25
+2026-02-15T16:44:58.757046 | [SAVED] TestCase2.txt (9ae32e8b41ece6109a7612860c8b8c74acbad3b58ec25105abfa26f11dd40f25) → static\uploads\api\TestCase2_9062ebb05fd34a4b899f74f7c51f6871.txt
+2026-02-15T16:44:58.783763 | [PARSED] TestCase2.txt using parse_text
+2026-02-15T16:44:58.838432 | [INGESTED] TestCase2.txt successfully processed.
+2026-02-15T16:44:58.905465 | [HASH] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf → 9c18cf9d516bd60de0b8bc23b66eb848624a15cf4f398b228bd5debd2a95201c
+2026-02-15T16:44:58.909276 | [SAVED] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf (9c18cf9d516bd60de0b8bc23b66eb848624a15cf4f398b228bd5debd2a95201c) → static\uploads\api\023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen_a578fb8e23c147e4bd6eb043f46a5702.pdf
+2026-02-15T16:44:59.856751 | [PARSED] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf using parse_pdf
+2026-02-15T16:44:59.945866 | [INGESTED] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf successfully processed.
+2026-02-15T16:45:01.784504 | [HASH] Learning_22jan2020.docx → 26de72a0d325120730ffc213694efc91c55153087dc37ef9859d9395cd18de7d
+2026-02-15T16:45:01.790544 | [SAVED] Learning_22jan2020.docx (26de72a0d325120730ffc213694efc91c55153087dc37ef9859d9395cd18de7d) → static\uploads\api\Learning_22jan2020_3d48cbae378d4b0693bcc1ff6ff28b97.docx
+2026-02-15T16:45:01.864112 | [PARSED] Learning_22jan2020.docx using parse_docx
+2026-02-15T16:45:02.446912 | [INGESTED] Learning_22jan2020.docx successfully processed.
+2026-02-15T16:45:02.963176 | [HASH] tttttt_v1.txt → bcf32dafe18bab752f6b01b0843d142a7997b4da1e1b524f872d1795ecb0ec47
+2026-02-15T16:45:02.970693 | [SAVED] tttttt_v1.txt (bcf32dafe18bab752f6b01b0843d142a7997b4da1e1b524f872d1795ecb0ec47) → static\uploads\api\tttttt_v1_7d27174ae6d445b7a57cca63ccc4f67f.txt
+2026-02-15T16:45:03.024728 | [PARSED] tttttt_v1.txt using parse_text
+2026-02-15T16:45:03.079172 | [INGESTED] tttttt_v1.txt successfully processed.
+2026-02-15T16:45:55.012192 | [HASH] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf → 9c18cf9d516bd60de0b8bc23b66eb848624a15cf4f398b228bd5debd2a95201c
+2026-02-15T16:45:55.026309 | [SKIPPED_DB_DUPLICATE] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf
+2026-02-15T16:45:55.105042 | [HASH] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf → b9cfb5c645a1b98b27c6425c07287a132c2df3d66a9c588922c3c37fbe4b9503
+2026-02-15T16:45:55.117263 | [SKIPPED_DB_DUPLICATE] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf
+2026-02-15T16:45:55.255506 | [HASH] Phase-1_Marketing_Advantage_V1.docx → 11c9f634c9019728d9bb51bee664d08cc5bf702a53f72f46f9f7e7337f558fe9
+2026-02-15T16:45:55.259025 | [SKIPPED_DB_DUPLICATE] Phase-1_Marketing_Advantage_V1.docx
+2026-02-15T16:45:55.269175 | [HASH] Roshini.txt → 6a7a34062f84264e400889c88dc9abda7ab8bd4d0dcd34b5a7f69b9746b19e92
+2026-02-15T16:45:55.275316 | [SKIPPED_DB_DUPLICATE] Roshini.txt
+2026-02-15T16:45:55.284152 | [HASH] testdata_v3.txt → cca71414ca5a4fabc8952e07b819934edc49e5afb07396fd7278f9d1412402ff
+2026-02-15T16:45:55.289195 | [SKIPPED_DB_DUPLICATE] testdata_v3.txt
+2026-02-15T16:45:55.433612 | [HASH] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf → 98591f82e2c6440efb0c68f21e7e218d603536becfcb8231ca523d9c57328c4e
+2026-02-15T16:45:55.438152 | [SKIPPED_DB_DUPLICATE] Income Tax Slabs for FY 2025-26 (AY 2026-27).pdf
+2026-02-15T16:45:55.483001 | [HASH] Crisil.pdf → fdd3debe5b549cf0247778383fd606bae66a32cc48490cb4135212331e51b590
+2026-02-15T16:45:55.488975 | [SKIPPED_DB_DUPLICATE] Crisil.pdf
+2026-02-15T16:45:55.501367 | [HASH] TestCase2.txt → 9ae32e8b41ece6109a7612860c8b8c74acbad3b58ec25105abfa26f11dd40f25
+2026-02-15T16:45:55.506914 | [SKIPPED_DB_DUPLICATE] TestCase2.txt
+2026-02-15T16:45:55.565729 | [HASH] Learning_22jan2020.docx → 26de72a0d325120730ffc213694efc91c55153087dc37ef9859d9395cd18de7d
+2026-02-15T16:45:55.569248 | [SKIPPED_DB_DUPLICATE] Learning_22jan2020.docx
+2026-02-15T16:45:55.580853 | [HASH] tttttt_v1.txt → bcf32dafe18bab752f6b01b0843d142a7997b4da1e1b524f872d1795ecb0ec47
+2026-02-15T16:45:55.585072 | [SKIPPED_DB_DUPLICATE] tttttt_v1.txt
+2026-02-15T17:59:37.007978 | [HASH] CM.txt → ce6871afb2da51a500f7abbaa0d0592fcfb7c898562df076ab44c3261a862904
+2026-02-15T17:59:37.019267 | [SAVED] CM.txt (ce6871afb2da51a500f7abbaa0d0592fcfb7c898562df076ab44c3261a862904) → static\uploads\api\CM_6f2ae1c97d3a4bfbbb759eef4b96a208.txt
+2026-02-15T17:59:37.040389 | [PARSED] CM.txt using parse_text
+2026-02-15T17:59:42.096218 | [INGESTED] CM.txt successfully processed.

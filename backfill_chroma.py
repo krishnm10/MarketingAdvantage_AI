@@ -5,17 +5,18 @@ import os
 import math
 from sqlalchemy import create_engine, text, inspect
 from chromadb import PersistentClient
+from app.config.ingestion_settings import EMBEDDING_MODEL_NAME
 import time
 
 # Optional fallback embedder (sentence-transformers); replace with your project's embedder if available.
 try:
     from sentence_transformers import SentenceTransformer
-    _SBERT = SentenceTransformer("all-MiniLM-L6-v2")
+    _SBERT = SentenceTransformer(EMBEDDING_MODEL_NAME)
 except Exception:
     _SBERT = None
 
 # -------- CONFIG ----------
-DATABASE_URL = os.environ.get("DATABASE_URL")  # must be sync-style: postgresql://user:pass@host/db
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:Mahadeva%40123@localhost/marketing_advantage")  # must be sync-style: postgresql://user:pass@host/db
 CHROMA_PATH = os.environ.get("CHROMA_PATH", "./chroma_db")
 GCI_TABLE_SCHEMA = None   # auto-detected below
 GCI_TABLE = "global_content_index"

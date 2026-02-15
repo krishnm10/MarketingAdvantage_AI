@@ -29,6 +29,7 @@ def get_query_embedder():
         print(f"🔧 Loading embedding model: {EMBEDDING_MODEL_NAME}...")
         _EMBEDDER = SentenceTransformer(EMBEDDING_MODEL_NAME)
         print("✅ Model loaded successfully")
+        '''print(_EMBEDDER)'''
     return _EMBEDDER
 
 
