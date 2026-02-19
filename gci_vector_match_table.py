@@ -3,7 +3,7 @@ import chromadb
 from sqlalchemy import create_engine, text
 from chromadb.config import Settings
 
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = os.getenv("DATABASE_URL","postgresql://postgres:Mahadeva%40123@localhost/marketing_advantage")
 CHROMA_PATH = os.getenv("CHROMA_PATH", "./chroma_db")
 COLLECTION_NAME = os.getenv("CHROMA_COLLECTION", "ingested_content")
 

@@ -8,7 +8,7 @@ import uuid
 import hashlib
 import traceback
 from datetime import datetime
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional,  Tuple
 import re
 import asyncio
 from app.api.v2.ingestion_ws_api import broadcast
@@ -29,7 +29,13 @@ from sentence_transformers import SentenceTransformer
 
 import chromadb
 
-
+# =============================================
+# ✅ NEW IMPORT: 3-Layer Deduplication Engine
+# =============================================
+from app.services.ingestion.deduplication_engine_v2 import (
+    deduplicate_chunks,
+    create_normalized_hash
+)                                              
 # =============================================
 # CONFIGURATION
 # =============================================
@@ -264,7 +270,7 @@ def get_embedder():
 
 async def log_event(file_name: str, stage: str, status: str, message: str = ""):
     event = {
-        "timestamp": datetime.datetime.utcnow().isoformat(),
+        "timestamp": datetime.utcnow().isoformat(),
         "file": file_name,
         "stage": stage,
         "status": status,
@@ -333,9 +339,7 @@ class IngestionServiceV2:
                 # ==========================================================
                 # MEDIA-LEVEL HARD DEDUP (AUTHORITATIVE — API + WATCHER)
                 # ==========================================================
-                # ==========================================================
-                # HARD MEDIA-LEVEL DEDUP (AUTHORITATIVE — API + WATCHER)
-                # ==========================================================
+                
                 if file_record and file_record.file_path:
                     loop = asyncio.get_running_loop()
                     try:
@@ -421,7 +425,7 @@ class IngestionServiceV2:
                         business_id=business_id,
                         meta_data={"file_hash": compute_file_hash(file_path)},
                         status="uploaded",
-                        media_hash=media_hash,
+                        #media_hash=media_hash,
                         created_at=datetime.utcnow(),
                         updated_at=datetime.utcnow(),
                     )
@@ -500,25 +504,87 @@ class IngestionServiceV2:
     @staticmethod
     async def _run_pipeline(db: AsyncSession, file_record: IngestedFileV2, parsed_payload: Dict[str, Any]):
         await IngestionServiceV2._ensure_file_entry(db, file_record)
+
         file_id = file_record.id
         business_id = file_record.business_id
         file_type = file_record.file_type
 
-
         chunks = await IngestionServiceV2._extract_chunks(parsed_payload, file_id, file_type, business_id, db)
+
         if not chunks:
             log_info(f"[IngestionV2] No chunks to ingest for {file_id}")
             return
 
-        unique_chunks = await IngestionServiceV2._dedup_chunks(db, chunks, file_id)
-        if not unique_chunks:
-            log_info(f"[IngestionV2] All chunks duplicates for {file_id}")
-            await IngestionServiceV2._update_file_status(db, file_id, 0, "processed")
-            return
+        unique_chunks, dedup_stats = await IngestionServiceV2._dedup_chunks(
+            db, chunks, file_id, business_id
+        )
 
-        await IngestionServiceV2._insert_chunks(db, file_id, business_id, unique_chunks)
-        await IngestionServiceV2._embed_and_store(file_id, business_id, file_type, unique_chunks)
-        await IngestionServiceV2._update_file_status(db, file_id, len(unique_chunks), "processed")
+        # ═══════════════════════════════════════════════════════════
+        # ✅ FIX: Store ALL chunks in ingested_content (unique + duplicates)
+        # ═══════════════════════════════════════════════════════════
+
+        # Identify which chunks are unique
+        unique_hashes = {c.get('semantic_hash') for c in unique_chunks}
+
+        # Prepare all chunks for storage
+        all_chunks_for_storage = []
+
+        # Add unique chunks (marked as not duplicate)
+        for chunk in unique_chunks:
+            chunk['is_duplicate'] = False
+            chunk['duplicate_of'] = None
+            chunk['similarity_score'] = None
+            all_chunks_for_storage.append(chunk)
+
+        # Add duplicate chunks (marked appropriately)
+        for chunk in chunks:
+            semantic_hash = chunk.get('semantic_hash')
+            if semantic_hash not in unique_hashes:
+                # This is a duplicate chunk
+                chunk['is_duplicate'] = True
+                chunk['duplicate_of'] = chunk.get('global_content_id')  # Link to GCI
+                chunk['similarity_score'] = chunk.get('similarity', None)
+                all_chunks_for_storage.append(chunk)
+
+        # ✅ ALWAYS insert chunks (unique + duplicates)
+        if all_chunks_for_storage:
+            await IngestionServiceV2._insert_chunks(
+                db, file_id, business_id, all_chunks_for_storage
+            )
+            log_info(
+                f"[IngestionV2] Inserted {len(all_chunks_for_storage)} chunks into ingested_content: "
+                f"{len(unique_chunks)} unique, {len(all_chunks_for_storage) - len(unique_chunks)} duplicates"
+            )
+
+        # ✅ Only embed and store unique chunks in ChromaDB (avoid duplicate vectors)
+        
+        # ✅ Embed any GCI-known hashes that are missing from ChromaDB
+        # Pass ALL chunks — _embed_and_store internally skips hashes already in Chroma
+        chunks_with_hash = [c for c in chunks if c.get("semantic_hash")]
+        if chunks_with_hash:
+            log_info(f"[IngestionV2] Calling _embed_and_store for {file_id} with {len(chunks_with_hash)} chunks")
+            await IngestionServiceV2._embed_and_store(file_id, business_id, file_type, chunks_with_hash)
+        else:
+            log_info(f"[IngestionV2] No chunks with semantic_hash — skipping Chroma embed for {file_id}")
+        
+
+        # ✅ Update file status with detailed stats
+        await IngestionServiceV2._update_file_status(
+            db,
+            file_id,
+            total_chunks=dedup_stats['total'],
+            unique_chunks=dedup_stats['unique'],
+            duplicate_chunks=dedup_stats['duplicates'],
+            dedup_ratio=dedup_stats['dedup_ratio'],
+            status="processed"
+        )
+
+        log_info(
+            f"[IngestionV2] Pipeline complete for {file_id}: "
+            f"{dedup_stats['unique']}/{dedup_stats['total']} chunks stored "
+            f"({dedup_stats['dedup_ratio']:.2f}% deduplication)"
+        )
+        
 
     # ----------------------------------------------------------
     # Enhanced Chunk extraction (Global Index compatible)
@@ -661,23 +727,47 @@ class IngestionServiceV2:
     # Deduplication (batched for performance)
     # ----------------------------------------------------------
     @staticmethod
-    async def _dedup_chunks(db: AsyncSession, chunks: List[Dict[str, Any]], file_id: str) -> List[Dict[str, Any]]:
-        # Batch-query existing semantic_hash values for this file to avoid per-chunk queries
-        hashes = [c.get("semantic_hash") for c in chunks if c.get("semantic_hash")]
-        if not hashes:
-            log_info(f"[IngestionV2] 0 unique chunks retained (no semantic_hashes present)")
-            return []
-
-        q = select(IngestedContentV2.semantic_hash).where(
-            IngestedContentV2.file_id == file_id,
-            IngestedContentV2.semantic_hash.in_(hashes),
+    async def _dedup_chunks(
+        db: AsyncSession, 
+        chunks: List[Dict[str, Any]], 
+        file_id: str,
+        business_id: Optional[str] = None
+    ) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
+        """
+        ✅ UPDATED: 3-layer deduplication with cross-file duplicate detection.
+    
+        Returns:
+            Tuple of (unique_chunks, dedup_stats)
+        """
+        if not chunks:
+            return [], {'total': 0, 'unique': 0, 'duplicates': 0, 'dedup_ratio': 0.0}
+    
+        # Get ChromaDB and embedder
+        _, collection = get_chroma_collection(skip_count=True)
+        embedder = get_embedder()
+    
+        # Run 3-layer deduplication
+        unique_chunks, stats = await deduplicate_chunks(
+            db=db,
+            chunks=chunks,
+            chroma_collection=collection,
+            embedder=embedder,
+            file_id=file_id,
+            business_id=business_id,
+            enable_embedding_dedup=True,  # Enable Layer 2 (semantic similarity)
+            similarity_threshold=0.95  # 95% similarity threshold
         )
-        result = await db.execute(q)
-        existing = set(result.scalars().all())
-
-        unique_chunks = [c for c in chunks if c.get("semantic_hash") not in existing]
-        log_info(f"[IngestionV2] {len(unique_chunks)} unique chunks retained")
-        return unique_chunks
+    
+        log_info(
+            f"[IngestionV2] Dedup complete for file {file_id}: "
+            f"{stats['unique']} unique, {stats['duplicates']} duplicates "
+            f"({stats['dedup_ratio']:.2f}% reduction) | "
+            f"L1: {stats.get('layer1_hash_duplicates', 0)}, "
+            f"L2: {stats.get('layer2_embedding_duplicates', 0)}, "
+            f"L3: {stats.get('layer3_gci_duplicates', 0)}"
+        )
+    
+        return unique_chunks, stats
 
     # ----------------------------------------------------------
     # Insert + Embeddings (Unified Chroma Dedup Safe)
@@ -708,7 +798,9 @@ class IngestionServiceV2:
                 "semantic_hash": c.get("semantic_hash"),
                 "global_content_id": c.get("global_content_id"),
                 "reasoning_ingestion": c.get("reasoning_ingestion"),
-                "is_duplicate": False,
+                "is_duplicate": c.get("is_duplicate", False),  # ✅ USE THE FLAG FROM CHUNK!
+                "duplicate_of": c.get("duplicate_of"),  # ✅ ADD THIS LINE TOO
+                "similarity_score": c.get("similarity_score"),  # ✅ ADD THIS LINE TOO
                 "created_at": datetime.utcnow(),
                 "updated_at": datetime.utcnow(),
             }
@@ -735,6 +827,7 @@ class IngestionServiceV2:
 
             # ensure chroma collection exists (lazy)
             _, collection = get_chroma_collection()
+            print(_, collection)
 
             # gather semantic_hashes for all chunks (keep mapping)
             hash_to_chunk = {}
@@ -840,12 +933,13 @@ class IngestionServiceV2:
                 metadatas = [
                     {
                         "file_id": str(file_id),
-                        "business_id": str(business_id) if business_id else None,
-                        "source_type": file_type,
-                        "semantic_hash": c.get("semantic_hash"),
+                        "business_id": str(business_id) if business_id else "",
+                        "source_type": str(file_type) if file_type else "",
+                        "semantic_hash": str(c.get("semantic_hash", "")),
                     }
                     for c in batch
                 ]
+
 
                 # Upsert to Chroma using semantic_hash as id — offload to executor
                 await loop.run_in_executor(
@@ -854,7 +948,7 @@ class IngestionServiceV2:
                         ids=ids, embeddings=emb, metadatas=met, documents=docs
                     ),
                 )
-
+                log_info(f"[IngestionV2] ✅ Upserted batch {i//BATCH_SIZE + 1}: {len(batch)} vectors to ChromaDB")
             log_info(f"[IngestionV2] Stored {len(new_chunks)} new unique vectors in ChromaDB for file {file_id}")
 
         except Exception as e:
@@ -879,15 +973,39 @@ class IngestionServiceV2:
         await db.commit()
 
     @staticmethod
-    async def _update_file_status(db: AsyncSession, file_id, total_chunks, status):
-        await db.execute(
-            update(IngestedFileV2)
-            .where(IngestedFileV2.id == file_id)
-            .values(
-                total_chunks=total_chunks,
-                status=status,
-                updated_at=datetime.utcnow(),
+    async def _update_file_status(
+        db: AsyncSession,
+        file_id: str,
+        total_chunks: int = 0,
+        unique_chunks: int = 0,
+        duplicate_chunks: int = 0,
+        dedup_ratio: float = 0.0,
+        status: str = "processed",
+    ):
+        """
+        ✅ UPDATED: Track comprehensive deduplication metrics.
+        """
+        try:
+            await db.execute(
+                update(IngestedFileV2)
+                .where(IngestedFileV2.id == file_id)
+                .values(
+                    total_chunks=total_chunks,
+                    unique_chunks=unique_chunks,
+                    duplicate_chunks=duplicate_chunks,
+                    dedup_ratio=dedup_ratio,
+                    status=status,
+                    updated_at=datetime.utcnow(),
+                )
             )
-        )
-        await db.commit()
-        log_info(f"[IngestionV2] File {file_id} status updated to {status}")
+            await db.commit()
+    
+            log_info(
+                f"[IngestionV2] File {file_id} status updated: "
+                f"status={status}, chunks={unique_chunks}/{total_chunks}, "
+                f"dedup={dedup_ratio:.2f}%"
+            )
+    
+        except Exception as e:
+            log_info(f"[IngestionV2] Failed to update file status: {e}")
+            await db.rollback()

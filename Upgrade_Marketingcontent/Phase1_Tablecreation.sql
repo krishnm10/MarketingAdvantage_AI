@@ -52,7 +52,7 @@ CREATE TABLE taxonomy_alias (
     
     canonical_taxonomy_id UUID NOT NULL
         REFERENCES taxonomy(id)
-        ON DELETE CASCADE,
+        ON DELETE CASCADE, 
     
     created_at TIMESTAMP DEFAULT NOW()
 );

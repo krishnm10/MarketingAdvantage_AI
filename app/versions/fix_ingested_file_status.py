@@ -56,3 +56,4 @@ def downgrade():
         ADD CONSTRAINT ingested_file_status_check
         CHECK (status IN ('processed'));
     """)
+    

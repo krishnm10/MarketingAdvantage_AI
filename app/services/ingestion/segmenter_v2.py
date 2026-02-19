@@ -12,7 +12,11 @@ from datetime import datetime
 from functools import lru_cache
 from app.config.ingestion_settings import EMBEDDING_MODEL_NAME
 
-# ❗ Removed embed model usage here — embedding is now centralized in ingestion_service_v2
+# =============================================
+# ✅ NEW IMPORT: Normalized Hash from Deduplication Engine
+# =============================================
+from app.services.ingestion.deduplication_engine_v2 import create_normalized_hash                                               
+                                                                     # ❗ Removed embed model usage here — embedding is now centralized in ingestion_service_v2
 # to avoid blocking event loop inside segmenter.
 # We still keep lazy-loader for future optional use.
 @lru_cache(maxsize=1)
@@ -27,10 +31,20 @@ def count_tokens(text: str) -> int:
     return len(text.split())
 
 # -------------------------------------------------------------------
-# SEMANTIC HASH GENERATOR
+# ✅ UPDATED: SEMANTIC HASH GENERATOR (Normalized for Better Dedup)
 # -------------------------------------------------------------------
 def make_semantic_hash(text: str) -> str:
-    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+    """
+    ✅ UPDATED: Creates a normalized semantic hash for production-grade deduplication.
+
+    This ensures that minor variations don't create different hashes:
+    - "Hello World" and "hello world" → Same hash
+    - "Text" and "Text " (extra space) → Same hash
+    - "Hello!" and "Hello" → Same hash
+
+    Uses the centralized deduplication engine for consistency across the system.
+    """
+    return create_normalized_hash(text)
 
 # -------------------------------------------------------------------
 # STEP-1: REASONING INGESTION METADATA (ADDITIVE, SAFE)
@@ -233,7 +247,7 @@ async def recursive_semantic_chunk(
     return result
 
 # -------------------------------------------------------------------
-# DEDUP-AWARE CHUNK BUILDER (Patched)
+# ✅ UPDATED: DEDUP-AWARE CHUNK BUILDER (Enhanced with Normalized Hash)
 # -------------------------------------------------------------------
 async def make_chunk_dict(
     text: str,
@@ -242,11 +256,19 @@ async def make_chunk_dict(
     business_id=None,
     source_type: str = None,
 ) -> Dict[str, Any]:
+    """
+    ✅ UPDATED: Enhanced chunk dictionary builder with normalized hash support.
 
+    Changes:
+    - Uses normalized hash via make_semantic_hash() (now uses create_normalized_hash)
+    - Explicitly includes normalized_hash field for deduplication engine
+    - All existing functionality preserved (GCI, reasoning metadata, etc.)
+    """
     cleaned = clean_text(text)
     if not cleaned.strip():
         return {}
 
+    # ✅ This now uses normalized hash via create_normalized_hash()
     semantic_hash = make_semantic_hash(cleaned)
     tokens = count_tokens(cleaned)
     now = datetime.utcnow()
@@ -284,6 +306,7 @@ async def make_chunk_dict(
 
         if row:
             gci_id = row.id
+
             try:
                 await db_session.execute(
                     update(GlobalContentIndexV2)
@@ -306,6 +329,7 @@ async def make_chunk_dict(
         "cleaned_text": cleaned,
         "tokens": tokens,
         "semantic_hash": semantic_hash,
+        "normalized_hash": semantic_hash,  # ✅ NEW: Explicit normalized_hash field
         "confidence": 1.0,
         "global_content_id": str(gci_id) if gci_id else None,
         "source_type": source_type,
@@ -313,7 +337,7 @@ async def make_chunk_dict(
         # ✅ STEP-1 ADDITIVE METADATA (SAFE)
         "reasoning_ingestion": build_reasoning_ingestion_metadata(
             text=cleaned,
-            source_type=source_type,
+            source_type=source_type or "unknown",
             semantic_hash=semantic_hash,
         ),
     }

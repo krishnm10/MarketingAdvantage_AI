@@ -814,3 +814,540 @@ DETAIL:  Key (id)=(471802ef-85bb-409e-a68c-68132e261961) already exists.
 2026-02-15T04:59:23.400395 | [SKIPPED_DB_DUPLICATE] testdata_v3.txt
 2026-02-15T04:59:32.627369 | [HASH] testdata_v3.txt → cca71414ca5a4fabc8952e07b819934edc49e5afb07396fd7278f9d1412402ff
 2026-02-15T04:59:32.633595 | [SKIPPED_DB_DUPLICATE] testdata_v3.txt
+2026-02-15T10:32:43.375221 | [HASH] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf → b9cfb5c645a1b98b27c6425c07287a132c2df3d66a9c588922c3c37fbe4b9503
+2026-02-15T10:32:43.393063 | [SAVED] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf (b9cfb5c645a1b98b27c6425c07287a132c2df3d66a9c588922c3c37fbe4b9503) → static\uploads\api\022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen_b425812afcf4450ba4ab5780c4b38a12.pdf
+2026-02-15T10:32:45.180375 | [PARSED] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf using parse_pdf
+2026-02-15T10:32:49.264582 | [INGESTED] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf successfully processed.
+2026-02-15T10:32:57.287205 | [HASH] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf → b9cfb5c645a1b98b27c6425c07287a132c2df3d66a9c588922c3c37fbe4b9503
+2026-02-15T10:32:57.292049 | [SKIPPED_DB_DUPLICATE] 022-I-FOUND-A-FROG-Free-Childrens-Book-By-Monkey-Pen.pdf
+2026-02-15T10:41:26.543650 | [HASH] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf → 9c18cf9d516bd60de0b8bc23b66eb848624a15cf4f398b228bd5debd2a95201c
+2026-02-15T10:41:26.549796 | [SAVED] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf (9c18cf9d516bd60de0b8bc23b66eb848624a15cf4f398b228bd5debd2a95201c) → static\uploads\api\023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen_8e27deae58364711b01c8955b3d4ca77.pdf
+2026-02-15T10:41:27.453395 | [PARSED] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf using parse_pdf
+2026-02-15T10:41:29.946268 | [INGESTED] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf successfully processed.
+2026-02-15T10:41:35.737507 | [HASH] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf → 9c18cf9d516bd60de0b8bc23b66eb848624a15cf4f398b228bd5debd2a95201c
+2026-02-15T10:41:35.740547 | [SKIPPED_DB_DUPLICATE] 023-A-DOG-ON-A-LOG-Free-Childrens-Book-By-Monkey-Pen.pdf
+2026-02-15T10:55:07.745716 | [HASH] Schatzinsel_E.pdf → 2ff332510d74fd5a54443cb57a73ecfe312b7e6b456ab0a2dc724f3e16d860f6
+2026-02-15T10:55:07.754150 | [SAVED] Schatzinsel_E.pdf (2ff332510d74fd5a54443cb57a73ecfe312b7e6b456ab0a2dc724f3e16d860f6) → static\uploads\api\Schatzinsel_E_3ec242f11b9b47a7a1b531c5aace3e11.pdf
+2026-02-15T10:55:23.095131 | [PARSED] Schatzinsel_E.pdf using parse_pdf
+2026-02-15T11:01:35.854766 | [INGESTED] Schatzinsel_E.pdf successfully processed.
+2026-02-15T11:01:35.998746 | [HASH] Schatzinsel_E.pdf → 2ff332510d74fd5a54443cb57a73ecfe312b7e6b456ab0a2dc724f3e16d860f6
+2026-02-15T11:01:36.001974 | [SKIPPED_DB_DUPLICATE] Schatzinsel_E.pdf
+2026-02-17T09:01:57.747413 | [HASH] TEST.JSON → d14708f271ee6a37c0187363657c2bda42842d77d635d1e27998696c9fbc0d75
+2026-02-17T09:01:57.767990 | [SAVED] TEST.JSON (d14708f271ee6a37c0187363657c2bda42842d77d635d1e27998696c9fbc0d75) → static\uploads\api\TEST_9acf468fb73348f08719e22360cb6942.JSON
+2026-02-17T09:01:57.774629 | [PARSED] TEST.JSON using parse_json
+2026-02-17T09:02:09.676301 | [INGESTED] TEST.JSON successfully processed.
+2026-02-17T21:18:42.532799 | [HASH] TEST.JSON → d14708f271ee6a37c0187363657c2bda42842d77d635d1e27998696c9fbc0d75
+2026-02-17T21:18:42.545505 | [SKIPPED_DB_DUPLICATE] TEST.JSON
+2026-02-17T21:19:25.383969 | [HASH] commoncrawl.JSON → d14708f271ee6a37c0187363657c2bda42842d77d635d1e27998696c9fbc0d75
+2026-02-17T21:19:25.394845 | [SKIPPED_DB_DUPLICATE] commoncrawl.JSON
+2026-02-17T21:20:19.694210 | [HASH] commoncrawl.JSON → b85780724ac6d0816f243bbbabdc094352f3983e13f4865cc7c65287d3ea4805
+2026-02-17T21:20:19.700255 | [SAVED] commoncrawl.JSON (b85780724ac6d0816f243bbbabdc094352f3983e13f4865cc7c65287d3ea4805) → static\uploads\api\commoncrawl_130830e1e4ec47cf8ed580caac206b1a.JSON
+2026-02-17T21:20:19.707114 | [PARSED] commoncrawl.JSON using parse_json
+2026-02-17T21:20:20.186599 | [INGESTED] commoncrawl.JSON successfully processed.
+2026-02-17T21:26:28.146864 | [HASH] commoncrawl.JSON → 00240fcf88c4b895351ba81b613eaf9376df33489e2bb42481f879fa050ac9fc
+2026-02-17T21:26:28.153455 | [SKIPPED_DB_DUPLICATE] commoncrawl.JSON
+2026-02-18T01:14:38.796955 | [HASH] test_layer1_original.txt → b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91
+2026-02-18T01:14:38.859572 | [SAVED] test_layer1_original.txt (b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91) → static\uploads\api\test_layer1_original_accf38c264fb422e82fd04591c33fec2.txt
+2026-02-18T01:14:38.861580 | [PARSED] test_layer1_original.txt using parse_text
+2026-02-18T01:14:42.362670 | [INGESTED] test_layer1_original.txt successfully processed.
+2026-02-18T01:14:46.426829 | [HASH] test_layer1_case_variation.txt → b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072
+2026-02-18T01:14:46.429409 | [SAVED] test_layer1_case_variation.txt (b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072) → static\uploads\api\test_layer1_case_variation_7f841ebc378c46019881b544ea5d6d67.txt
+2026-02-18T01:14:46.429409 | [PARSED] test_layer1_case_variation.txt using parse_text
+2026-02-18T01:14:46.450029 | [INGESTED] test_layer1_case_variation.txt successfully processed.
+2026-02-18T01:14:50.506847 | [HASH] test_layer1_space_variation.txt → 1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e
+2026-02-18T01:14:50.515905 | [SAVED] test_layer1_space_variation.txt (1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e) → static\uploads\api\test_layer1_space_variation_68c938b49aba42ffa92e69c5ecb2ca87.txt
+2026-02-18T01:14:50.517457 | [PARSED] test_layer1_space_variation.txt using parse_text
+2026-02-18T01:14:50.529648 | [INGESTED] test_layer1_space_variation.txt successfully processed.
+2026-02-18T01:14:54.569428 | [HASH] test_layer1_punctuation_variation.txt → 431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12
+2026-02-18T01:14:54.569428 | [SAVED] test_layer1_punctuation_variation.txt (431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12) → static\uploads\api\test_layer1_punctuation_variation_53ac6de1beb84ac5ae55d3cf7956505f.txt
+2026-02-18T01:14:54.569428 | [PARSED] test_layer1_punctuation_variation.txt using parse_text
+2026-02-18T01:14:54.592012 | [INGESTED] test_layer1_punctuation_variation.txt successfully processed.
+2026-02-18T01:14:58.635726 | [HASH] test_layer2_original.txt → 35dfe98e891fa05a7ca2f51d25dba2676154f11d39d78eb9d402abced76d25f8
+2026-02-18T01:14:58.635726 | [SAVED] test_layer2_original.txt (35dfe98e891fa05a7ca2f51d25dba2676154f11d39d78eb9d402abced76d25f8) → static\uploads\api\test_layer2_original_878625e6fe9b4653a0cc16bb7214933f.txt
+2026-02-18T01:14:58.635726 | [PARSED] test_layer2_original.txt using parse_text
+2026-02-18T01:14:58.663068 | [INGESTED] test_layer2_original.txt successfully processed.
+2026-02-18T01:15:02.722225 | [HASH] test_layer2_paraphrase.txt → a2147fcc55f0131d27bb270d825795e73e85b20a9079a3ff89e1dc379a21b900
+2026-02-18T01:15:02.725225 | [SAVED] test_layer2_paraphrase.txt (a2147fcc55f0131d27bb270d825795e73e85b20a9079a3ff89e1dc379a21b900) → static\uploads\api\test_layer2_paraphrase_e700387b468549dfb4d582949ba6131e.txt
+2026-02-18T01:15:02.728225 | [PARSED] test_layer2_paraphrase.txt using parse_text
+2026-02-18T01:15:02.743726 | [INGESTED] test_layer2_paraphrase.txt successfully processed.
+2026-02-18T01:15:06.772860 | [HASH] test_layer2_similar.txt → ae1acef35966ca013722a597e45082b15ff87fa0afc529410b523700950dafd6
+2026-02-18T01:15:06.776373 | [SAVED] test_layer2_similar.txt (ae1acef35966ca013722a597e45082b15ff87fa0afc529410b523700950dafd6) → static\uploads\api\test_layer2_similar_2ff9738ce69a421398a2f8cc7e5fd7ac.txt
+2026-02-18T01:15:06.778836 | [PARSED] test_layer2_similar.txt using parse_text
+2026-02-18T01:15:06.796273 | [INGESTED] test_layer2_similar.txt successfully processed.
+2026-02-18T01:15:10.837212 | [HASH] test_layer3_report_q1.txt → 621001e626b5436da467a59fe83b8b976703de92a40425971b99fe70da5ba301
+2026-02-18T01:15:10.840182 | [SAVED] test_layer3_report_q1.txt (621001e626b5436da467a59fe83b8b976703de92a40425971b99fe70da5ba301) → static\uploads\api\test_layer3_report_q1_02cf95fdd6f8423792d2b44809768c91.txt
+2026-02-18T01:15:10.842892 | [PARSED] test_layer3_report_q1.txt using parse_text
+2026-02-18T01:15:10.861093 | [INGESTED] test_layer3_report_q1.txt successfully processed.
+2026-02-18T01:15:14.911830 | [HASH] test_layer3_report_q2.txt → 710df8117fe0aaab8ad58269f98c299baed1bb9a7828711091bc5a5d472d00e1
+2026-02-18T01:15:14.916056 | [SAVED] test_layer3_report_q2.txt (710df8117fe0aaab8ad58269f98c299baed1bb9a7828711091bc5a5d472d00e1) → static\uploads\api\test_layer3_report_q2_cd9eabe1b6594ab2b179b66e77c9f550.txt
+2026-02-18T01:15:14.918367 | [PARSED] test_layer3_report_q2.txt using parse_text
+2026-02-18T01:15:14.937778 | [INGESTED] test_layer3_report_q2.txt successfully processed.
+2026-02-18T01:15:19.041141 | [HASH] test_layer3_report_q3.txt → 1225fa3835b20e4c23bdb2ae52e4af5db7a859814ec1ae83fde54ba66fb6b370
+2026-02-18T01:15:19.046466 | [SAVED] test_layer3_report_q3.txt (1225fa3835b20e4c23bdb2ae52e4af5db7a859814ec1ae83fde54ba66fb6b370) → static\uploads\api\test_layer3_report_q3_52146f9672464d579dc5305c5d9b6a29.txt
+2026-02-18T01:15:19.048963 | [PARSED] test_layer3_report_q3.txt using parse_text
+2026-02-18T01:15:19.064105 | [INGESTED] test_layer3_report_q3.txt successfully processed.
+2026-02-18T01:15:23.127470 | [HASH] test_customers_jan.csv → ac06d1334c72dd7d7fcd02a866520f0c0d55a50d3da1d739c899c001f2353f39
+2026-02-18T01:15:23.131471 | [SAVED] test_customers_jan.csv (ac06d1334c72dd7d7fcd02a866520f0c0d55a50d3da1d739c899c001f2353f39) → static\uploads\api\test_customers_jan_0ccbc24240d24f018081e92b136c39d1.csv
+2026-02-18T01:15:23.154822 | [PARSED] test_customers_jan.csv using parse_csv
+2026-02-18T01:15:23.184270 | [INGESTED] test_customers_jan.csv successfully processed.
+2026-02-18T01:15:27.242857 | [HASH] test_customers_feb.csv → ffe09580e0b290c426f051a2994351668f54d48553ad33e95a4bc4b30c7f20f2
+2026-02-18T01:15:27.246039 | [SAVED] test_customers_feb.csv (ffe09580e0b290c426f051a2994351668f54d48553ad33e95a4bc4b30c7f20f2) → static\uploads\api\test_customers_feb_ccb749929d4240519548e5421bea7127.csv
+2026-02-18T01:15:27.253039 | [PARSED] test_customers_feb.csv using parse_csv
+2026-02-18T01:15:27.283944 | [INGESTED] test_customers_feb.csv successfully processed.
+2026-02-18T01:15:31.375706 | [HASH] test_mixed_content_a.txt → 2ab0cb17366943e3a5eece3a739e09e4a73241dc927bfb602461728e9889bc9a
+2026-02-18T01:15:31.378707 | [SAVED] test_mixed_content_a.txt (2ab0cb17366943e3a5eece3a739e09e4a73241dc927bfb602461728e9889bc9a) → static\uploads\api\test_mixed_content_a_a4adb6ac884c4c3db567a2e916de7e19.txt
+2026-02-18T01:15:31.381707 | [PARSED] test_mixed_content_a.txt using parse_text
+2026-02-18T01:15:31.406692 | [INGESTED] test_mixed_content_a.txt successfully processed.
+2026-02-18T01:15:35.471039 | [HASH] test_mixed_content_b.txt → c6ad0c39d6be7767b62b567d1f4b5d5e222b7ae8d048f7a13458fd70ebf73aa4
+2026-02-18T01:15:35.475047 | [SAVED] test_mixed_content_b.txt (c6ad0c39d6be7767b62b567d1f4b5d5e222b7ae8d048f7a13458fd70ebf73aa4) → static\uploads\api\test_mixed_content_b_7859bdc62da04b8dadef2d3a6c0c57e8.txt
+2026-02-18T01:15:35.478108 | [PARSED] test_mixed_content_b.txt using parse_text
+2026-02-18T01:15:35.499206 | [INGESTED] test_mixed_content_b.txt successfully processed.
+2026-02-18T01:15:39.584690 | [HASH] test_edge_empty.txt → dba5166ad9db9ba648c1032ebbd34dcd0d085b50023b839ef5c68ca1db93a563
+2026-02-18T01:15:39.588694 | [SAVED] test_edge_empty.txt (dba5166ad9db9ba648c1032ebbd34dcd0d085b50023b839ef5c68ca1db93a563) → static\uploads\api\test_edge_empty_a73938356e0a43c1ac7090be1cd55560.txt
+2026-02-18T01:15:39.590695 | [FAILED] test_edge_empty.txt: [text_parser_v2] Text file is empty: static\uploads\api\test_edge_empty_a73938356e0a43c1ac7090be1cd55560.txt
+2026-02-18T01:15:43.648749 | [HASH] test_edge_short.txt → a67df9b40c82290266b97f653f05f858205ff2347eb687af149547b992fd2d92
+2026-02-18T01:15:43.652769 | [SAVED] test_edge_short.txt (a67df9b40c82290266b97f653f05f858205ff2347eb687af149547b992fd2d92) → static\uploads\api\test_edge_short_53fe8fa9d2e747f194f029cd9b348c09.txt
+2026-02-18T01:15:43.654769 | [PARSED] test_edge_short.txt using parse_text
+2026-02-18T01:15:43.673048 | [INGESTED] test_edge_short.txt successfully processed.
+2026-02-18T01:15:47.722640 | [HASH] test_edge_long_repeated.txt → fe96774f490a0322863b8c6994b633ca3bd2a4803cedd7ead5cf64d3424e3c4d
+2026-02-18T01:15:47.726652 | [SAVED] test_edge_long_repeated.txt (fe96774f490a0322863b8c6994b633ca3bd2a4803cedd7ead5cf64d3424e3c4d) → static\uploads\api\test_edge_long_repeated_2f5791ab02a04f56b2ed88326084065a.txt
+2026-02-18T01:15:47.734813 | [PARSED] test_edge_long_repeated.txt using parse_text
+2026-02-18T01:15:47.810230 | [INGESTED] test_edge_long_repeated.txt successfully processed.
+2026-02-18T01:41:32.798600 | [HASH] test_layer1_original.txt → b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91
+2026-02-18T01:41:32.800823 | [SAVED] test_layer1_original.txt (b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91) → static\uploads\api\test_layer1_original_90201c7abc344df2ade8d778a03ee9aa.txt
+2026-02-18T01:41:32.812621 | [PARSED] test_layer1_original.txt using parse_text
+2026-02-18T01:41:36.201750 | [INGESTED] test_layer1_original.txt successfully processed.
+2026-02-18T01:41:40.255767 | [HASH] test_layer1_case_variation.txt → b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072
+2026-02-18T01:41:40.255767 | [SAVED] test_layer1_case_variation.txt (b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072) → static\uploads\api\test_layer1_case_variation_5c126fed2ae74cbab5915da106d35d3b.txt
+2026-02-18T01:41:40.255767 | [PARSED] test_layer1_case_variation.txt using parse_text
+2026-02-18T01:41:40.277168 | [INGESTED] test_layer1_case_variation.txt successfully processed.
+2026-02-18T01:41:44.324040 | [HASH] test_layer1_space_variation.txt → 1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e
+2026-02-18T01:41:44.329097 | [SAVED] test_layer1_space_variation.txt (1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e) → static\uploads\api\test_layer1_space_variation_e2cd668d37e94a49aadc80c55c56e2b7.txt
+2026-02-18T01:41:44.329097 | [PARSED] test_layer1_space_variation.txt using parse_text
+2026-02-18T01:41:44.347403 | [INGESTED] test_layer1_space_variation.txt successfully processed.
+2026-02-18T01:41:48.390790 | [HASH] test_layer1_punctuation_variation.txt → 431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12
+2026-02-18T01:41:48.390790 | [SAVED] test_layer1_punctuation_variation.txt (431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12) → static\uploads\api\test_layer1_punctuation_variation_c94831bc256d45ee9f560a68a59013c9.txt
+2026-02-18T01:41:48.390790 | [PARSED] test_layer1_punctuation_variation.txt using parse_text
+2026-02-18T01:41:48.407722 | [INGESTED] test_layer1_punctuation_variation.txt successfully processed.
+2026-02-18T01:41:52.433464 | [HASH] test_layer2_original.txt → 35dfe98e891fa05a7ca2f51d25dba2676154f11d39d78eb9d402abced76d25f8
+2026-02-18T01:41:52.439359 | [SAVED] test_layer2_original.txt (35dfe98e891fa05a7ca2f51d25dba2676154f11d39d78eb9d402abced76d25f8) → static\uploads\api\test_layer2_original_f36c090e50f8480e8e17b8c670f1e41d.txt
+2026-02-18T01:41:52.439359 | [PARSED] test_layer2_original.txt using parse_text
+2026-02-18T01:41:52.455920 | [INGESTED] test_layer2_original.txt successfully processed.
+2026-02-18T01:41:56.524353 | [HASH] test_layer2_paraphrase.txt → a2147fcc55f0131d27bb270d825795e73e85b20a9079a3ff89e1dc379a21b900
+2026-02-18T01:41:56.526025 | [SAVED] test_layer2_paraphrase.txt (a2147fcc55f0131d27bb270d825795e73e85b20a9079a3ff89e1dc379a21b900) → static\uploads\api\test_layer2_paraphrase_71d6477cb0da4b9ab539a529f934fac9.txt
+2026-02-18T01:41:56.529550 | [PARSED] test_layer2_paraphrase.txt using parse_text
+2026-02-18T01:41:56.549772 | [INGESTED] test_layer2_paraphrase.txt successfully processed.
+2026-02-18T01:42:00.592032 | [HASH] test_layer2_similar.txt → ae1acef35966ca013722a597e45082b15ff87fa0afc529410b523700950dafd6
+2026-02-18T01:42:00.592032 | [SAVED] test_layer2_similar.txt (ae1acef35966ca013722a597e45082b15ff87fa0afc529410b523700950dafd6) → static\uploads\api\test_layer2_similar_179418279aaf43f6b310a6462419f046.txt
+2026-02-18T01:42:00.601745 | [PARSED] test_layer2_similar.txt using parse_text
+2026-02-18T01:42:00.620984 | [INGESTED] test_layer2_similar.txt successfully processed.
+2026-02-18T01:42:04.703637 | [HASH] test_layer3_report_q1.txt → 621001e626b5436da467a59fe83b8b976703de92a40425971b99fe70da5ba301
+2026-02-18T01:42:04.711775 | [SAVED] test_layer3_report_q1.txt (621001e626b5436da467a59fe83b8b976703de92a40425971b99fe70da5ba301) → static\uploads\api\test_layer3_report_q1_4c845ea6b8b14349841a0a2e8214861a.txt
+2026-02-18T01:42:04.714328 | [PARSED] test_layer3_report_q1.txt using parse_text
+2026-02-18T01:42:04.736770 | [INGESTED] test_layer3_report_q1.txt successfully processed.
+2026-02-18T01:42:08.799765 | [HASH] test_layer3_report_q2.txt → 710df8117fe0aaab8ad58269f98c299baed1bb9a7828711091bc5a5d472d00e1
+2026-02-18T01:42:08.802715 | [SAVED] test_layer3_report_q2.txt (710df8117fe0aaab8ad58269f98c299baed1bb9a7828711091bc5a5d472d00e1) → static\uploads\api\test_layer3_report_q2_27a50408393347ff81b8c7db927744aa.txt
+2026-02-18T01:42:08.806164 | [PARSED] test_layer3_report_q2.txt using parse_text
+2026-02-18T01:42:08.830350 | [INGESTED] test_layer3_report_q2.txt successfully processed.
+2026-02-18T01:42:12.893030 | [HASH] test_layer3_report_q3.txt → 1225fa3835b20e4c23bdb2ae52e4af5db7a859814ec1ae83fde54ba66fb6b370
+2026-02-18T01:42:12.893030 | [SAVED] test_layer3_report_q3.txt (1225fa3835b20e4c23bdb2ae52e4af5db7a859814ec1ae83fde54ba66fb6b370) → static\uploads\api\test_layer3_report_q3_dabf11fed32f4c45a15bb69781d3027e.txt
+2026-02-18T01:42:12.893030 | [PARSED] test_layer3_report_q3.txt using parse_text
+2026-02-18T01:42:12.917465 | [INGESTED] test_layer3_report_q3.txt successfully processed.
+2026-02-18T01:42:16.968464 | [HASH] test_customers_jan.csv → ac06d1334c72dd7d7fcd02a866520f0c0d55a50d3da1d739c899c001f2353f39
+2026-02-18T01:42:16.968464 | [SAVED] test_customers_jan.csv (ac06d1334c72dd7d7fcd02a866520f0c0d55a50d3da1d739c899c001f2353f39) → static\uploads\api\test_customers_jan_1add6f1da49141059c30445f354d71e2.csv
+2026-02-18T01:42:16.977985 | [PARSED] test_customers_jan.csv using parse_csv
+2026-02-18T01:42:17.005267 | [INGESTED] test_customers_jan.csv successfully processed.
+2026-02-18T01:42:21.049785 | [HASH] test_customers_feb.csv → ffe09580e0b290c426f051a2994351668f54d48553ad33e95a4bc4b30c7f20f2
+2026-02-18T01:42:21.049785 | [SAVED] test_customers_feb.csv (ffe09580e0b290c426f051a2994351668f54d48553ad33e95a4bc4b30c7f20f2) → static\uploads\api\test_customers_feb_96c9983e08df4a819219bdfeb7a170f1.csv
+2026-02-18T01:42:21.049785 | [PARSED] test_customers_feb.csv using parse_csv
+2026-02-18T01:42:21.078912 | [INGESTED] test_customers_feb.csv successfully processed.
+2026-02-18T01:42:25.134729 | [HASH] test_mixed_content_a.txt → 2ab0cb17366943e3a5eece3a739e09e4a73241dc927bfb602461728e9889bc9a
+2026-02-18T01:42:25.142405 | [SAVED] test_mixed_content_a.txt (2ab0cb17366943e3a5eece3a739e09e4a73241dc927bfb602461728e9889bc9a) → static\uploads\api\test_mixed_content_a_a95bdae030f844958f76c330d8d62403.txt
+2026-02-18T01:42:25.142405 | [PARSED] test_mixed_content_a.txt using parse_text
+2026-02-18T01:42:25.163950 | [INGESTED] test_mixed_content_a.txt successfully processed.
+2026-02-18T01:42:29.241814 | [HASH] test_mixed_content_b.txt → c6ad0c39d6be7767b62b567d1f4b5d5e222b7ae8d048f7a13458fd70ebf73aa4
+2026-02-18T01:42:29.243488 | [SAVED] test_mixed_content_b.txt (c6ad0c39d6be7767b62b567d1f4b5d5e222b7ae8d048f7a13458fd70ebf73aa4) → static\uploads\api\test_mixed_content_b_641c9d6867b8468d877d76fb57f15b55.txt
+2026-02-18T01:42:29.246392 | [PARSED] test_mixed_content_b.txt using parse_text
+2026-02-18T01:42:29.268765 | [INGESTED] test_mixed_content_b.txt successfully processed.
+2026-02-18T01:42:33.330962 | [HASH] test_edge_empty.txt → dba5166ad9db9ba648c1032ebbd34dcd0d085b50023b839ef5c68ca1db93a563
+2026-02-18T01:42:33.333477 | [SAVED] test_edge_empty.txt (dba5166ad9db9ba648c1032ebbd34dcd0d085b50023b839ef5c68ca1db93a563) → static\uploads\api\test_edge_empty_0061a190931c4e45901b259d16b85409.txt
+2026-02-18T01:42:33.333477 | [FAILED] test_edge_empty.txt: [text_parser_v2] Text file is empty: static\uploads\api\test_edge_empty_0061a190931c4e45901b259d16b85409.txt
+2026-02-18T01:42:37.398931 | [HASH] test_edge_short.txt → a67df9b40c82290266b97f653f05f858205ff2347eb687af149547b992fd2d92
+2026-02-18T01:42:37.402257 | [SAVED] test_edge_short.txt (a67df9b40c82290266b97f653f05f858205ff2347eb687af149547b992fd2d92) → static\uploads\api\test_edge_short_29663afc1a66440aa82a365dbe945466.txt
+2026-02-18T01:42:37.402257 | [PARSED] test_edge_short.txt using parse_text
+2026-02-18T01:42:37.409841 | [INGESTED] test_edge_short.txt successfully processed.
+2026-02-18T01:42:41.480858 | [HASH] test_edge_long_repeated.txt → fe96774f490a0322863b8c6994b633ca3bd2a4803cedd7ead5cf64d3424e3c4d
+2026-02-18T01:42:41.483929 | [SAVED] test_edge_long_repeated.txt (fe96774f490a0322863b8c6994b633ca3bd2a4803cedd7ead5cf64d3424e3c4d) → static\uploads\api\test_edge_long_repeated_d64986043abb408d9de4ca2b9955d7b1.txt
+2026-02-18T01:42:41.492303 | [PARSED] test_edge_long_repeated.txt using parse_text
+2026-02-18T01:42:41.556891 | [INGESTED] test_edge_long_repeated.txt successfully processed.
+2026-02-18T19:39:04.173617 | [HASH] test_layer1_original.txt → b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91
+2026-02-18T19:39:04.183592 | [SAVED] test_layer1_original.txt (b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91) → static\uploads\api\test_layer1_original_ccb095b566f94ce3bb119a9b24e9d1f4.txt
+2026-02-18T19:39:04.187241 | [PARSED] test_layer1_original.txt using parse_text
+2026-02-18T19:39:08.727170 | [INGESTED] test_layer1_original.txt successfully processed.
+2026-02-18T19:39:12.800537 | [HASH] test_layer1_case_variation.txt → b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072
+2026-02-18T19:39:12.800537 | [SAVED] test_layer1_case_variation.txt (b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072) → static\uploads\api\test_layer1_case_variation_9d95ae99b1a144f8a9a747e6a5b742cc.txt
+2026-02-18T19:39:12.800537 | [PARSED] test_layer1_case_variation.txt using parse_text
+2026-02-18T19:39:12.822350 | [INGESTED] test_layer1_case_variation.txt successfully processed.
+2026-02-18T19:39:16.886359 | [HASH] test_layer1_space_variation.txt → 1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e
+2026-02-18T19:39:16.889372 | [SAVED] test_layer1_space_variation.txt (1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e) → static\uploads\api\test_layer1_space_variation_6815f2ee8fa34eb7a5ef2cc909a915c4.txt
+2026-02-18T19:39:16.891318 | [PARSED] test_layer1_space_variation.txt using parse_text
+2026-02-18T19:39:16.902612 | [INGESTED] test_layer1_space_variation.txt successfully processed.
+2026-02-18T19:39:20.961974 | [HASH] test_layer1_punctuation_variation.txt → 431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12
+2026-02-18T19:39:20.964984 | [SAVED] test_layer1_punctuation_variation.txt (431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12) → static\uploads\api\test_layer1_punctuation_variation_6df00443f17e489c93925027a0e9f3ab.txt
+2026-02-18T19:39:20.967689 | [PARSED] test_layer1_punctuation_variation.txt using parse_text
+2026-02-18T19:39:20.981914 | [INGESTED] test_layer1_punctuation_variation.txt successfully processed.
+2026-02-18T19:39:25.077107 | [HASH] test_layer2_original.txt → 35dfe98e891fa05a7ca2f51d25dba2676154f11d39d78eb9d402abced76d25f8
+2026-02-18T19:39:25.077107 | [SAVED] test_layer2_original.txt (35dfe98e891fa05a7ca2f51d25dba2676154f11d39d78eb9d402abced76d25f8) → static\uploads\api\test_layer2_original_ff68449f644649f4bf976f6ca9a7c8b1.txt
+2026-02-18T19:39:25.082648 | [PARSED] test_layer2_original.txt using parse_text
+2026-02-18T19:39:25.100383 | [INGESTED] test_layer2_original.txt successfully processed.
+2026-02-18T19:39:29.197297 | [HASH] test_layer2_paraphrase.txt → a2147fcc55f0131d27bb270d825795e73e85b20a9079a3ff89e1dc379a21b900
+2026-02-18T19:39:29.198682 | [SAVED] test_layer2_paraphrase.txt (a2147fcc55f0131d27bb270d825795e73e85b20a9079a3ff89e1dc379a21b900) → static\uploads\api\test_layer2_paraphrase_cdb9c37c1f49467cb6e68b3f8e52be49.txt
+2026-02-18T19:39:29.202606 | [PARSED] test_layer2_paraphrase.txt using parse_text
+2026-02-18T19:39:29.224513 | [INGESTED] test_layer2_paraphrase.txt successfully processed.
+2026-02-18T19:39:33.318306 | [HASH] test_layer2_similar.txt → ae1acef35966ca013722a597e45082b15ff87fa0afc529410b523700950dafd6
+2026-02-18T19:39:33.323777 | [SAVED] test_layer2_similar.txt (ae1acef35966ca013722a597e45082b15ff87fa0afc529410b523700950dafd6) → static\uploads\api\test_layer2_similar_cab666bab3944897ae17340393e98b9e.txt
+2026-02-18T19:39:33.327658 | [PARSED] test_layer2_similar.txt using parse_text
+2026-02-18T19:39:33.335906 | [INGESTED] test_layer2_similar.txt successfully processed.
+2026-02-18T19:39:37.400544 | [HASH] test_layer3_report_q1.txt → 621001e626b5436da467a59fe83b8b976703de92a40425971b99fe70da5ba301
+2026-02-18T19:39:37.403250 | [SAVED] test_layer3_report_q1.txt (621001e626b5436da467a59fe83b8b976703de92a40425971b99fe70da5ba301) → static\uploads\api\test_layer3_report_q1_1c407fbb252a46b6b7eb6deccb5c5714.txt
+2026-02-18T19:39:37.407921 | [PARSED] test_layer3_report_q1.txt using parse_text
+2026-02-18T19:39:37.425088 | [INGESTED] test_layer3_report_q1.txt successfully processed.
+2026-02-18T19:39:41.499590 | [HASH] test_layer3_report_q2.txt → 710df8117fe0aaab8ad58269f98c299baed1bb9a7828711091bc5a5d472d00e1
+2026-02-18T19:39:41.503934 | [SAVED] test_layer3_report_q2.txt (710df8117fe0aaab8ad58269f98c299baed1bb9a7828711091bc5a5d472d00e1) → static\uploads\api\test_layer3_report_q2_3f4d06e513f2498483d613b81ca54373.txt
+2026-02-18T19:39:41.506020 | [PARSED] test_layer3_report_q2.txt using parse_text
+2026-02-18T19:39:41.536254 | [INGESTED] test_layer3_report_q2.txt successfully processed.
+2026-02-18T19:39:45.592163 | [HASH] test_layer3_report_q3.txt → 1225fa3835b20e4c23bdb2ae52e4af5db7a859814ec1ae83fde54ba66fb6b370
+2026-02-18T19:39:45.594520 | [SAVED] test_layer3_report_q3.txt (1225fa3835b20e4c23bdb2ae52e4af5db7a859814ec1ae83fde54ba66fb6b370) → static\uploads\api\test_layer3_report_q3_fcd1f500524e451e9cfb6bc46d0dd5d0.txt
+2026-02-18T19:39:45.594520 | [PARSED] test_layer3_report_q3.txt using parse_text
+2026-02-18T19:39:45.616581 | [INGESTED] test_layer3_report_q3.txt successfully processed.
+2026-02-18T19:39:49.687880 | [HASH] test_customers_jan.csv → ac06d1334c72dd7d7fcd02a866520f0c0d55a50d3da1d739c899c001f2353f39
+2026-02-18T19:39:49.689618 | [SAVED] test_customers_jan.csv (ac06d1334c72dd7d7fcd02a866520f0c0d55a50d3da1d739c899c001f2353f39) → static\uploads\api\test_customers_jan_dda7794881bc4181b8ce8ae46ee24b0d.csv
+2026-02-18T19:39:49.698274 | [PARSED] test_customers_jan.csv using parse_csv
+2026-02-18T19:39:49.726812 | [INGESTED] test_customers_jan.csv successfully processed.
+2026-02-18T19:39:53.785915 | [HASH] test_customers_feb.csv → ffe09580e0b290c426f051a2994351668f54d48553ad33e95a4bc4b30c7f20f2
+2026-02-18T19:39:53.788342 | [SAVED] test_customers_feb.csv (ffe09580e0b290c426f051a2994351668f54d48553ad33e95a4bc4b30c7f20f2) → static\uploads\api\test_customers_feb_d4e8b92608ab491c9644217565a37230.csv
+2026-02-18T19:39:53.791083 | [PARSED] test_customers_feb.csv using parse_csv
+2026-02-18T19:39:53.812955 | [INGESTED] test_customers_feb.csv successfully processed.
+2026-02-18T19:39:57.872253 | [HASH] test_mixed_content_a.txt → 2ab0cb17366943e3a5eece3a739e09e4a73241dc927bfb602461728e9889bc9a
+2026-02-18T19:39:57.876105 | [SAVED] test_mixed_content_a.txt (2ab0cb17366943e3a5eece3a739e09e4a73241dc927bfb602461728e9889bc9a) → static\uploads\api\test_mixed_content_a_f31a5c5178d94fb0b631f77eb44c0641.txt
+2026-02-18T19:39:57.880456 | [PARSED] test_mixed_content_a.txt using parse_text
+2026-02-18T19:39:57.902458 | [INGESTED] test_mixed_content_a.txt successfully processed.
+2026-02-18T19:40:01.981221 | [HASH] test_mixed_content_b.txt → c6ad0c39d6be7767b62b567d1f4b5d5e222b7ae8d048f7a13458fd70ebf73aa4
+2026-02-18T19:40:01.987905 | [SAVED] test_mixed_content_b.txt (c6ad0c39d6be7767b62b567d1f4b5d5e222b7ae8d048f7a13458fd70ebf73aa4) → static\uploads\api\test_mixed_content_b_c3c33912db3e4fd782d615d73d915082.txt
+2026-02-18T19:40:01.987905 | [PARSED] test_mixed_content_b.txt using parse_text
+2026-02-18T19:40:02.015410 | [INGESTED] test_mixed_content_b.txt successfully processed.
+2026-02-18T19:40:06.065880 | [HASH] test_edge_empty.txt → dba5166ad9db9ba648c1032ebbd34dcd0d085b50023b839ef5c68ca1db93a563
+2026-02-18T19:40:06.065880 | [SAVED] test_edge_empty.txt (dba5166ad9db9ba648c1032ebbd34dcd0d085b50023b839ef5c68ca1db93a563) → static\uploads\api\test_edge_empty_75d7fb9201394d1fb4bb5be35057dcc3.txt
+2026-02-18T19:40:06.065880 | [FAILED] test_edge_empty.txt: [text_parser_v2] Text file is empty: static\uploads\api\test_edge_empty_75d7fb9201394d1fb4bb5be35057dcc3.txt
+2026-02-18T19:40:10.146972 | [HASH] test_edge_short.txt → a67df9b40c82290266b97f653f05f858205ff2347eb687af149547b992fd2d92
+2026-02-18T19:40:10.150058 | [SAVED] test_edge_short.txt (a67df9b40c82290266b97f653f05f858205ff2347eb687af149547b992fd2d92) → static\uploads\api\test_edge_short_4c9cf7a2599a4a5b86a484d9d4ae75d3.txt
+2026-02-18T19:40:10.151929 | [PARSED] test_edge_short.txt using parse_text
+2026-02-18T19:40:10.169047 | [INGESTED] test_edge_short.txt successfully processed.
+2026-02-18T19:40:14.257304 | [HASH] test_edge_long_repeated.txt → fe96774f490a0322863b8c6994b633ca3bd2a4803cedd7ead5cf64d3424e3c4d
+2026-02-18T19:40:14.261147 | [SAVED] test_edge_long_repeated.txt (fe96774f490a0322863b8c6994b633ca3bd2a4803cedd7ead5cf64d3424e3c4d) → static\uploads\api\test_edge_long_repeated_8fab7c8667b545bd9b483b8b4f32cc67.txt
+2026-02-18T19:40:14.271332 | [PARSED] test_edge_long_repeated.txt using parse_text
+2026-02-18T19:40:14.337377 | [INGESTED] test_edge_long_repeated.txt successfully processed.
+2026-02-18T20:31:31.115565 | [HASH] test_layer1_space_variation_6815f2ee8fa34eb7a5ef2cc909a915c4.txt → 1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e
+2026-02-18T20:31:31.127460 | [SAVED] test_layer1_space_variation_6815f2ee8fa34eb7a5ef2cc909a915c4.txt (1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e) → static\uploads\api\test_layer1_space_variation_6815f2ee8fa34eb7a5ef2cc909a915c4_a16ce9c610a14bc9b7e8a63dd36cf1b8.txt
+2026-02-18T20:31:31.131437 | [PARSED] test_layer1_space_variation_6815f2ee8fa34eb7a5ef2cc909a915c4.txt using parse_text
+2026-02-18T20:31:31.200400 | [INGESTED] test_layer1_space_variation_6815f2ee8fa34eb7a5ef2cc909a915c4.txt successfully processed.
+2026-02-18T20:31:31.216094 | [HASH] test_layer1_original_ccb095b566f94ce3bb119a9b24e9d1f4.txt → b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91
+2026-02-18T20:31:31.221878 | [SAVED] test_layer1_original_ccb095b566f94ce3bb119a9b24e9d1f4.txt (b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91) → static\uploads\api\test_layer1_original_ccb095b566f94ce3bb119a9b24e9d1f4_1455a48981ad4e0bb550270b5c4acbfd.txt
+2026-02-18T20:31:31.227409 | [PARSED] test_layer1_original_ccb095b566f94ce3bb119a9b24e9d1f4.txt using parse_text
+2026-02-18T20:31:31.267555 | [INGESTED] test_layer1_original_ccb095b566f94ce3bb119a9b24e9d1f4.txt successfully processed.
+2026-02-18T20:31:31.280985 | [HASH] test_layer1_case_variation_9d95ae99b1a144f8a9a747e6a5b742cc.txt → b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072
+2026-02-18T20:31:31.286899 | [SAVED] test_layer1_case_variation_9d95ae99b1a144f8a9a747e6a5b742cc.txt (b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072) → static\uploads\api\test_layer1_case_variation_9d95ae99b1a144f8a9a747e6a5b742cc_dd27562cc50b4a0ea1268012d5021455.txt
+2026-02-18T20:31:31.292842 | [PARSED] test_layer1_case_variation_9d95ae99b1a144f8a9a747e6a5b742cc.txt using parse_text
+2026-02-18T20:31:31.332892 | [INGESTED] test_layer1_case_variation_9d95ae99b1a144f8a9a747e6a5b742cc.txt successfully processed.
+2026-02-18T20:31:31.346047 | [HASH] test_layer1_punctuation_variation_6df00443f17e489c93925027a0e9f3ab.txt → 431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12
+2026-02-18T20:31:31.352793 | [SAVED] test_layer1_punctuation_variation_6df00443f17e489c93925027a0e9f3ab.txt (431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12) → static\uploads\api\test_layer1_punctuation_variation_6df00443f17e489c93925027a0e9f3ab_a59566a8e0e042e8b339b5439ea75e9f.txt
+2026-02-18T20:31:31.357972 | [PARSED] test_layer1_punctuation_variation_6df00443f17e489c93925027a0e9f3ab.txt using parse_text
+2026-02-18T20:31:31.396999 | [INGESTED] test_layer1_punctuation_variation_6df00443f17e489c93925027a0e9f3ab.txt successfully processed.
+2026-02-18T20:54:00.131058 | [HASH] test_layer1_original.txt → b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91
+2026-02-18T20:54:00.144545 | [SAVED] test_layer1_original.txt (b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91) → static\uploads\api\test_layer1_original_57e39d0526a34400a89998639186ba9c.txt
+2026-02-18T20:54:00.153299 | [PARSED] test_layer1_original.txt using parse_text
+2026-02-18T20:54:00.211143 | [INGESTED] test_layer1_original.txt successfully processed.
+2026-02-18T20:54:04.274425 | [HASH] test_layer1_case_variation.txt → b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072
+2026-02-18T20:54:04.278277 | [SAVED] test_layer1_case_variation.txt (b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072) → static\uploads\api\test_layer1_case_variation_dd498913284546a78f2f994a065670c7.txt
+2026-02-18T20:54:04.284510 | [PARSED] test_layer1_case_variation.txt using parse_text
+2026-02-18T20:54:04.319885 | [INGESTED] test_layer1_case_variation.txt successfully processed.
+2026-02-18T20:54:08.397173 | [HASH] test_layer1_space_variation.txt → 1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e
+2026-02-18T20:54:08.401652 | [SAVED] test_layer1_space_variation.txt (1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e) → static\uploads\api\test_layer1_space_variation_5ffe9eeea28742ce94c70b73951e04c6.txt
+2026-02-18T20:54:08.405872 | [PARSED] test_layer1_space_variation.txt using parse_text
+2026-02-18T20:54:08.439786 | [INGESTED] test_layer1_space_variation.txt successfully processed.
+2026-02-18T20:54:12.500315 | [HASH] test_layer1_punctuation_variation.txt → 431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12
+2026-02-18T20:54:12.503315 | [SAVED] test_layer1_punctuation_variation.txt (431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12) → static\uploads\api\test_layer1_punctuation_variation_904355d965f04e3c9554af9db282683e.txt
+2026-02-18T20:54:12.507290 | [PARSED] test_layer1_punctuation_variation.txt using parse_text
+2026-02-18T20:54:12.539988 | [INGESTED] test_layer1_punctuation_variation.txt successfully processed.
+2026-02-18T20:54:16.593265 | [HASH] test_layer2_original.txt → 35dfe98e891fa05a7ca2f51d25dba2676154f11d39d78eb9d402abced76d25f8
+2026-02-18T20:54:16.598746 | [SAVED] test_layer2_original.txt (35dfe98e891fa05a7ca2f51d25dba2676154f11d39d78eb9d402abced76d25f8) → static\uploads\api\test_layer2_original_66a791bbc68843aa9eb16f0bb6c04981.txt
+2026-02-18T20:54:16.602085 | [PARSED] test_layer2_original.txt using parse_text
+2026-02-18T20:54:16.639435 | [INGESTED] test_layer2_original.txt successfully processed.
+2026-02-18T20:54:20.687917 | [HASH] test_layer2_paraphrase.txt → a2147fcc55f0131d27bb270d825795e73e85b20a9079a3ff89e1dc379a21b900
+2026-02-18T20:54:20.693107 | [SAVED] test_layer2_paraphrase.txt (a2147fcc55f0131d27bb270d825795e73e85b20a9079a3ff89e1dc379a21b900) → static\uploads\api\test_layer2_paraphrase_768c09178f1c438db4f2b5b7554afb32.txt
+2026-02-18T20:54:20.695461 | [PARSED] test_layer2_paraphrase.txt using parse_text
+2026-02-18T20:54:20.735548 | [INGESTED] test_layer2_paraphrase.txt successfully processed.
+2026-02-18T20:54:24.816703 | [HASH] test_layer2_similar.txt → ae1acef35966ca013722a597e45082b15ff87fa0afc529410b523700950dafd6
+2026-02-18T20:54:24.821464 | [SAVED] test_layer2_similar.txt (ae1acef35966ca013722a597e45082b15ff87fa0afc529410b523700950dafd6) → static\uploads\api\test_layer2_similar_bbecd0589b9842d09ae6f9a40ccd2ca8.txt
+2026-02-18T20:54:24.824898 | [PARSED] test_layer2_similar.txt using parse_text
+2026-02-18T20:54:24.859981 | [INGESTED] test_layer2_similar.txt successfully processed.
+2026-02-18T20:54:28.902642 | [HASH] test_layer3_report_q1.txt → 621001e626b5436da467a59fe83b8b976703de92a40425971b99fe70da5ba301
+2026-02-18T20:54:28.907099 | [SAVED] test_layer3_report_q1.txt (621001e626b5436da467a59fe83b8b976703de92a40425971b99fe70da5ba301) → static\uploads\api\test_layer3_report_q1_b146e7a51b304a09ae0c6a8bfd27d72d.txt
+2026-02-18T20:54:28.910628 | [PARSED] test_layer3_report_q1.txt using parse_text
+2026-02-18T20:54:28.960957 | [INGESTED] test_layer3_report_q1.txt successfully processed.
+2026-02-18T20:54:33.025254 | [HASH] test_layer3_report_q2.txt → 710df8117fe0aaab8ad58269f98c299baed1bb9a7828711091bc5a5d472d00e1
+2026-02-18T20:54:33.028983 | [SAVED] test_layer3_report_q2.txt (710df8117fe0aaab8ad58269f98c299baed1bb9a7828711091bc5a5d472d00e1) → static\uploads\api\test_layer3_report_q2_f6194d67ec6f4f6cbb24b52358d70f51.txt
+2026-02-18T20:54:33.031846 | [PARSED] test_layer3_report_q2.txt using parse_text
+2026-02-18T20:54:33.065249 | [INGESTED] test_layer3_report_q2.txt successfully processed.
+2026-02-18T20:54:37.131527 | [HASH] test_layer3_report_q3.txt → 1225fa3835b20e4c23bdb2ae52e4af5db7a859814ec1ae83fde54ba66fb6b370
+2026-02-18T20:54:37.135688 | [SAVED] test_layer3_report_q3.txt (1225fa3835b20e4c23bdb2ae52e4af5db7a859814ec1ae83fde54ba66fb6b370) → static\uploads\api\test_layer3_report_q3_39eeed2441da4d99b4606f3be4ddf518.txt
+2026-02-18T20:54:37.139885 | [PARSED] test_layer3_report_q3.txt using parse_text
+2026-02-18T20:54:37.173814 | [INGESTED] test_layer3_report_q3.txt successfully processed.
+2026-02-18T20:54:41.231114 | [HASH] test_customers_jan.csv → ac06d1334c72dd7d7fcd02a866520f0c0d55a50d3da1d739c899c001f2353f39
+2026-02-18T20:54:41.235727 | [SAVED] test_customers_jan.csv (ac06d1334c72dd7d7fcd02a866520f0c0d55a50d3da1d739c899c001f2353f39) → static\uploads\api\test_customers_jan_7b2713c7d3504e44adbdb7af902600aa.csv
+2026-02-18T20:54:41.247609 | [PARSED] test_customers_jan.csv using parse_csv
+2026-02-18T20:54:41.311574 | [INGESTED] test_customers_jan.csv successfully processed.
+2026-02-18T20:54:45.373955 | [HASH] test_customers_feb.csv → ffe09580e0b290c426f051a2994351668f54d48553ad33e95a4bc4b30c7f20f2
+2026-02-18T20:54:45.379474 | [SAVED] test_customers_feb.csv (ffe09580e0b290c426f051a2994351668f54d48553ad33e95a4bc4b30c7f20f2) → static\uploads\api\test_customers_feb_24d4e72c63464225b3b01b064b609156.csv
+2026-02-18T20:54:45.389215 | [PARSED] test_customers_feb.csv using parse_csv
+2026-02-18T20:54:45.446405 | [INGESTED] test_customers_feb.csv successfully processed.
+2026-02-18T20:54:49.527105 | [HASH] test_mixed_content_a.txt → 2ab0cb17366943e3a5eece3a739e09e4a73241dc927bfb602461728e9889bc9a
+2026-02-18T20:54:49.531118 | [SAVED] test_mixed_content_a.txt (2ab0cb17366943e3a5eece3a739e09e4a73241dc927bfb602461728e9889bc9a) → static\uploads\api\test_mixed_content_a_a9f792920af3404e9963d5210ed9fc8d.txt
+2026-02-18T20:54:49.535644 | [PARSED] test_mixed_content_a.txt using parse_text
+2026-02-18T20:54:49.581323 | [INGESTED] test_mixed_content_a.txt successfully processed.
+2026-02-18T20:54:53.664074 | [HASH] test_mixed_content_b.txt → c6ad0c39d6be7767b62b567d1f4b5d5e222b7ae8d048f7a13458fd70ebf73aa4
+2026-02-18T20:54:53.668620 | [SAVED] test_mixed_content_b.txt (c6ad0c39d6be7767b62b567d1f4b5d5e222b7ae8d048f7a13458fd70ebf73aa4) → static\uploads\api\test_mixed_content_b_63c09c1c81d74b3a909659423d53849c.txt
+2026-02-18T20:54:53.671453 | [PARSED] test_mixed_content_b.txt using parse_text
+2026-02-18T20:54:53.721912 | [INGESTED] test_mixed_content_b.txt successfully processed.
+2026-02-18T20:54:57.798779 | [HASH] test_edge_empty.txt → dba5166ad9db9ba648c1032ebbd34dcd0d085b50023b839ef5c68ca1db93a563
+2026-02-18T20:54:57.802941 | [SAVED] test_edge_empty.txt (dba5166ad9db9ba648c1032ebbd34dcd0d085b50023b839ef5c68ca1db93a563) → static\uploads\api\test_edge_empty_c4c9f49417de4b6785ec6587aa8d5f2c.txt
+2026-02-18T20:54:57.805909 | [FAILED] test_edge_empty.txt: [text_parser_v2] Text file is empty: static\uploads\api\test_edge_empty_c4c9f49417de4b6785ec6587aa8d5f2c.txt
+2026-02-18T20:55:01.869145 | [HASH] test_edge_short.txt → a67df9b40c82290266b97f653f05f858205ff2347eb687af149547b992fd2d92
+2026-02-18T20:55:01.873221 | [SAVED] test_edge_short.txt (a67df9b40c82290266b97f653f05f858205ff2347eb687af149547b992fd2d92) → static\uploads\api\test_edge_short_99e8e2221dcd4037bc7acf5b66e7311d.txt
+2026-02-18T20:55:01.876524 | [PARSED] test_edge_short.txt using parse_text
+2026-02-18T20:55:01.912256 | [INGESTED] test_edge_short.txt successfully processed.
+2026-02-18T20:55:05.956178 | [HASH] test_edge_long_repeated.txt → fe96774f490a0322863b8c6994b633ca3bd2a4803cedd7ead5cf64d3424e3c4d
+2026-02-18T20:55:05.959987 | [SAVED] test_edge_long_repeated.txt (fe96774f490a0322863b8c6994b633ca3bd2a4803cedd7ead5cf64d3424e3c4d) → static\uploads\api\test_edge_long_repeated_0f6215ec8fd24bdfb578c05d1584e89c.txt
+2026-02-18T20:55:05.971739 | [PARSED] test_edge_long_repeated.txt using parse_text
+2026-02-18T20:55:06.125682 | [INGESTED] test_edge_long_repeated.txt successfully processed.
+2026-02-18T21:11:43.291547 | [HASH] test_layer1_original.txt → b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91
+2026-02-18T21:11:43.303513 | [SAVED] test_layer1_original.txt (b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91) → static\uploads\api\test_layer1_original_62a014987c36454697dc3b0eb7f0815a.txt
+2026-02-18T21:11:43.312356 | [PARSED] test_layer1_original.txt using parse_text
+2026-02-18T21:11:47.148941 | [INGESTED] test_layer1_original.txt successfully processed.
+2026-02-18T21:11:51.231542 | [HASH] test_layer1_case_variation.txt → b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072
+2026-02-18T21:11:51.237292 | [SAVED] test_layer1_case_variation.txt (b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072) → static\uploads\api\test_layer1_case_variation_9e811c0c4359436c92878b881e0f8685.txt
+2026-02-18T21:11:51.241449 | [PARSED] test_layer1_case_variation.txt using parse_text
+2026-02-18T21:11:51.274382 | [INGESTED] test_layer1_case_variation.txt successfully processed.
+2026-02-18T21:11:55.333111 | [HASH] test_layer1_space_variation.txt → 1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e
+2026-02-18T21:11:55.337699 | [SAVED] test_layer1_space_variation.txt (1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e) → static\uploads\api\test_layer1_space_variation_d802e72c349e45bf81ca4d9f279be3b7.txt
+2026-02-18T21:11:55.341778 | [PARSED] test_layer1_space_variation.txt using parse_text
+2026-02-18T21:11:55.394628 | [INGESTED] test_layer1_space_variation.txt successfully processed.
+2026-02-18T21:11:59.468237 | [HASH] test_layer1_punctuation_variation.txt → 431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12
+2026-02-18T21:11:59.473892 | [SAVED] test_layer1_punctuation_variation.txt (431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12) → static\uploads\api\test_layer1_punctuation_variation_fb0bdf914d42448faf64282c4a4d1904.txt
+2026-02-18T21:11:59.476792 | [PARSED] test_layer1_punctuation_variation.txt using parse_text
+2026-02-18T21:11:59.510551 | [INGESTED] test_layer1_punctuation_variation.txt successfully processed.
+2026-02-18T21:12:03.584047 | [HASH] test_layer2_original.txt → 35dfe98e891fa05a7ca2f51d25dba2676154f11d39d78eb9d402abced76d25f8
+2026-02-18T21:12:03.588982 | [SAVED] test_layer2_original.txt (35dfe98e891fa05a7ca2f51d25dba2676154f11d39d78eb9d402abced76d25f8) → static\uploads\api\test_layer2_original_6023bb7b53cf4781ab4bb9d72a6ec948.txt
+2026-02-18T21:12:03.593128 | [PARSED] test_layer2_original.txt using parse_text
+2026-02-18T21:12:03.629966 | [INGESTED] test_layer2_original.txt successfully processed.
+2026-02-18T21:12:07.683346 | [HASH] test_layer2_paraphrase.txt → a2147fcc55f0131d27bb270d825795e73e85b20a9079a3ff89e1dc379a21b900
+2026-02-18T21:12:07.688477 | [SAVED] test_layer2_paraphrase.txt (a2147fcc55f0131d27bb270d825795e73e85b20a9079a3ff89e1dc379a21b900) → static\uploads\api\test_layer2_paraphrase_38d74af7e719406aa7b772d41b39ebb0.txt
+2026-02-18T21:12:07.692529 | [PARSED] test_layer2_paraphrase.txt using parse_text
+2026-02-18T21:12:07.729694 | [INGESTED] test_layer2_paraphrase.txt successfully processed.
+2026-02-18T21:12:11.763702 | [HASH] test_layer2_similar.txt → ae1acef35966ca013722a597e45082b15ff87fa0afc529410b523700950dafd6
+2026-02-18T21:12:11.768642 | [SAVED] test_layer2_similar.txt (ae1acef35966ca013722a597e45082b15ff87fa0afc529410b523700950dafd6) → static\uploads\api\test_layer2_similar_cf948e64206e4c8591241aa467ff7ed9.txt
+2026-02-18T21:12:11.771381 | [PARSED] test_layer2_similar.txt using parse_text
+2026-02-18T21:12:11.806564 | [INGESTED] test_layer2_similar.txt successfully processed.
+2026-02-18T21:12:15.855298 | [HASH] test_layer3_report_q1.txt → 621001e626b5436da467a59fe83b8b976703de92a40425971b99fe70da5ba301
+2026-02-18T21:12:15.859762 | [SAVED] test_layer3_report_q1.txt (621001e626b5436da467a59fe83b8b976703de92a40425971b99fe70da5ba301) → static\uploads\api\test_layer3_report_q1_50bd85c0941047189aca353c1deaad39.txt
+2026-02-18T21:12:15.863301 | [PARSED] test_layer3_report_q1.txt using parse_text
+2026-02-18T21:12:15.896050 | [INGESTED] test_layer3_report_q1.txt successfully processed.
+2026-02-18T21:12:19.956120 | [HASH] test_layer3_report_q2.txt → 710df8117fe0aaab8ad58269f98c299baed1bb9a7828711091bc5a5d472d00e1
+2026-02-18T21:12:19.960398 | [SAVED] test_layer3_report_q2.txt (710df8117fe0aaab8ad58269f98c299baed1bb9a7828711091bc5a5d472d00e1) → static\uploads\api\test_layer3_report_q2_2b7a049949bf432d962fc324291f9f19.txt
+2026-02-18T21:12:19.963828 | [PARSED] test_layer3_report_q2.txt using parse_text
+2026-02-18T21:12:19.996415 | [INGESTED] test_layer3_report_q2.txt successfully processed.
+2026-02-18T21:12:24.044864 | [HASH] test_layer3_report_q3.txt → 1225fa3835b20e4c23bdb2ae52e4af5db7a859814ec1ae83fde54ba66fb6b370
+2026-02-18T21:12:24.049407 | [SAVED] test_layer3_report_q3.txt (1225fa3835b20e4c23bdb2ae52e4af5db7a859814ec1ae83fde54ba66fb6b370) → static\uploads\api\test_layer3_report_q3_754676c93c2f4265800cbafd61aca3e4.txt
+2026-02-18T21:12:24.052550 | [PARSED] test_layer3_report_q3.txt using parse_text
+2026-02-18T21:12:24.084157 | [INGESTED] test_layer3_report_q3.txt successfully processed.
+2026-02-18T21:12:28.160883 | [HASH] test_customers_jan.csv → ac06d1334c72dd7d7fcd02a866520f0c0d55a50d3da1d739c899c001f2353f39
+2026-02-18T21:12:28.166125 | [SAVED] test_customers_jan.csv (ac06d1334c72dd7d7fcd02a866520f0c0d55a50d3da1d739c899c001f2353f39) → static\uploads\api\test_customers_jan_9a7a477bf8d04b1ea6a5aa89a5bbd58c.csv
+2026-02-18T21:12:28.177525 | [PARSED] test_customers_jan.csv using parse_csv
+2026-02-18T21:12:28.256339 | [INGESTED] test_customers_jan.csv successfully processed.
+2026-02-18T21:12:32.326450 | [HASH] test_customers_feb.csv → ffe09580e0b290c426f051a2994351668f54d48553ad33e95a4bc4b30c7f20f2
+2026-02-18T21:12:32.330749 | [SAVED] test_customers_feb.csv (ffe09580e0b290c426f051a2994351668f54d48553ad33e95a4bc4b30c7f20f2) → static\uploads\api\test_customers_feb_68cf2525a71f42e486de165b0a11daec.csv
+2026-02-18T21:12:32.346595 | [PARSED] test_customers_feb.csv using parse_csv
+2026-02-18T21:12:32.410320 | [INGESTED] test_customers_feb.csv successfully processed.
+2026-02-18T21:12:36.455805 | [HASH] test_mixed_content_a.txt → 2ab0cb17366943e3a5eece3a739e09e4a73241dc927bfb602461728e9889bc9a
+2026-02-18T21:12:36.460742 | [SAVED] test_mixed_content_a.txt (2ab0cb17366943e3a5eece3a739e09e4a73241dc927bfb602461728e9889bc9a) → static\uploads\api\test_mixed_content_a_d5b41fde2a254eb5be8c0f0d38c12a1f.txt
+2026-02-18T21:12:36.478703 | [PARSED] test_mixed_content_a.txt using parse_text
+2026-02-18T21:12:36.525553 | [INGESTED] test_mixed_content_a.txt successfully processed.
+2026-02-18T21:12:40.604639 | [HASH] test_mixed_content_b.txt → c6ad0c39d6be7767b62b567d1f4b5d5e222b7ae8d048f7a13458fd70ebf73aa4
+2026-02-18T21:12:40.608323 | [SAVED] test_mixed_content_b.txt (c6ad0c39d6be7767b62b567d1f4b5d5e222b7ae8d048f7a13458fd70ebf73aa4) → static\uploads\api\test_mixed_content_b_6af40c426f9b4ad794fcaa25cde86034.txt
+2026-02-18T21:12:40.611990 | [PARSED] test_mixed_content_b.txt using parse_text
+2026-02-18T21:12:40.658000 | [INGESTED] test_mixed_content_b.txt successfully processed.
+2026-02-18T21:12:44.714239 | [HASH] test_edge_empty.txt → dba5166ad9db9ba648c1032ebbd34dcd0d085b50023b839ef5c68ca1db93a563
+2026-02-18T21:12:44.719274 | [SAVED] test_edge_empty.txt (dba5166ad9db9ba648c1032ebbd34dcd0d085b50023b839ef5c68ca1db93a563) → static\uploads\api\test_edge_empty_faaef82886384ecbb588072b430d34ae.txt
+2026-02-18T21:12:44.722492 | [FAILED] test_edge_empty.txt: [text_parser_v2] Text file is empty: static\uploads\api\test_edge_empty_faaef82886384ecbb588072b430d34ae.txt
+2026-02-18T21:12:48.796799 | [HASH] test_edge_short.txt → a67df9b40c82290266b97f653f05f858205ff2347eb687af149547b992fd2d92
+2026-02-18T21:12:48.801322 | [SAVED] test_edge_short.txt (a67df9b40c82290266b97f653f05f858205ff2347eb687af149547b992fd2d92) → static\uploads\api\test_edge_short_deb2004c90c041488442b21f8753073a.txt
+2026-02-18T21:12:48.805397 | [PARSED] test_edge_short.txt using parse_text
+2026-02-18T21:12:48.838385 | [INGESTED] test_edge_short.txt successfully processed.
+2026-02-18T21:12:52.909073 | [HASH] test_edge_long_repeated.txt → fe96774f490a0322863b8c6994b633ca3bd2a4803cedd7ead5cf64d3424e3c4d
+2026-02-18T21:12:52.913123 | [SAVED] test_edge_long_repeated.txt (fe96774f490a0322863b8c6994b633ca3bd2a4803cedd7ead5cf64d3424e3c4d) → static\uploads\api\test_edge_long_repeated_69d694315cfa41cb911ce8caab780915.txt
+2026-02-18T21:12:52.925122 | [PARSED] test_edge_long_repeated.txt using parse_text
+2026-02-18T21:12:53.089138 | [INGESTED] test_edge_long_repeated.txt successfully processed.
+2026-02-18T21:41:52.143044 | [HASH] test_layer1_original.txt → b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91
+2026-02-18T21:41:52.153443 | [SAVED] test_layer1_original.txt (b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91) → static\uploads\api\test_layer1_original_e7cd858d2f52407f887e5f9ac0032747.txt
+2026-02-18T21:41:52.160050 | [PARSED] test_layer1_original.txt using parse_text
+2026-02-18T21:41:56.148465 | [INGESTED] test_layer1_original.txt successfully processed.
+2026-02-18T21:42:00.198901 | [HASH] test_layer1_case_variation.txt → b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072
+2026-02-18T21:42:00.201930 | [SAVED] test_layer1_case_variation.txt (b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072) → static\uploads\api\test_layer1_case_variation_f2138290a82d4aa8ab7525d68a1519c9.txt
+2026-02-18T21:42:00.203941 | [PARSED] test_layer1_case_variation.txt using parse_text
+2026-02-18T21:42:00.451301 | [INGESTED] test_layer1_case_variation.txt successfully processed.
+2026-02-18T21:42:04.522375 | [HASH] test_layer1_space_variation.txt → 1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e
+2026-02-18T21:42:04.524869 | [SAVED] test_layer1_space_variation.txt (1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e) → static\uploads\api\test_layer1_space_variation_4d897d3db339422d81ec661db9424c67.txt
+2026-02-18T21:42:04.527940 | [PARSED] test_layer1_space_variation.txt using parse_text
+2026-02-18T21:42:04.772182 | [INGESTED] test_layer1_space_variation.txt successfully processed.
+2026-02-18T21:42:08.834864 | [HASH] test_layer1_punctuation_variation.txt → 431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12
+2026-02-18T21:42:08.837823 | [SAVED] test_layer1_punctuation_variation.txt (431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12) → static\uploads\api\test_layer1_punctuation_variation_b7190d11665b4101923813889f245d27.txt
+2026-02-18T21:42:08.840509 | [PARSED] test_layer1_punctuation_variation.txt using parse_text
+2026-02-18T21:42:09.071758 | [INGESTED] test_layer1_punctuation_variation.txt successfully processed.
+2026-02-18T21:42:13.142280 | [HASH] test_layer2_original.txt → 35dfe98e891fa05a7ca2f51d25dba2676154f11d39d78eb9d402abced76d25f8
+2026-02-18T21:42:13.145576 | [SAVED] test_layer2_original.txt (35dfe98e891fa05a7ca2f51d25dba2676154f11d39d78eb9d402abced76d25f8) → static\uploads\api\test_layer2_original_74f66f4d34784c5eba40df8de3362036.txt
+2026-02-18T21:42:13.146713 | [PARSED] test_layer2_original.txt using parse_text
+2026-02-18T21:42:13.480987 | [INGESTED] test_layer2_original.txt successfully processed.
+2026-02-18T21:42:17.551984 | [HASH] test_layer2_paraphrase.txt → a2147fcc55f0131d27bb270d825795e73e85b20a9079a3ff89e1dc379a21b900
+2026-02-18T21:42:17.554996 | [SAVED] test_layer2_paraphrase.txt (a2147fcc55f0131d27bb270d825795e73e85b20a9079a3ff89e1dc379a21b900) → static\uploads\api\test_layer2_paraphrase_6bdd427256ac4dff9f34099b79a0aa12.txt
+2026-02-18T21:42:17.556100 | [PARSED] test_layer2_paraphrase.txt using parse_text
+2026-02-18T21:42:17.899361 | [INGESTED] test_layer2_paraphrase.txt successfully processed.
+2026-02-18T21:42:21.969711 | [HASH] test_layer2_similar.txt → ae1acef35966ca013722a597e45082b15ff87fa0afc529410b523700950dafd6
+2026-02-18T21:42:21.973758 | [SAVED] test_layer2_similar.txt (ae1acef35966ca013722a597e45082b15ff87fa0afc529410b523700950dafd6) → static\uploads\api\test_layer2_similar_adb9915b6366487284f893df345bf429.txt
+2026-02-18T21:42:21.975756 | [PARSED] test_layer2_similar.txt using parse_text
+2026-02-18T21:42:22.403229 | [INGESTED] test_layer2_similar.txt successfully processed.
+2026-02-18T21:42:26.473197 | [HASH] test_layer3_report_q1.txt → 621001e626b5436da467a59fe83b8b976703de92a40425971b99fe70da5ba301
+2026-02-18T21:42:26.476192 | [SAVED] test_layer3_report_q1.txt (621001e626b5436da467a59fe83b8b976703de92a40425971b99fe70da5ba301) → static\uploads\api\test_layer3_report_q1_35567246511942c082875ca412a32093.txt
+2026-02-18T21:42:26.479196 | [PARSED] test_layer3_report_q1.txt using parse_text
+2026-02-18T21:42:26.750073 | [INGESTED] test_layer3_report_q1.txt successfully processed.
+2026-02-18T21:42:30.794577 | [HASH] test_layer3_report_q2.txt → 710df8117fe0aaab8ad58269f98c299baed1bb9a7828711091bc5a5d472d00e1
+2026-02-18T21:42:30.798405 | [SAVED] test_layer3_report_q2.txt (710df8117fe0aaab8ad58269f98c299baed1bb9a7828711091bc5a5d472d00e1) → static\uploads\api\test_layer3_report_q2_082e9de222fe4540916538a6fc8f89ea.txt
+2026-02-18T21:42:30.800418 | [PARSED] test_layer3_report_q2.txt using parse_text
+2026-02-18T21:42:31.191485 | [INGESTED] test_layer3_report_q2.txt successfully processed.
+2026-02-18T21:42:35.266879 | [HASH] test_layer3_report_q3.txt → 1225fa3835b20e4c23bdb2ae52e4af5db7a859814ec1ae83fde54ba66fb6b370
+2026-02-18T21:42:35.270731 | [SAVED] test_layer3_report_q3.txt (1225fa3835b20e4c23bdb2ae52e4af5db7a859814ec1ae83fde54ba66fb6b370) → static\uploads\api\test_layer3_report_q3_27ad797d888b4b4f85fd7597fedbeb92.txt
+2026-02-18T21:42:35.272488 | [PARSED] test_layer3_report_q3.txt using parse_text
+2026-02-18T21:42:35.646997 | [INGESTED] test_layer3_report_q3.txt successfully processed.
+2026-02-18T21:42:39.696327 | [HASH] test_customers_jan.csv → ac06d1334c72dd7d7fcd02a866520f0c0d55a50d3da1d739c899c001f2353f39
+2026-02-18T21:42:39.698840 | [SAVED] test_customers_jan.csv (ac06d1334c72dd7d7fcd02a866520f0c0d55a50d3da1d739c899c001f2353f39) → static\uploads\api\test_customers_jan_c2218f84e78e4dafb01e3ad82a8fad63.csv
+2026-02-18T21:42:39.707280 | [PARSED] test_customers_jan.csv using parse_csv
+2026-02-18T21:42:40.113844 | [INGESTED] test_customers_jan.csv successfully processed.
+2026-02-18T21:42:44.166190 | [HASH] test_customers_feb.csv → ffe09580e0b290c426f051a2994351668f54d48553ad33e95a4bc4b30c7f20f2
+2026-02-18T21:42:44.169382 | [SAVED] test_customers_feb.csv (ffe09580e0b290c426f051a2994351668f54d48553ad33e95a4bc4b30c7f20f2) → static\uploads\api\test_customers_feb_f805c9f554804e6abb1fdae03fc0f21e.csv
+2026-02-18T21:42:44.176907 | [PARSED] test_customers_feb.csv using parse_csv
+2026-02-18T21:42:44.549743 | [INGESTED] test_customers_feb.csv successfully processed.
+2026-02-18T21:42:48.663596 | [HASH] test_mixed_content_a.txt → 2ab0cb17366943e3a5eece3a739e09e4a73241dc927bfb602461728e9889bc9a
+2026-02-18T21:42:48.667589 | [SAVED] test_mixed_content_a.txt (2ab0cb17366943e3a5eece3a739e09e4a73241dc927bfb602461728e9889bc9a) → static\uploads\api\test_mixed_content_a_b8a6d3a07b3346bb8dc2d1e5e20547d2.txt
+2026-02-18T21:42:48.670099 | [PARSED] test_mixed_content_a.txt using parse_text
+2026-02-18T21:42:49.284734 | [INGESTED] test_mixed_content_a.txt successfully processed.
+2026-02-18T21:42:53.338226 | [HASH] test_mixed_content_b.txt → c6ad0c39d6be7767b62b567d1f4b5d5e222b7ae8d048f7a13458fd70ebf73aa4
+2026-02-18T21:42:53.341893 | [SAVED] test_mixed_content_b.txt (c6ad0c39d6be7767b62b567d1f4b5d5e222b7ae8d048f7a13458fd70ebf73aa4) → static\uploads\api\test_mixed_content_b_07629fb7c6b644f398ab678c9275f1f3.txt
+2026-02-18T21:42:53.343911 | [PARSED] test_mixed_content_b.txt using parse_text
+2026-02-18T21:42:53.929824 | [INGESTED] test_mixed_content_b.txt successfully processed.
+2026-02-18T21:42:57.985623 | [HASH] test_edge_empty.txt → dba5166ad9db9ba648c1032ebbd34dcd0d085b50023b839ef5c68ca1db93a563
+2026-02-18T21:42:57.989126 | [SAVED] test_edge_empty.txt (dba5166ad9db9ba648c1032ebbd34dcd0d085b50023b839ef5c68ca1db93a563) → static\uploads\api\test_edge_empty_05624141d4fd4e06a112787d135ef2fa.txt
+2026-02-18T21:42:57.990130 | [FAILED] test_edge_empty.txt: [text_parser_v2] Text file is empty: static\uploads\api\test_edge_empty_05624141d4fd4e06a112787d135ef2fa.txt
+2026-02-18T21:43:02.046904 | [HASH] test_edge_short.txt → a67df9b40c82290266b97f653f05f858205ff2347eb687af149547b992fd2d92
+2026-02-18T21:43:02.051026 | [SAVED] test_edge_short.txt (a67df9b40c82290266b97f653f05f858205ff2347eb687af149547b992fd2d92) → static\uploads\api\test_edge_short_7a11a4faa8f1422383e3873d4f4a5b39.txt
+2026-02-18T21:43:02.053081 | [PARSED] test_edge_short.txt using parse_text
+2026-02-18T21:43:02.227649 | [INGESTED] test_edge_short.txt successfully processed.
+2026-02-18T21:43:06.292717 | [HASH] test_edge_long_repeated.txt → fe96774f490a0322863b8c6994b633ca3bd2a4803cedd7ead5cf64d3424e3c4d
+2026-02-18T21:43:06.296554 | [SAVED] test_edge_long_repeated.txt (fe96774f490a0322863b8c6994b633ca3bd2a4803cedd7ead5cf64d3424e3c4d) → static\uploads\api\test_edge_long_repeated_fecacf1596354fa1ac602b1c26a7e225.txt
+2026-02-18T21:43:06.304394 | [PARSED] test_edge_long_repeated.txt using parse_text
+2026-02-18T21:43:09.127431 | [INGESTED] test_edge_long_repeated.txt successfully processed.
+2026-02-18T21:51:46.643794 | [HASH] test_layer1_original.txt → b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91
+2026-02-18T21:51:46.713363 | [SAVED] test_layer1_original.txt (b5c664a280eefd90430a2be99a6fb684d6e0da0738ade86361f2fcbbadd5ba91) → static\uploads\api\test_layer1_original_5411a05e545f46f2b9389542d26e0f43.txt
+2026-02-18T21:51:46.719876 | [PARSED] test_layer1_original.txt using parse_text
+2026-02-18T21:51:50.590551 | [INGESTED] test_layer1_original.txt successfully processed.
+2026-02-18T21:51:54.677379 | [HASH] test_layer1_case_variation.txt → b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072
+2026-02-18T21:51:54.680863 | [SAVED] test_layer1_case_variation.txt (b35fda5adb2e839546c84778e39c3c2cf05b193c6e0992fcc735043353be1072) → static\uploads\api\test_layer1_case_variation_0b8ad5afd8d841caa2ed250c1abf3201.txt
+2026-02-18T21:51:54.685585 | [PARSED] test_layer1_case_variation.txt using parse_text
+2026-02-18T21:51:54.719337 | [INGESTED] test_layer1_case_variation.txt successfully processed.
+2026-02-18T21:51:58.774075 | [HASH] test_layer1_space_variation.txt → 1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e
+2026-02-18T21:51:58.777609 | [SAVED] test_layer1_space_variation.txt (1d718b6456c0aca8cb1c26f3b8273f026020517ad4109ed38f55fdfa31dbbb3e) → static\uploads\api\test_layer1_space_variation_884d4491da42461fb6b33e805255dba9.txt
+2026-02-18T21:51:58.778808 | [PARSED] test_layer1_space_variation.txt using parse_text
+2026-02-18T21:51:58.804480 | [INGESTED] test_layer1_space_variation.txt successfully processed.
+2026-02-18T21:52:02.881612 | [HASH] test_layer1_punctuation_variation.txt → 431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12
+2026-02-18T21:52:02.884326 | [SAVED] test_layer1_punctuation_variation.txt (431a8aa93a0338a80b6317d7a143ff5f205194c6a7634b7561cf778a5e2b1c12) → static\uploads\api\test_layer1_punctuation_variation_5c3711fe8173419d808c7f4fc1335c07.txt
+2026-02-18T21:52:02.887310 | [PARSED] test_layer1_punctuation_variation.txt using parse_text
+2026-02-18T21:52:02.907718 | [INGESTED] test_layer1_punctuation_variation.txt successfully processed.
+2026-02-18T21:52:06.956909 | [HASH] test_layer2_original.txt → 35dfe98e891fa05a7ca2f51d25dba2676154f11d39d78eb9d402abced76d25f8
+2026-02-18T21:52:06.969604 | [SAVED] test_layer2_original.txt (35dfe98e891fa05a7ca2f51d25dba2676154f11d39d78eb9d402abced76d25f8) → static\uploads\api\test_layer2_original_ca65a78d96464354897c7b924ee36939.txt
+2026-02-18T21:52:06.972215 | [PARSED] test_layer2_original.txt using parse_text
+2026-02-18T21:52:07.320804 | [INGESTED] test_layer2_original.txt successfully processed.
+2026-02-18T21:52:11.377481 | [HASH] test_layer2_paraphrase.txt → a2147fcc55f0131d27bb270d825795e73e85b20a9079a3ff89e1dc379a21b900
+2026-02-18T21:52:11.380787 | [SAVED] test_layer2_paraphrase.txt (a2147fcc55f0131d27bb270d825795e73e85b20a9079a3ff89e1dc379a21b900) → static\uploads\api\test_layer2_paraphrase_369fd5aece1d4ddaa7a15d1bdde1dd25.txt
+2026-02-18T21:52:11.383291 | [PARSED] test_layer2_paraphrase.txt using parse_text
+2026-02-18T21:52:11.732305 | [INGESTED] test_layer2_paraphrase.txt successfully processed.
+2026-02-18T21:52:15.801381 | [HASH] test_layer2_similar.txt → ae1acef35966ca013722a597e45082b15ff87fa0afc529410b523700950dafd6
+2026-02-18T21:52:15.803735 | [SAVED] test_layer2_similar.txt (ae1acef35966ca013722a597e45082b15ff87fa0afc529410b523700950dafd6) → static\uploads\api\test_layer2_similar_1020072cd7a54a2b8947d74a9fd7bd37.txt
+2026-02-18T21:52:15.806273 | [PARSED] test_layer2_similar.txt using parse_text
+2026-02-18T21:52:16.169019 | [INGESTED] test_layer2_similar.txt successfully processed.
+2026-02-18T21:52:20.229344 | [HASH] test_layer3_report_q1.txt → 621001e626b5436da467a59fe83b8b976703de92a40425971b99fe70da5ba301
+2026-02-18T21:52:20.232173 | [SAVED] test_layer3_report_q1.txt (621001e626b5436da467a59fe83b8b976703de92a40425971b99fe70da5ba301) → static\uploads\api\test_layer3_report_q1_81937def2d334f3b9e88583be86ced38.txt
+2026-02-18T21:52:20.235173 | [PARSED] test_layer3_report_q1.txt using parse_text
+2026-02-18T21:52:20.499190 | [INGESTED] test_layer3_report_q1.txt successfully processed.
+2026-02-18T21:52:24.554489 | [HASH] test_layer3_report_q2.txt → 710df8117fe0aaab8ad58269f98c299baed1bb9a7828711091bc5a5d472d00e1
+2026-02-18T21:52:24.557017 | [SAVED] test_layer3_report_q2.txt (710df8117fe0aaab8ad58269f98c299baed1bb9a7828711091bc5a5d472d00e1) → static\uploads\api\test_layer3_report_q2_3c66870efabb4ad18144a7c39a4f473c.txt
+2026-02-18T21:52:24.559360 | [PARSED] test_layer3_report_q2.txt using parse_text
+2026-02-18T21:52:24.944353 | [INGESTED] test_layer3_report_q2.txt successfully processed.
+2026-02-18T21:52:29.009408 | [HASH] test_layer3_report_q3.txt → 1225fa3835b20e4c23bdb2ae52e4af5db7a859814ec1ae83fde54ba66fb6b370
+2026-02-18T21:52:29.012260 | [SAVED] test_layer3_report_q3.txt (1225fa3835b20e4c23bdb2ae52e4af5db7a859814ec1ae83fde54ba66fb6b370) → static\uploads\api\test_layer3_report_q3_0b51f0edb3a248ee8cb4c2fce2a3b07c.txt
+2026-02-18T21:52:29.015176 | [PARSED] test_layer3_report_q3.txt using parse_text
+2026-02-18T21:52:29.421197 | [INGESTED] test_layer3_report_q3.txt successfully processed.
+2026-02-18T21:52:33.484864 | [HASH] test_customers_jan.csv → ac06d1334c72dd7d7fcd02a866520f0c0d55a50d3da1d739c899c001f2353f39
+2026-02-18T21:52:33.489389 | [SAVED] test_customers_jan.csv (ac06d1334c72dd7d7fcd02a866520f0c0d55a50d3da1d739c899c001f2353f39) → static\uploads\api\test_customers_jan_5bd41e5f8d0d4095b040d6f7124880e4.csv
+2026-02-18T21:52:33.496837 | [PARSED] test_customers_jan.csv using parse_csv
+2026-02-18T21:52:33.888730 | [INGESTED] test_customers_jan.csv successfully processed.
+2026-02-18T21:52:37.961904 | [HASH] test_customers_feb.csv → ffe09580e0b290c426f051a2994351668f54d48553ad33e95a4bc4b30c7f20f2
+2026-02-18T21:52:37.965299 | [SAVED] test_customers_feb.csv (ffe09580e0b290c426f051a2994351668f54d48553ad33e95a4bc4b30c7f20f2) → static\uploads\api\test_customers_feb_b4e06839b9084e1bb0c0b682f8a7daf8.csv
+2026-02-18T21:52:37.971841 | [PARSED] test_customers_feb.csv using parse_csv
+2026-02-18T21:52:38.255891 | [INGESTED] test_customers_feb.csv successfully processed.
+2026-02-18T21:52:42.338050 | [HASH] test_mixed_content_a.txt → 2ab0cb17366943e3a5eece3a739e09e4a73241dc927bfb602461728e9889bc9a
+2026-02-18T21:52:42.341559 | [SAVED] test_mixed_content_a.txt (2ab0cb17366943e3a5eece3a739e09e4a73241dc927bfb602461728e9889bc9a) → static\uploads\api\test_mixed_content_a_8ab770c76dde4d9da5280dfcd92ee664.txt
+2026-02-18T21:52:42.344076 | [PARSED] test_mixed_content_a.txt using parse_text
+2026-02-18T21:52:42.943258 | [INGESTED] test_mixed_content_a.txt successfully processed.
+2026-02-18T21:52:46.995562 | [HASH] test_mixed_content_b.txt → c6ad0c39d6be7767b62b567d1f4b5d5e222b7ae8d048f7a13458fd70ebf73aa4
+2026-02-18T21:52:46.998992 | [SAVED] test_mixed_content_b.txt (c6ad0c39d6be7767b62b567d1f4b5d5e222b7ae8d048f7a13458fd70ebf73aa4) → static\uploads\api\test_mixed_content_b_c32a3a8aaeea487881acf8dd7ace1f80.txt
+2026-02-18T21:52:47.000992 | [PARSED] test_mixed_content_b.txt using parse_text
+2026-02-18T21:52:47.606208 | [INGESTED] test_mixed_content_b.txt successfully processed.
+2026-02-18T21:52:51.672695 | [HASH] test_edge_empty.txt → dba5166ad9db9ba648c1032ebbd34dcd0d085b50023b839ef5c68ca1db93a563
+2026-02-18T21:52:51.677130 | [SAVED] test_edge_empty.txt (dba5166ad9db9ba648c1032ebbd34dcd0d085b50023b839ef5c68ca1db93a563) → static\uploads\api\test_edge_empty_65502524f95242789387b49e559603c6.txt
+2026-02-18T21:52:51.678612 | [FAILED] test_edge_empty.txt: [text_parser_v2] Text file is empty: static\uploads\api\test_edge_empty_65502524f95242789387b49e559603c6.txt
+2026-02-18T21:52:55.727120 | [HASH] test_edge_short.txt → a67df9b40c82290266b97f653f05f858205ff2347eb687af149547b992fd2d92
+2026-02-18T21:52:55.730468 | [SAVED] test_edge_short.txt (a67df9b40c82290266b97f653f05f858205ff2347eb687af149547b992fd2d92) → static\uploads\api\test_edge_short_81b10427e1054a7facb6ea87c19823dd.txt
+2026-02-18T21:52:55.732579 | [PARSED] test_edge_short.txt using parse_text
+2026-02-18T21:52:55.924382 | [INGESTED] test_edge_short.txt successfully processed.
+2026-02-18T21:52:59.970566 | [HASH] test_edge_long_repeated.txt → fe96774f490a0322863b8c6994b633ca3bd2a4803cedd7ead5cf64d3424e3c4d
+2026-02-18T21:52:59.973619 | [SAVED] test_edge_long_repeated.txt (fe96774f490a0322863b8c6994b633ca3bd2a4803cedd7ead5cf64d3424e3c4d) → static\uploads\api\test_edge_long_repeated_1e69871f2d1b471e8d41fd2be95d95a0.txt
+2026-02-18T21:52:59.981895 | [PARSED] test_edge_long_repeated.txt using parse_text
+2026-02-18T21:53:02.602209 | [INGESTED] test_edge_long_repeated.txt successfully processed.
+2026-02-18T21:54:34.384199 | [HASH] Crisil.pdf → fdd3debe5b549cf0247778383fd606bae66a32cc48490cb4135212331e51b590
+2026-02-18T21:54:34.389716 | [SAVED] Crisil.pdf (fdd3debe5b549cf0247778383fd606bae66a32cc48490cb4135212331e51b590) → static\uploads\api\Crisil_51f9b7993eb3480bafbe787ddb3a0c8f.pdf
+2026-02-18T21:54:36.214350 | [PARSED] Crisil.pdf using parse_pdf
+2026-02-18T21:54:50.191756 | [INGESTED] Crisil.pdf successfully processed.
+2026-02-19T00:07:21.397252 | [HASH] commoncrawl.JSON → 00240fcf88c4b895351ba81b613eaf9376df33489e2bb42481f879fa050ac9fc
+2026-02-19T00:07:21.411415 | [SAVED] commoncrawl.JSON (00240fcf88c4b895351ba81b613eaf9376df33489e2bb42481f879fa050ac9fc) → static\uploads\api\commoncrawl_277dbd79384140d99fb39b7cece2f701.JSON
+2026-02-19T00:07:21.429878 | [PARSED] commoncrawl.JSON using parse_json
+2026-02-19T00:07:31.357485 | [INGESTED] commoncrawl.JSON successfully processed.
+2026-02-19T09:25:02.214596 | [HASH] Schatzinsel_E.pdf → 2ff332510d74fd5a54443cb57a73ecfe312b7e6b456ab0a2dc724f3e16d860f6
+2026-02-19T09:25:02.230526 | [SAVED] Schatzinsel_E.pdf (2ff332510d74fd5a54443cb57a73ecfe312b7e6b456ab0a2dc724f3e16d860f6) → static\uploads\api\Schatzinsel_E_b1074934bb704daca4ef67bea7153a1e.pdf
+2026-02-19T09:25:20.315557 | [PARSED] Schatzinsel_E.pdf using parse_pdf
+2026-02-19T09:25:26.835698 | [INGESTED] Schatzinsel_E.pdf successfully processed.
+2026-02-19T22:23:14.715702 | [HASH] Schatzinsel_E.pdf → 2ff332510d74fd5a54443cb57a73ecfe312b7e6b456ab0a2dc724f3e16d860f6
+2026-02-19T22:23:14.723931 | [SAVED] Schatzinsel_E.pdf (2ff332510d74fd5a54443cb57a73ecfe312b7e6b456ab0a2dc724f3e16d860f6) → static\uploads\api\Schatzinsel_E_b20fd602db5347909e09d7fd06081d86.pdf
+2026-02-19T22:23:29.885360 | [PARSED] Schatzinsel_E.pdf using parse_pdf
+2026-02-19T22:25:21.028816 | [INGESTED] Schatzinsel_E.pdf successfully processed.
+2026-02-19T22:48:56.220579 | [HASH] Schatzinsel_E.pdf → 2ff332510d74fd5a54443cb57a73ecfe312b7e6b456ab0a2dc724f3e16d860f6
+2026-02-19T22:48:56.236936 | [SAVED] Schatzinsel_E.pdf (2ff332510d74fd5a54443cb57a73ecfe312b7e6b456ab0a2dc724f3e16d860f6) → static\uploads\api\Schatzinsel_E_506d247981384663ac24a45feaac83eb.pdf
+2026-02-19T22:49:10.259403 | [PARSED] Schatzinsel_E.pdf using parse_pdf
+2026-02-19T22:54:20.369310 | [INGESTED] Schatzinsel_E.pdf successfully processed.
