@@ -1,0 +1,13 @@
+TO DO / In Queue : 
+   1. Make sure all pluggable/connectors work as expected. 
+      ---->   Every Connector(Vector,Embedders/transformers, LLM, Rerankers) can be connected as per the customer's needs.  Example: If the customer wants to set up Pinecone DB, BAAI/BGE-large-V2,Claude and openai rerankers) our environment 
+              should dynamically take the inputs and prepare the environment as required.
+      ---->   If the customer requires migrating the data from one embedder/vector/reranker/LLM, the migration should be smooth and the best way to implement.
+
+   2. High performance needs to be focused on. In ingestion, we need to make the 
+                             --->       fastest file processing, 
+                             --->       data reading and processing should be more efficient
+                             --->       no leaks in transferring the data 
+                                    
+
+ 
