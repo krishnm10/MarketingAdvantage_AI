@@ -9,7 +9,7 @@ TO DO / In Queue :
                              --->       data reading and processing should be more efficient
                              --->       no leaks in transferring the data 
 
-   3. Main only ChromaDB the exist and create methods were written in chroma_v1.py and other vector db have dummy methods exists.
-                                    
+   3. Only ChromaDB create() methods were written in chroma_v1.py fullfledgely and other vector db have dummy method exists(). make sure you code for other vectordbs as well for creating collections.
+                                     
 
  
