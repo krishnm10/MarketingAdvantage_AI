@@ -107,6 +107,11 @@ class QdrantVectorDB(BaseVectorDB):
             metadata = {k: v for k, v in payload.items() if k != "_text"}
             hits.append(VectorHit(id=str(r.id), text=str(text), score=float(r.score), metadata=metadata))
         return hits
+        
+    def exists(self, *, collection: str, ids: List[str]) -> List[str]:
+        return []   # TODO: implement per-backend
+
+    
 
     def delete(self, *, collection: str, doc_id: str) -> None:
         self._client.delete(collection_name=collection, points_selector=[doc_id])

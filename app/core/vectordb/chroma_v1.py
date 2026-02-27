@@ -86,6 +86,22 @@ class ChromaVectorDB(BaseVectorDB):
             score = 1.0 - float(dists[i]) if dists and dists[i] is not None else 0.0
             hits.append(VectorHit(id=str(ids[i]), text=str(docs[i]), score=score, metadata=metas[i] or {}))
         return hits
+    
+    
+    def exists(self, *, collection: str, ids: List[str]) -> List[str]:
+        """Return which of the given IDs are already stored in Chroma."""
+        if not ids:
+            return []
+        col = self._client.get_or_create_collection(collection)   # ← _client not self
+        try:
+            result = col.get(ids=ids)
+            return result.get("ids", []) if isinstance(result, dict) else []
+        except Exception:
+            return []
+
+
+
+
 
     def delete(self, *, collection: str, doc_id: str) -> None:
         col = self._client.get_or_create_collection(collection)

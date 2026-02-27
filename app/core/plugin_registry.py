@@ -154,3 +154,22 @@ embedder_registry: PluginRegistry[Any] = PluginRegistry(domain="embedder")
 llm_registry: PluginRegistry[Any] = PluginRegistry(domain="llm")
 reranker_registry: PluginRegistry[Any] = PluginRegistry(domain="reranker")
 ingestor_registry: PluginRegistry[Any] = PluginRegistry(domain="ingestor")
+
+# ---------------------------------------------------------------------
+# Bootstrap built-in connectors into ingestor_registry
+# ---------------------------------------------------------------------
+def _bootstrap_connectors() -> None:
+    from app.core.connectors.web_connector import WebConnector
+    from app.core.connectors.rss_connector import RSSConnector
+    from app.core.connectors.api_connector import APIConnector
+
+    # Default registrations — NoAuth by default, overridden per client at runtime
+    ingestor_registry.register("web", lambda **kw: WebConnector(**kw),
+                                description="Web scraper — supports NoAuth/Basic/Form/OAuth2")
+    ingestor_registry.register("rss", lambda **kw: RSSConnector(**kw),
+                                description="RSS/Atom feed — supports NoAuth/APIKey")
+    ingestor_registry.register("api", lambda **kw: APIConnector(**kw),
+                                description="REST API — supports APIKey/Basic/OAuth2/AzureAD")
+
+_bootstrap_connectors()
+

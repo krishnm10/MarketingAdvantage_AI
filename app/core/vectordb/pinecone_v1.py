@@ -231,6 +231,11 @@ class PineconeVectorDB(BaseVectorDB):
                 )
             )
         return hits
+        
+    
+    def exists(self, *, collection: str, ids: List[str]) -> List[str]:
+        return []   # TODO: implement per-backend
 
+    
     def delete(self, *, collection: str, doc_id: str) -> None:
         self._get_index().delete(ids=[doc_id], namespace=self._namespace)

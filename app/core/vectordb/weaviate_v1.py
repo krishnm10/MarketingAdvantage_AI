@@ -234,6 +234,11 @@ class WeaviateVectorDB(BaseVectorDB):
                 )
             )
         return hits
+        
+    def exists(self, *, collection: str, ids: List[str]) -> List[str]:
+        return []   # TODO: implement per-backend
+    
+    
 
     def delete(self, *, collection: str, doc_id: str) -> None:
         cls_name = self._class_name(collection)

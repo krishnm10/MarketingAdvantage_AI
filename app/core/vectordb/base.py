@@ -63,6 +63,19 @@ class BaseVectorDB(abc.ABC):
     ) -> List[VectorHit]:
         raise NotImplementedError
 
+    # app/core/vectordb/base.py  ← ADD these lines after search(), before delete()
+
+    @abc.abstractmethod
+    def exists(self, *, collection: str, ids: List[str]) -> List[str]:
+        """
+        Return the subset of given IDs that already exist in the collection.
+        Used by _embed_and_store() to skip re-embedding already-indexed chunks.
+        """
+        raise NotImplementedError
+
+    
+
+
     @abc.abstractmethod
     def delete(self, *, collection: str, doc_id: str) -> None:
         raise NotImplementedError

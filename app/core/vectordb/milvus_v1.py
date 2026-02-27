@@ -309,6 +309,10 @@ class MilvusVectorDB(BaseVectorDB):
             )
         return hits
 
+    def exists(self, *, collection: str, ids: List[str]) -> List[str]:
+        return []   # TODO: implement per-backend
+
+
     def delete(self, *, collection: str, doc_id: str) -> None:
         col = self._get_collection(collection)
         col.delete(expr=f'{_FIELD_ID} == "{doc_id}"')

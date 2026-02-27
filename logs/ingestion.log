@@ -1351,3 +1351,17 @@ DETAIL:  Key (id)=(471802ef-85bb-409e-a68c-68132e261961) already exists.
 2026-02-19T22:48:56.236936 | [SAVED] Schatzinsel_E.pdf (2ff332510d74fd5a54443cb57a73ecfe312b7e6b456ab0a2dc724f3e16d860f6) → static\uploads\api\Schatzinsel_E_506d247981384663ac24a45feaac83eb.pdf
 2026-02-19T22:49:10.259403 | [PARSED] Schatzinsel_E.pdf using parse_pdf
 2026-02-19T22:54:20.369310 | [INGESTED] Schatzinsel_E.pdf successfully processed.
+2026-02-26T10:00:31.834099 | [HASH] FINAL_REVIEW_APPROVED.txt → 037546a4d693a5dc3e91babec1d0caee86b183735e10d8b0dd8c2f70b9bcb84d
+2026-02-26T10:00:31.858307 | [SAVED] FINAL_REVIEW_APPROVED.txt (037546a4d693a5dc3e91babec1d0caee86b183735e10d8b0dd8c2f70b9bcb84d) → static\uploads\api\FINAL_REVIEW_APPROVED_083defcb983b497191475a43c7053e98.txt
+2026-02-26T10:00:32.022773 | [PARSED] FINAL_REVIEW_APPROVED.txt using parse_text
+2026-02-26T10:00:32.642967 | [INGESTED] FINAL_REVIEW_APPROVED.txt successfully processed.
+2026-02-26T16:33:19.377865 | [HASH] MASTER_INTEGRATION_GUIDE.txt → fd03bfcd3d852794ac2d35740eea0ba79ce4a6c7d599ce6469f16909d9ef3672
+2026-02-26T16:33:19.393881 | [SAVED] MASTER_INTEGRATION_GUIDE.txt (fd03bfcd3d852794ac2d35740eea0ba79ce4a6c7d599ce6469f16909d9ef3672) → static\uploads\api\MASTER_INTEGRATION_GUIDE_3ee384f4500b472b96ab3cddcc840b39.txt
+2026-02-26T16:33:19.694788 | [PARSED] MASTER_INTEGRATION_GUIDE.txt using parse_text
+2026-02-26T16:33:21.027187 | [INGESTED] MASTER_INTEGRATION_GUIDE.txt successfully processed.
+2026-02-26T21:16:12.273742 | [ROUTING] WEB → https://learn.microsoft.com/en-us/dotnet/ai/conceptual/understanding-tokens
+2026-02-26T21:16:12.665556 | [INGESTED] WEB source processed: https://learn.microsoft.com/en-us/dotnet/ai/conceptual/understanding-tokens
+2026-02-26T22:02:39.827010 | [HASH] commoncrawl.JSON → 00240fcf88c4b895351ba81b613eaf9376df33489e2bb42481f879fa050ac9fc
+2026-02-26T22:02:39.839162 | [SAVED] commoncrawl.JSON (00240fcf88c4b895351ba81b613eaf9376df33489e2bb42481f879fa050ac9fc) → static\uploads\api\commoncrawl_bdca9b8e2d1c4a918ff574439558c1ad.JSON
+2026-02-26T22:02:39.847171 | [PARSED] commoncrawl.JSON using parse_json
+2026-02-26T22:02:40.070563 | [INGESTED] commoncrawl.JSON successfully processed.
