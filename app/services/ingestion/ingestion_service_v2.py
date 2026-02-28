@@ -3,62 +3,42 @@
 # Fully aligned with PostgreSQL schema, Chroma, and FK-safe
 # Now includes: Direct ingestion support for pre-parsed inputs (RSS, API, etc.)
 # =============================================
-
+# ── Standard library ──────────────────────────────────────────────────
 import uuid
 import hashlib
-import traceback
-from datetime import datetime
-from typing import Any, Dict, List, Optional,  Tuple
 import re
+import os
 import asyncio
-from app.api.v2.ingestion_ws_api import broadcast
+from datetime import datetime
+from typing import Any, Dict, List, Optional, Tuple
+
+# ── FastAPI / SQLAlchemy ──────────────────────────────────────────────
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker
 from sqlalchemy import select, insert, update, func
 
+# ── App internals ─────────────────────────────────────────────────────
+from app.api.v2.ingestion_ws_api import broadcast
 from app.db.session_v2 import async_engine
 from app.db.models.ingested_file_v2 import IngestedFileV2
 from app.db.models.ingested_content_v2 import IngestedContentV2
 from app.db.models.global_content_index_v2 import GlobalContentIndexV2
-
 from app.services.ingestion.parsers_router_v2 import ParserRouterV2
-from app.services.ingestion.row_segmenter_v2 import parse_dataframe_rows
 from app.services.ingestion.segmenter_v2 import recursive_semantic_chunk
-from app.utils.logger import log_info
-from app.config.ingestion_settings import EMBEDDING_MODEL_NAME
-from sentence_transformers import SentenceTransformer
-
-import chromadb
-# ── Gap-1: Pluggable pipeline factory ───────────────────────────────────
-import json as _json
-import os as _os
-from app.core.pipeline_factory import pipeline_factory
-from app.core.config.client_config_schema import ClientConfig
-
-
-# =============================================
-# ✅ NEW IMPORT: 3-Layer Deduplication Engine
-# =============================================
 from app.services.ingestion.deduplication_engine_v2 import (
     deduplicate_chunks,
-    create_normalized_hash
-)                                              
-# =============================================
-# CONFIGURATION
-# =============================================
-CHROMA_PATH = "./chroma_db"
-#EMBED_MODEL_NAME = "BAAI/bge-large-en"
+    create_normalized_hash,
+)
+from app.utils.logger import log_info
+# ── Pluggable pipeline factory ────────────────────────────────────────
+from app.core.pipeline_factory import pipeline_factory
+from app.core.config.client_config_schema import (
+    ClientConfig, VectorDBConfig, EmbedderConfig,
+    VectorDBType, EmbedderType,
+    ChromaConfig, OllamaEmbedderConfig,
+)
+
+# ── Constants ─────────────────────────────────────────────────────────
 BATCH_SIZE = 256
-
-# Lazy-initialized resources (do not create heavy clients/models at import time)
-CHROMA_CLIENT = None
-COLLECTION = None
-EMBEDDER = None
-
-# ✅ NEW: Cached collection count (refreshes every 5 minutes)
-_COLLECTION_COUNT_CACHE = {
-    "count": 0,
-    "last_updated": None
-}
 
 async_session = async_sessionmaker(async_engine, expire_on_commit=False, autoflush=False)
 
@@ -100,27 +80,117 @@ def _resolve_text(payload: dict) -> str:
     except Exception:
         return ""
         
-# ── Gap-1: Per-client pipeline resolver ─────────────────────────────────
-_DEFAULT_PIPELINE_CONFIG = "app/core/configs/client_chroma_ollama.json"
+
+# ============================================================
+# WHAT THIS FUNCTION IS:
+#   The single place that resolves which pipeline to use.
+#   Priority order:
+#     1. Per-business config from environment variables
+#     2. Global default from environment variables
+#     3. Raise clearly if nothing is configured
+#
+# HOW TO CONFIGURE PER-BUSINESS:
+#   Set env vars: MAI_ACME_VECTORDB=qdrant, MAI_ACME_EMBEDDER=openai
+#   These override the global defaults for business_id="acme"
+# ============================================================
 
 def _get_pipeline(business_id: Optional[str] = None):
     """
-    Resolve a live AssembledPipeline from pipeline_factory.
-    Uses a per-business JSON config if it exists, otherwise falls back
-    to the default Chroma + Ollama config.
-
-    NOTE: Do NOT use this inside dedup_chunks() — the dedup engine
-    still uses the raw ChromaDB collection and SentenceTransformer directly.
+    Resolve a live AssembledPipeline for the given business.
+    
+    Config is read from environment variables — no JSON files on disk.
+    This makes the system work identically in dev, staging, and production
+    without copying config files around.
     """
-    cfg_path = (
-        f"app/core/configs/client_{business_id}.json"
-        if business_id
-        else None
+    b = (business_id or "default").lower().replace("-", "_")
+
+    # ── Read vectordb config from env ────────────────────────────────
+    vectordb_type = os.getenv(
+        f"MAI_{b.upper()}_VECTORDB",        # per-business override
+        os.getenv("MAI_VECTORDB", "chroma")  # global default
+    ).lower()
+
+    # ── Read embedder config from env ─────────────────────────────────
+    embedder_type = os.getenv(
+        f"MAI_{b.upper()}_EMBEDDER",
+        os.getenv("MAI_EMBEDDER", "ollama")
+    ).lower()
+
+    # ── Read LLM config from env ───────────────────────────────────────
+    llm_type = os.getenv(
+        f"MAI_{b.upper()}_LLM",
+        os.getenv("MAI_LLM", "ollama")
+    ).lower()
+
+    # ── Build a ClientConfig from env vars ────────────────────────────
+    # This is passed to pipeline_factory.build() which handles caching
+    config = _build_config_from_env(
+        client_id=business_id or "default",
+        vectordb_type=vectordb_type,
+        embedder_type=embedder_type,
+        llm_type=llm_type,
     )
-    if not cfg_path or not _os.path.exists(cfg_path):
-        cfg_path = _DEFAULT_PIPELINE_CONFIG
-    with open(cfg_path) as _f:
-        return pipeline_factory.build(ClientConfig(**_json.loads(_f.read())))
+    return pipeline_factory.build(config)
+
+
+def _build_config_from_env(
+    client_id: str,
+    vectordb_type: str,
+    embedder_type: str,
+    llm_type: str,
+) -> ClientConfig:
+    """Build a ClientConfig purely from environment variables."""
+
+    # VectorDB config
+    if vectordb_type == "chroma":
+        from app.core.config.client_config_schema import ChromaConfig
+        vdb_cfg = VectorDBConfig(
+            type=VectorDBType.CHROMA,
+            collection=os.getenv("MAI_COLLECTION", "ingested_content"),
+            chroma=ChromaConfig(
+                persist_directory=os.getenv("CHROMA_PATH", "./chroma_db"),
+            ),
+        )
+    elif vectordb_type == "qdrant":
+        from app.core.config.client_config_schema import QdrantConfig
+        vdb_cfg = VectorDBConfig(
+            type=VectorDBType.QDRANT,
+            collection=os.getenv("MAI_COLLECTION", "ingested_content"),
+            qdrant=QdrantConfig(
+                url=os.getenv("QDRANT_URL", "http://localhost:6333"),
+                api_key_env="QDRANT_API_KEY",
+            ),
+        )
+    else:
+        raise ValueError(f"Unknown vectordb type from env: '{vectordb_type}'")
+
+    # Embedder config
+    if embedder_type == "ollama":
+        from app.core.config.client_config_schema import OllamaEmbedderConfig
+        emb_cfg = EmbedderConfig(
+            type=EmbedderType.OLLAMA,
+            ollama=OllamaEmbedderConfig(
+                model=os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text"),
+                base_url=os.getenv("OLLAMA_BASE_URL", "http://localhost:11434"),
+            ),
+        )
+    elif embedder_type == "openai":
+        from app.core.config.client_config_schema import OpenAIEmbedderConfig
+        emb_cfg = EmbedderConfig(
+            type=EmbedderType.OPENAI,
+            openai=OpenAIEmbedderConfig(
+                model=os.getenv("OPENAI_EMBED_MODEL", "text-embedding-3-small"),
+                api_key_env="OPENAI_API_KEY",
+            ),
+        )
+    else:
+        raise ValueError(f"Unknown embedder type from env: '{embedder_type}'")
+
+    return ClientConfig(
+        client_id=client_id,
+        vectordb=vdb_cfg,
+        embedder=emb_cfg,
+    )
 
 
 # ============================================================
@@ -174,127 +244,6 @@ async def _explain_visual_with_llm(raw_text: str) -> str:
         pass
 
     return ""
-
-
-def get_chroma_collection(skip_count: bool = False):
-    """
-    Lazily create and return a chroma collection.
-    
-    Args:
-        skip_count: If True, skip the expensive count() operation.
-                   Recommended for startup to avoid delays with large collections.
-    
-    Returns:
-        Tuple[chromadb.Client, chromadb.Collection]
-    """
-    global CHROMA_CLIENT, COLLECTION
-    
-    if CHROMA_CLIENT is None:
-        try:
-            CHROMA_CLIENT = chromadb.PersistentClient(path=CHROMA_PATH)
-            log_info(f"[IngestionV2] ChromaDB client initialized at {CHROMA_PATH}")
-        except Exception as e:
-            log_info(f"[ERROR] Failed to initialize ChromaDB client: {e}")
-            raise RuntimeError(f"ChromaDB initialization failed: {e}")
-    
-    if COLLECTION is None:
-        try:
-            # List all collections first
-            existing = CHROMA_CLIENT.list_collections()
-            collection_names = [col.name for col in existing]
-            log_info(f"[IngestionV2] Found ChromaDB collections: {collection_names}")
-            
-            # Check if our collection exists
-            if "ingested_content" in collection_names:
-                COLLECTION = CHROMA_CLIENT.get_collection(name="ingested_content")
-                
-                # ✅ Only count if explicitly requested (avoid startup delay)
-                if not skip_count:
-                    try:
-                        count = COLLECTION.count()
-                        log_info(f"[IngestionV2] Connected to existing collection 'ingested_content' ({count:,} vectors)")
-                    except Exception as count_err:
-                        log_info(f"[IngestionV2] Connected to existing collection 'ingested_content' (count failed: {count_err})")
-                else:
-                    log_info(f"[IngestionV2] ✅ Connected to existing collection 'ingested_content'")
-            else:
-                # Collection doesn't exist, create it
-                log_info("[IngestionV2] Collection 'ingested_content' not found, creating...")
-                COLLECTION = CHROMA_CLIENT.create_collection(
-                    name="ingested_content",
-                    metadata={"hnsw:space": "cosine"}
-                )
-                log_info("[IngestionV2] ✅ Created new collection 'ingested_content' (0 vectors)")
-                
-        except Exception as e:
-            log_info(f"[ERROR] Failed to get/create ChromaDB collection: {e}")
-            import traceback
-            log_info(traceback.format_exc())
-            raise RuntimeError(f"ChromaDB collection setup failed: {e}")
-    
-    return CHROMA_CLIENT, COLLECTION
-
-
-def get_collection_count_cached(force_refresh: bool = False):
-    """
-    Get collection count with caching to avoid expensive operations on large collections.
-    
-    Cache Strategy:
-    - First call: Fetches count and caches it
-    - Subsequent calls: Returns cached value if <5 minutes old
-    - force_refresh=True: Bypasses cache and fetches fresh count
-    
-    Args:
-        force_refresh: If True, ignore cache and fetch fresh count
-    
-    Returns:
-        int: Number of vectors in collection (0 if unavailable)
-    """
-    global _COLLECTION_COUNT_CACHE
-    
-    now = datetime.utcnow()
-    last_updated = _COLLECTION_COUNT_CACHE.get("last_updated")
-    
-    # Cache duration: 5 minutes (300 seconds)
-    CACHE_DURATION = 300
-    
-    # Return cached value if still fresh
-    if not force_refresh and last_updated:
-        age_seconds = (now - last_updated).total_seconds()
-        if age_seconds < CACHE_DURATION:
-            cached_count = _COLLECTION_COUNT_CACHE.get("count", 0)
-            log_info(f"[IngestionV2] Returning cached vector count: {cached_count:,} (age: {int(age_seconds)}s)")
-            return cached_count
-    
-    # Fetch fresh count
-    try:
-        _, collection = get_chroma_collection(skip_count=True)  # Don't double-count
-        count = collection.count()
-        
-        # Update cache
-        _COLLECTION_COUNT_CACHE["count"] = count
-        _COLLECTION_COUNT_CACHE["last_updated"] = now
-        
-        log_info(f"[IngestionV2] Fetched fresh vector count: {count:,}")
-        return count
-        
-    except Exception as e:
-        log_info(f"[IngestionV2] Failed to get collection count: {e}")
-        # Return stale cache if available, otherwise 0
-        return _COLLECTION_COUNT_CACHE.get("count", 0)
-
-
-
-
-def get_embedder():
-    """
-    Lazily create and return the embedder model.
-    """
-    global EMBEDDER  # ✅ Fixed - no underscore
-    if EMBEDDER is None:  # ✅ Fixed
-        EMBEDDER = SentenceTransformer(EMBEDDING_MODEL_NAME)  # ✅ Fixed
-    return EMBEDDER  # ✅ Fixed
-
 
 
 async def log_event(file_name: str, stage: str, status: str, message: str = ""):
@@ -585,16 +534,16 @@ class IngestionServiceV2:
                 f"{len(unique_chunks)} unique, {len(all_chunks_for_storage) - len(unique_chunks)} duplicates"
             )
 
-        # ✅ Only embed and store unique chunks in ChromaDB (avoid duplicate vectors)
+        # ✅ Only embed and store unique chunks in VectorDB (avoid duplicate vectors)
         
-        # ✅ Embed any GCI-known hashes that are missing from ChromaDB
+        # ✅ Embed any GCI-known hashes that are missing from VectorDB
         # Pass ALL chunks — _embed_and_store internally skips hashes already in Chroma
         chunks_with_hash = [c for c in chunks if c.get("semantic_hash")]
         if chunks_with_hash:
             log_info(f"[IngestionV2] Calling _embed_and_store for {file_id} with {len(chunks_with_hash)} chunks")
             await IngestionServiceV2._embed_and_store(file_id, business_id, file_type, chunks_with_hash)
         else:
-            log_info(f"[IngestionV2] No chunks with semantic_hash — skipping Chroma embed for {file_id}")
+            log_info(f"[IngestionV2] No chunks with semantic_hash — skipping VectorDB embed for {file_id}")
         
 
         # ✅ Update file status with detailed stats
@@ -834,26 +783,42 @@ class IngestionServiceV2:
         await db.commit()
         log_info(f"[IngestionV2] Inserted {len(db_rows)} chunks into DB")
 
-
     # ----------------------------------------------------------
-    # Embedding + Vector Store (executor-offloaded + DB-and-Chroma-checked)
+    # Embedding + Vector Store (executor-offloaded + DB-and-VectorDB-checked)
     # ----------------------------------------------------------
     @staticmethod
     async def _embed_and_store(file_id, business_id, file_type, chunks):
         try:
             # normalize cleaned texts
             clean_texts = [
-                re.sub(r'\\s*---(BLOCK|ENTRY) BREAK---\\s*', '\\n\\n',
+                re.sub(r'\s*---(BLOCK|ENTRY) BREAK---\s*', '\n\n',
                        c.get("cleaned_text", c.get("cleaned", "")))
                 for c in chunks
             ]
     
-            # ── Gap-1 Change 1: Resolve pipeline from registry ───────────
+            # ✅ FIX 1: Define loop FIRST — it is used throughout this entire method
+            loop = asyncio.get_running_loop()
+    
+            # ── Resolve pipeline from registry ───────────────────────────
             pipeline = _get_pipeline(business_id)
             embedder = pipeline.embedder   # BaseEmbedder (pluggable)
             vectordb = pipeline.vectordb   # BaseVectorDB (pluggable)
-            vectordb.ensure_collection("ingested_content", embedding_dim=embedder.info.dim or 1024)
-            # ─────────────────────────────────────────────────────────────
+    
+            # ✅ FIX 2: Probe actual dimension — never assume 1024
+            embedding_dim = embedder.info.dim
+            if not embedding_dim or embedding_dim <= 0:
+                # Ask the embedder directly — works for any model
+                probe = await loop.run_in_executor(
+                    None, lambda: embedder.embed_query("dimension probe")
+                )
+                embedding_dim = len(probe)
+                log_info(f"[IngestionV2] Probed embedding dim: {embedding_dim}")
+    
+            vectordb.ensure_collection(
+                "ingested_content",
+                embedding_dim=embedding_dim,
+                distance_metric="cosine",
+            )
     
             # gather semantic_hashes for all chunks (keep mapping)
             hash_to_chunk = {}
@@ -878,10 +843,9 @@ class IngestionServiceV2:
                 rows = res.all()
                 known_hashes = {row[0] for row in rows}
     
-            # ── Gap-1 Change 2: Replace _chroma_get block with vectordb.exists() ──
-            loop = asyncio.get_running_loop()
+            # ── Replace _chroma_get block with vectordb.exists() ──────────
             try:
-                present_in_chroma = set(
+                present_in_vectordb = set(
                     await loop.run_in_executor(
                         None,
                         lambda: vectordb.exists(
@@ -892,36 +856,34 @@ class IngestionServiceV2:
                 )
             except Exception as e:
                 log_info(f"[IngestionV2] Warning: VectorDB exists check failed: {e}")
-                present_in_chroma = set()
-            # ──────────────────────────────────────────────────────────────────────
+                present_in_vectordb = set()
+            # ──────────────────────────────────────────────────────────────
     
             # Determine which hashes truly need embedding
             hashes_needing_embedding = set()
             for h in all_hashes:
                 if h not in known_hashes:
                     hashes_needing_embedding.add(h)
-                elif h not in present_in_chroma:
+                elif h not in present_in_vectordb:
                     hashes_needing_embedding.add(h)
     
             if not hashes_needing_embedding:
-                log_info(f"[IngestionV2] No new vectors to add (VectorDB already has vectors for all hashes)")
+                log_info(f"[IngestionV2] No new vectors to add (VectorDB already has all hashes)")
                 return
     
             # Build list of chunks to embed (preserve order)
             new_chunks = [hash_to_chunk[h] for h in all_hashes if h in hashes_needing_embedding]
     
             # Batched embedding + upsert
-            # ── Gap-1 Change 3: embedder already set above — NO get_embedder() call ──
             for i in range(0, len(new_chunks), BATCH_SIZE):
                 batch     = new_chunks[i:i + BATCH_SIZE]
                 texts     = [c.get("cleaned_text", c.get("cleaned", "")) for c in batch]
                 batch_ids = [c.get("semantic_hash") for c in batch]
     
-                # ── Gap-1 Change 3: Replace embedder.encode() + .tolist() ──────────
+                # ── BaseEmbedder.embed_documents() — pluggable, no .encode() ──
                 emb_list = await loop.run_in_executor(
                     None, lambda: embedder.embed_documents(texts)
                 )
-                # ────────────────────────────────────────────────────────────────────
     
                 metadatas = [
                     {
@@ -933,30 +895,29 @@ class IngestionServiceV2:
                     for c in batch
                 ]
     
-                # ── Gap-1 Change 4: Replace collection.upsert() with vectordb.upsert() ──
-                await loop.run_in_executor(
+                # ── Single batch call — 1 API call instead of N calls ─────
+                result = await loop.run_in_executor(
                     None,
-                    lambda ids=batch_ids, emb=emb_list, met=metadatas, docs=texts: [
-                        vectordb.upsert(
+                    lambda ids=batch_ids, emb=emb_list, met=metadatas, docs=texts:
+                        vectordb.batch_upsert(
                             collection="ingested_content",
-                            doc_id=ids[j],
-                            embedding=emb[j],
-                            text=docs[j],
-                            metadata=met[j],
+                            doc_ids=ids,
+                            embeddings=emb,
+                            texts=docs,
+                            metadatas=met,
                         )
-                        for j in range(len(ids))
-                    ]
                 )
-                # ─────────────────────────────────────────────────────────────────────
-    
-                log_info(f"[IngestionV2] ✅ Upserted batch {i//BATCH_SIZE + 1}: {len(batch)} vectors via {vectordb.kind}")
+                log_info(
+                    f"[IngestionV2] ✅ Batch {i//BATCH_SIZE + 1}: "
+                    f"+{result.inserted} new, ~{result.updated} updated via {vectordb.kind}"
+                )
     
             log_info(f"[IngestionV2] Stored {len(new_chunks)} new unique vectors via {vectordb.kind} for file {file_id}")
     
         except Exception as e:
             log_info(f"[ERROR] Embedding or VectorDB storage failed: {e}")
             return
-    
+
     
     # ----------------------------------------------------------
     # Error Handling + File Status

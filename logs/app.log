@@ -4485,3 +4485,809 @@
 2026-02-27 22:53:19 |     INFO | MarketingAdvantageAI | [agentic_validation] Worker stopped
 2026-02-27 22:53:19 |     INFO | MarketingAdvantageAI | [Scheduler] All tasks completed gracefully
 2026-02-27 22:53:19 |     INFO | MarketingAdvantageAI | [Scheduler] Scheduler stopped
+2026-02-27 23:51:43 |     INFO | MarketingAdvantageAI | [IngestionV2] ChromaDB client initialized at ./chroma_db
+2026-02-27 23:51:43 |     INFO | MarketingAdvantageAI | [IngestionV2] Found ChromaDB collections: ['ingested_content']
+2026-02-27 23:51:43 |     INFO | MarketingAdvantageAI | [IngestionV2] ✅ Connected to existing collection 'ingested_content'
+2026-02-27 23:51:43 |     INFO | MarketingAdvantageAI | [WatcherIngestorV2] Background watcher started with FastAPI server.
+2026-02-27 23:51:43 |     INFO | MarketingAdvantageAI | [Scheduler] Starting validation scheduler | validation_interval=60s | conflict_interval=120s | temporal_interval=300s
+2026-02-27 23:51:43 |     INFO | MarketingAdvantageAI | [Scheduler] Started 4 background tasks (validation: True, conflict: True, temporal: True)
+2026-02-27 23:51:43 |     INFO | MarketingAdvantageAI | [WatcherIngestorV2] 👀 Watching folder: C:\ProjectK\MarketingAdvantage_AI_v1\static\uploads\manual
+2026-02-27 23:51:43 |     INFO | MarketingAdvantageAI | [agentic_validation] Worker started
+2026-02-27 23:51:43 |     INFO | MarketingAdvantageAI | [conflict_detection] Worker started
+2026-02-27 23:51:43 |     INFO | MarketingAdvantageAI | [temporal_revalidation] Worker started
+2026-02-27 23:51:43 |     INFO | MarketingAdvantageAI | [HealthMonitor] Health monitor started
+2026-02-27 23:52:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-27 23:52:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=566ms
+2026-02-27 23:53:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-27 23:53:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-27 23:53:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-27 23:53:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=7ms
+2026-02-27 23:54:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-27 23:54:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-27 23:55:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-27 23:55:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=2ms
+2026-02-27 23:55:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-27 23:55:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=3ms
+2026-02-27 23:56:43 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-27 23:56:43 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-27 23:56:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-27 23:56:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-27 23:57:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-27 23:57:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-27 23:57:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-27 23:57:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-27 23:58:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-27 23:58:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-27 23:59:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-27 23:59:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=11ms
+2026-02-27 23:59:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-27 23:59:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:00:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:00:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:01:43 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 00:01:43 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:01:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:01:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:01:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:01:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:02:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:02:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:03:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:03:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:03:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:03:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:04:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:04:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:05:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:05:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:05:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:05:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:06:43 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 00:06:43 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:06:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:06:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:07:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:07:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:07:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:07:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:08:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:08:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:09:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:09:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:09:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:09:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:10:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:10:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:11:43 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 00:11:43 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:11:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:11:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:11:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:11:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=13ms
+2026-02-28 00:12:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:12:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:13:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:13:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:13:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:13:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:14:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:14:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:15:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:15:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:15:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:15:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:16:43 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 00:16:43 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:16:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:16:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:17:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:17:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:17:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:17:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:18:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:18:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:19:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:19:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:19:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:19:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:20:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:20:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:21:43 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 00:21:43 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:21:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:21:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:21:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:21:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:22:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:22:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=61ms
+2026-02-28 00:23:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:23:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:23:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:23:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:24:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:24:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=13ms
+2026-02-28 00:25:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:25:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 00:25:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:25:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:26:43 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 00:26:43 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 00:26:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:26:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:27:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:27:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:27:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:27:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 00:28:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:28:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:29:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:29:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 00:29:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:29:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 00:30:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:30:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:31:43 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 00:31:43 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:31:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:31:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:31:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:31:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:32:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:32:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:33:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:33:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:33:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:33:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:34:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:34:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:35:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:35:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:35:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:35:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=2ms
+2026-02-28 00:36:43 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 00:36:43 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 00:36:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:36:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=2ms
+2026-02-28 00:37:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:37:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:37:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:37:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=1ms
+2026-02-28 00:38:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:38:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:39:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:39:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 00:39:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:39:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:40:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:40:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:41:43 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 00:41:43 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=2ms
+2026-02-28 00:41:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:41:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:41:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:41:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:42:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:42:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:43:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:43:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=2ms
+2026-02-28 00:43:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:43:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=1ms
+2026-02-28 00:44:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:44:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 00:45:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:45:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 00:45:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:45:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 00:46:43 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 00:46:43 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:46:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:46:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:47:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:47:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 00:47:53 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:47:53 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:48:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:48:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 00:49:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:49:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:49:54 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:49:54 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:50:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:50:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 00:51:43 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 00:51:43 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 00:51:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:51:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=0ms
+2026-02-28 00:51:54 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:51:54 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 00:52:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:52:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=128ms
+2026-02-28 00:53:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:53:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:53:54 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:53:54 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:54:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:54:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:55:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:55:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 00:55:54 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:55:54 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:56:43 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 00:56:43 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 00:56:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:56:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 00:57:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:57:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 00:57:54 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:57:54 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 00:58:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:58:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=9ms
+2026-02-28 00:59:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 00:59:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 00:59:54 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 00:59:54 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 01:00:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 01:00:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 01:01:43 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 01:01:43 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 01:01:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 01:01:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 01:01:54 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 01:01:54 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 01:02:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 01:02:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 01:03:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 01:03:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=1ms
+2026-02-28 01:03:54 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 01:03:54 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 01:04:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 01:04:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 01:46:43 |  WARNING | MarketingAdvantageAI | [HealthMonitor] Unhealthy workers detected: agentic_validation (stalled, 2514s since last run), conflict_detection (stalled, 2570s since last run), temporal_revalidation (stalled, 2700s since last run)
+2026-02-28 01:46:44 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 01:46:44 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=546ms
+2026-02-28 01:46:44 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 01:46:44 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=884ms
+2026-02-28 01:46:44 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 01:46:44 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=845ms
+2026-02-28 06:33:22 |  WARNING | MarketingAdvantageAI | [HealthMonitor] Unhealthy workers detected: agentic_validation (stalled, 17198s since last run), conflict_detection (stalled, 17198s since last run), temporal_revalidation (stalled, 17198s since last run)
+2026-02-28 06:33:22 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 06:33:22 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 06:33:22 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 06:33:22 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=472ms
+2026-02-28 06:33:22 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=475ms
+2026-02-28 06:33:22 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=491ms
+2026-02-28 08:22:12 |  WARNING | MarketingAdvantageAI | [HealthMonitor] Unhealthy workers detected: agentic_validation (stalled, 6530s since last run), conflict_detection (stalled, 6530s since last run), temporal_revalidation (stalled, 6530s since last run)
+2026-02-28 08:22:13 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 08:22:13 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=498ms
+2026-02-28 08:22:13 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 08:22:13 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=494ms
+2026-02-28 08:22:13 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 08:22:13 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=535ms
+2026-02-28 08:23:13 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 08:23:13 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 08:24:13 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 08:24:13 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 08:24:13 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 08:24:13 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 08:25:13 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 08:25:13 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 09:02:20 |  WARNING | MarketingAdvantageAI | [HealthMonitor] Unhealthy workers detected: agentic_validation (stalled, 2227s since last run), conflict_detection (stalled, 2287s since last run), temporal_revalidation (stalled, 2408s since last run)
+2026-02-28 09:02:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:02:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=754ms
+2026-02-28 09:02:21 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 09:02:21 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=764ms
+2026-02-28 09:02:21 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:02:21 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=795ms
+2026-02-28 09:03:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:03:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 09:04:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:04:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 09:04:21 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:04:21 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 09:05:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:05:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=1ms
+2026-02-28 09:06:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:06:21 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:06:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 09:06:21 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 09:07:21 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 09:07:21 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=2ms
+2026-02-28 09:07:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:07:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 09:08:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:08:21 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:08:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 09:08:21 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 09:09:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:09:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 09:10:21 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:10:21 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 09:10:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:10:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 09:11:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:11:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 09:12:21 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 09:12:21 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 09:12:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:12:21 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:12:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 09:12:21 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=10ms
+2026-02-28 09:13:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:13:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=2ms
+2026-02-28 09:14:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:14:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 09:14:21 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:14:21 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=11ms
+2026-02-28 09:15:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:15:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 09:16:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:16:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=9ms
+2026-02-28 09:16:21 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:16:21 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=12ms
+2026-02-28 09:17:21 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 09:17:21 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=2ms
+2026-02-28 09:17:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:17:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 09:18:21 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:18:21 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 09:18:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:18:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 09:19:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:19:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=2ms
+2026-02-28 09:20:21 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:20:21 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 09:20:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:20:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 09:21:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:21:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 09:22:21 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 09:22:21 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 09:22:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:22:21 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:22:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=13ms
+2026-02-28 09:22:21 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=48ms
+2026-02-28 09:23:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:23:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 09:24:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:24:21 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:24:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 09:24:21 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 09:25:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:25:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 09:26:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:26:21 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:26:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 09:26:21 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 09:27:21 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 09:27:21 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 09:27:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:27:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 09:28:21 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:28:21 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:28:21 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 09:28:21 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 09:29:22 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:29:22 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 09:30:22 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:30:22 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 09:30:22 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:30:22 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 09:45:15 |  WARNING | MarketingAdvantageAI | [HealthMonitor] Unhealthy workers detected: agentic_validation (stalled, 893s since last run), conflict_detection (stalled, 893s since last run), temporal_revalidation (stalled, 1073s since last run)
+2026-02-28 09:45:16 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 09:45:16 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 09:45:16 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 09:45:16 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=901ms
+2026-02-28 09:45:16 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=917ms
+2026-02-28 09:45:16 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=945ms
+2026-02-28 10:43:57 |  WARNING | MarketingAdvantageAI | [HealthMonitor] Unhealthy workers detected: agentic_validation (stalled, 3522s since last run), conflict_detection (stalled, 3522s since last run), temporal_revalidation (stalled, 3522s since last run)
+2026-02-28 10:43:57 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 10:43:57 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 10:43:57 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 10:43:57 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=518ms
+2026-02-28 10:43:57 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=513ms
+2026-02-28 10:43:57 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=545ms
+2026-02-28 10:44:57 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 10:44:57 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 10:45:57 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 10:45:57 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 10:45:57 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 10:45:57 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=1ms
+2026-02-28 10:46:57 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 10:46:57 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 10:47:57 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 10:47:57 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 10:47:57 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 10:47:57 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 11:03:48 |  WARNING | MarketingAdvantageAI | [HealthMonitor] Unhealthy workers detected: agentic_validation (stalled, 951s since last run), conflict_detection (stalled, 951s since last run), temporal_revalidation (stalled, 1191s since last run)
+2026-02-28 11:03:48 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 11:03:48 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:03:48 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 11:03:48 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=171ms
+2026-02-28 11:03:48 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=129ms
+2026-02-28 11:03:48 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=104ms
+2026-02-28 11:10:48 |  WARNING | MarketingAdvantageAI | [HealthMonitor] Unhealthy workers detected: agentic_validation (stalled, 420s since last run), conflict_detection (stalled, 420s since last run)
+2026-02-28 11:10:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:10:49 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 11:10:49 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 11:10:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=93ms
+2026-02-28 11:10:49 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=72ms
+2026-02-28 11:10:49 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=71ms
+2026-02-28 11:11:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:11:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 11:12:49 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 11:12:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:12:49 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 11:12:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=10ms
+2026-02-28 11:13:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:13:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 11:14:49 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 11:14:49 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=105ms
+2026-02-28 11:14:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:14:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=142ms
+2026-02-28 11:15:49 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 11:15:49 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=103ms
+2026-02-28 11:15:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:15:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=1ms
+2026-02-28 11:16:49 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 11:16:49 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 11:16:49 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:16:49 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=1ms
+2026-02-28 11:23:51 |  WARNING | MarketingAdvantageAI | [HealthMonitor] Unhealthy workers detected: agentic_validation (stalled, 422s since last run), conflict_detection (stalled, 422s since last run)
+2026-02-28 11:23:51 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 11:23:51 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 11:23:51 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:23:51 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=47ms
+2026-02-28 11:23:51 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=49ms
+2026-02-28 11:23:51 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=99ms
+2026-02-28 11:24:51 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:24:51 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 11:25:51 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 11:25:51 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 11:25:51 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:25:51 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 11:26:51 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:26:51 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 11:29:58 |  WARNING | MarketingAdvantageAI | [HealthMonitor] Unhealthy workers detected: agentic_validation (stalled, 188s since last run)
+2026-02-28 11:29:58 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 11:29:58 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 11:29:59 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:29:59 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=83ms
+2026-02-28 11:29:59 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=166ms
+2026-02-28 11:29:59 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=128ms
+2026-02-28 11:30:59 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:30:59 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 11:31:59 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 11:31:59 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:31:59 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 11:31:59 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 11:32:59 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 11:32:59 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=0ms
+2026-02-28 13:08:18 |  WARNING | MarketingAdvantageAI | [HealthMonitor] Unhealthy workers detected: agentic_validation (stalled, 5719s since last run), conflict_detection (stalled, 5779s since last run), temporal_revalidation (stalled, 5899s since last run)
+2026-02-28 13:08:19 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:08:19 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:08:19 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 13:08:19 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=812ms
+2026-02-28 13:08:19 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=794ms
+2026-02-28 13:08:19 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=744ms
+2026-02-28 13:09:19 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:09:19 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 13:10:19 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:10:19 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:10:19 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 13:10:19 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=9ms
+2026-02-28 13:11:19 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:11:19 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 13:12:19 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:12:19 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:12:19 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 13:12:19 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=9ms
+2026-02-28 13:13:19 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 13:13:19 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 13:13:19 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:13:19 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 13:14:19 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:14:19 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:14:19 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=9ms
+2026-02-28 13:14:19 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 13:15:19 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:15:19 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 13:16:19 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:16:19 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 13:16:19 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:16:19 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 13:17:19 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:17:19 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 13:18:17 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 13:18:17 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 13:18:17 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:18:17 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 13:18:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:18:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 13:19:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:19:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 13:20:17 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:20:17 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 13:20:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:20:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 13:21:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:21:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 13:22:17 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:22:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:22:17 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=9ms
+2026-02-28 13:22:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=9ms
+2026-02-28 13:23:17 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 13:23:17 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=1ms
+2026-02-28 13:23:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:23:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 13:24:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:24:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 13:24:17 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:24:17 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 13:25:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:25:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=0ms
+2026-02-28 13:26:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:26:17 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:26:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=9ms
+2026-02-28 13:26:17 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=12ms
+2026-02-28 13:27:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:27:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 13:28:17 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 13:28:17 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=0ms
+2026-02-28 13:28:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:28:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 13:28:17 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:28:17 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=11ms
+2026-02-28 13:29:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:29:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 13:30:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:30:17 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:30:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 13:30:17 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 13:31:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:31:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 13:32:17 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:32:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:32:17 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=9ms
+2026-02-28 13:32:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 13:33:17 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 13:33:17 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 13:33:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:33:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 13:34:17 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:34:17 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=2ms
+2026-02-28 13:34:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:34:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 13:35:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:35:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=0ms
+2026-02-28 13:36:17 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:36:17 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 13:36:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:36:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 13:37:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:37:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 13:38:17 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 13:38:17 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 13:38:17 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:38:17 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=0ms
+2026-02-28 13:38:17 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:38:17 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 13:39:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:39:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=130ms
+2026-02-28 13:40:17 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:40:17 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=112ms
+2026-02-28 13:40:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:40:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=104ms
+2026-02-28 13:41:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:41:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 13:42:18 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:42:18 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 13:42:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:42:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 13:43:17 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 13:43:17 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 13:43:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:43:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=8ms
+2026-02-28 13:44:18 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:44:18 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 13:44:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:44:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 13:45:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:45:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 13:46:18 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:46:18 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 13:46:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:46:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 13:47:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:47:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 13:48:17 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 13:48:17 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 13:48:18 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:48:18 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 13:48:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:48:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 13:49:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:49:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=2ms
+2026-02-28 13:50:18 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:50:18 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 13:50:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:50:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 13:51:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:51:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 13:52:18 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:52:18 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=7ms
+2026-02-28 13:52:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:52:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 13:53:17 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 13:53:17 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=0ms
+2026-02-28 13:53:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:53:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=0ms
+2026-02-28 13:54:18 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:54:18 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 13:54:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:54:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 13:55:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:55:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 13:56:18 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:56:18 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 13:56:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:56:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=1ms
+2026-02-28 13:57:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:57:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 13:58:17 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 13:58:17 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 13:58:18 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 13:58:18 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 13:58:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:58:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 13:59:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 13:59:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 14:00:18 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 14:00:18 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 14:00:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:00:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 14:01:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:01:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 14:02:18 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 14:02:18 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 14:02:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:02:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 14:03:17 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 14:03:17 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 14:03:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:03:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 14:04:18 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 14:04:18 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 14:04:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:04:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 14:05:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:05:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 14:06:18 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 14:06:18 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 14:06:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:06:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 14:07:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:07:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 14:08:17 |     INFO | MarketingAdvantageAI | [TemporalRevalidation] No rows pending temporal review.
+2026-02-28 14:08:17 |     INFO | MarketingAdvantageAI | [temporal_revalidation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 14:08:18 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 14:08:18 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 14:08:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:08:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 14:09:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:09:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=60ms
+2026-02-28 14:10:18 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 14:10:18 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=60ms
+2026-02-28 14:10:18 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:10:18 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=57ms
+2026-02-28 14:11:00 |     INFO | MarketingAdvantageAI | [Scheduler] Initiating graceful shutdown...
+2026-02-28 14:11:00 |     INFO | MarketingAdvantageAI | [temporal_revalidation] Worker stopped
+2026-02-28 14:11:00 |     INFO | MarketingAdvantageAI | [HealthMonitor] Health monitor stopped
+2026-02-28 14:11:00 |     INFO | MarketingAdvantageAI | [conflict_detection] Worker stopped
+2026-02-28 14:11:00 |     INFO | MarketingAdvantageAI | [agentic_validation] Worker stopped
+2026-02-28 14:11:00 |     INFO | MarketingAdvantageAI | [Scheduler] All tasks completed gracefully
+2026-02-28 14:11:00 |     INFO | MarketingAdvantageAI | [Scheduler] Scheduler stopped
+2026-02-28 14:11:36 |     INFO | MarketingAdvantageAI | [IngestionV2] ChromaDB client initialized at ./chroma_db
+2026-02-28 14:11:36 |     INFO | MarketingAdvantageAI | [IngestionV2] Found ChromaDB collections: ['ingested_content']
+2026-02-28 14:11:36 |     INFO | MarketingAdvantageAI | [IngestionV2] ✅ Connected to existing collection 'ingested_content'
+2026-02-28 14:11:36 |     INFO | MarketingAdvantageAI | [WatcherIngestorV2] Background watcher started with FastAPI server.
+2026-02-28 14:11:36 |     INFO | MarketingAdvantageAI | [Scheduler] Starting validation scheduler | validation_interval=60s | conflict_interval=120s | temporal_interval=300s
+2026-02-28 14:11:36 |     INFO | MarketingAdvantageAI | [Scheduler] Started 4 background tasks (validation: True, conflict: True, temporal: True)
+2026-02-28 14:11:36 |     INFO | MarketingAdvantageAI | [WatcherIngestorV2] 👀 Watching folder: C:\ProjectK\MarketingAdvantage_AI_v1\static\uploads\manual
+2026-02-28 14:11:36 |     INFO | MarketingAdvantageAI | [agentic_validation] Worker started
+2026-02-28 14:11:36 |     INFO | MarketingAdvantageAI | [conflict_detection] Worker started
+2026-02-28 14:11:36 |     INFO | MarketingAdvantageAI | [temporal_revalidation] Worker started
+2026-02-28 14:11:36 |     INFO | MarketingAdvantageAI | [HealthMonitor] Health monitor started
+2026-02-28 14:11:55 |     INFO | MarketingAdvantageAI | [Scheduler] Initiating graceful shutdown...
+2026-02-28 14:11:55 |     INFO | MarketingAdvantageAI | [agentic_validation] Worker stopped
+2026-02-28 14:11:55 |     INFO | MarketingAdvantageAI | [temporal_revalidation] Worker stopped
+2026-02-28 14:11:55 |     INFO | MarketingAdvantageAI | [HealthMonitor] Health monitor stopped
+2026-02-28 14:11:55 |     INFO | MarketingAdvantageAI | [conflict_detection] Worker stopped
+2026-02-28 14:11:55 |     INFO | MarketingAdvantageAI | [Scheduler] All tasks completed gracefully
+2026-02-28 14:11:55 |     INFO | MarketingAdvantageAI | [Scheduler] Scheduler stopped
+2026-02-28 14:12:05 |     INFO | MarketingAdvantageAI | [IngestionV2] ChromaDB client initialized at ./chroma_db
+2026-02-28 14:12:05 |     INFO | MarketingAdvantageAI | [IngestionV2] Found ChromaDB collections: ['ingested_content']
+2026-02-28 14:12:05 |     INFO | MarketingAdvantageAI | [IngestionV2] ✅ Connected to existing collection 'ingested_content'
+2026-02-28 14:12:05 |     INFO | MarketingAdvantageAI | [WatcherIngestorV2] Background watcher started with FastAPI server.
+2026-02-28 14:12:05 |     INFO | MarketingAdvantageAI | [Scheduler] Starting validation scheduler | validation_interval=60s | conflict_interval=120s | temporal_interval=300s
+2026-02-28 14:12:05 |     INFO | MarketingAdvantageAI | [Scheduler] Started 4 background tasks (validation: True, conflict: True, temporal: True)
+2026-02-28 14:12:05 |     INFO | MarketingAdvantageAI | [WatcherIngestorV2] 👀 Watching folder: C:\ProjectK\MarketingAdvantage_AI_v1\static\uploads\manual
+2026-02-28 14:12:05 |     INFO | MarketingAdvantageAI | [agentic_validation] Worker started
+2026-02-28 14:12:05 |     INFO | MarketingAdvantageAI | [conflict_detection] Worker started
+2026-02-28 14:12:05 |     INFO | MarketingAdvantageAI | [temporal_revalidation] Worker started
+2026-02-28 14:12:05 |     INFO | MarketingAdvantageAI | [HealthMonitor] Health monitor started
+2026-02-28 14:13:05 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:13:05 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=68ms
+2026-02-28 14:14:05 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:14:05 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=5ms
+2026-02-28 14:14:15 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 14:14:15 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=11ms
+2026-02-28 14:15:05 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:15:05 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 14:16:05 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:16:05 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 14:16:15 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 14:16:15 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=3ms
+2026-02-28 14:16:22 |     INFO | MarketingAdvantageAI | [Scheduler] Initiating graceful shutdown...
+2026-02-28 14:16:22 |     INFO | MarketingAdvantageAI | [temporal_revalidation] Worker stopped
+2026-02-28 14:16:22 |     INFO | MarketingAdvantageAI | [HealthMonitor] Health monitor stopped
+2026-02-28 14:16:22 |     INFO | MarketingAdvantageAI | [agentic_validation] Worker stopped
+2026-02-28 14:16:22 |     INFO | MarketingAdvantageAI | [conflict_detection] Worker stopped
+2026-02-28 14:16:22 |     INFO | MarketingAdvantageAI | [Scheduler] All tasks completed gracefully
+2026-02-28 14:16:22 |     INFO | MarketingAdvantageAI | [Scheduler] Scheduler stopped
+2026-02-28 14:16:32 |     INFO | MarketingAdvantageAI | [IngestionV2] ChromaDB client initialized at ./chroma_db
+2026-02-28 14:16:32 |     INFO | MarketingAdvantageAI | [IngestionV2] Found ChromaDB collections: ['ingested_content']
+2026-02-28 14:16:32 |     INFO | MarketingAdvantageAI | [IngestionV2] ✅ Connected to existing collection 'ingested_content'
+2026-02-28 14:16:32 |     INFO | MarketingAdvantageAI | [WatcherIngestorV2] Background watcher started with FastAPI server.
+2026-02-28 14:16:32 |     INFO | MarketingAdvantageAI | [Scheduler] Starting validation scheduler | validation_interval=60s | conflict_interval=120s | temporal_interval=300s
+2026-02-28 14:16:32 |     INFO | MarketingAdvantageAI | [Scheduler] Started 4 background tasks (validation: True, conflict: True, temporal: True)
+2026-02-28 14:16:32 |     INFO | MarketingAdvantageAI | [WatcherIngestorV2] 👀 Watching folder: C:\ProjectK\MarketingAdvantage_AI_v1\static\uploads\manual
+2026-02-28 14:16:32 |     INFO | MarketingAdvantageAI | [agentic_validation] Worker started
+2026-02-28 14:16:32 |     INFO | MarketingAdvantageAI | [conflict_detection] Worker started
+2026-02-28 14:16:32 |     INFO | MarketingAdvantageAI | [temporal_revalidation] Worker started
+2026-02-28 14:16:32 |     INFO | MarketingAdvantageAI | [HealthMonitor] Health monitor started
+2026-02-28 14:17:32 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:17:32 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=67ms
+2026-02-28 14:17:49 |     INFO | MarketingAdvantageAI | [Scheduler] Initiating graceful shutdown...
+2026-02-28 14:17:49 |     INFO | MarketingAdvantageAI | [temporal_revalidation] Worker stopped
+2026-02-28 14:17:49 |     INFO | MarketingAdvantageAI | [conflict_detection] Worker stopped
+2026-02-28 14:17:49 |     INFO | MarketingAdvantageAI | [HealthMonitor] Health monitor stopped
+2026-02-28 14:17:49 |     INFO | MarketingAdvantageAI | [agentic_validation] Worker stopped
+2026-02-28 14:17:49 |     INFO | MarketingAdvantageAI | [Scheduler] All tasks completed gracefully
+2026-02-28 14:17:49 |     INFO | MarketingAdvantageAI | [Scheduler] Scheduler stopped
+2026-02-28 14:17:59 |     INFO | MarketingAdvantageAI | [ERROR] Failed to initialize ChromaDB client: name 'chromadb' is not defined
+2026-02-28 14:17:59 |     INFO | MarketingAdvantageAI | [WatcherIngestorV2] Background watcher started with FastAPI server.
+2026-02-28 14:17:59 |     INFO | MarketingAdvantageAI | [Scheduler] Starting validation scheduler | validation_interval=60s | conflict_interval=120s | temporal_interval=300s
+2026-02-28 14:17:59 |     INFO | MarketingAdvantageAI | [Scheduler] Started 4 background tasks (validation: True, conflict: True, temporal: True)
+2026-02-28 14:17:59 |     INFO | MarketingAdvantageAI | [WatcherIngestorV2] 👀 Watching folder: C:\ProjectK\MarketingAdvantage_AI_v1\static\uploads\manual
+2026-02-28 14:17:59 |     INFO | MarketingAdvantageAI | [agentic_validation] Worker started
+2026-02-28 14:17:59 |     INFO | MarketingAdvantageAI | [conflict_detection] Worker started
+2026-02-28 14:17:59 |     INFO | MarketingAdvantageAI | [temporal_revalidation] Worker started
+2026-02-28 14:17:59 |     INFO | MarketingAdvantageAI | [HealthMonitor] Health monitor started
+2026-02-28 14:18:46 |     INFO | MarketingAdvantageAI | [Scheduler] Initiating graceful shutdown...
+2026-02-28 14:18:46 |     INFO | MarketingAdvantageAI | [agentic_validation] Worker stopped
+2026-02-28 14:18:46 |     INFO | MarketingAdvantageAI | [temporal_revalidation] Worker stopped
+2026-02-28 14:18:46 |     INFO | MarketingAdvantageAI | [HealthMonitor] Health monitor stopped
+2026-02-28 14:18:46 |     INFO | MarketingAdvantageAI | [conflict_detection] Worker stopped
+2026-02-28 14:18:46 |     INFO | MarketingAdvantageAI | [Scheduler] All tasks completed gracefully
+2026-02-28 14:18:46 |     INFO | MarketingAdvantageAI | [Scheduler] Scheduler stopped
+2026-02-28 14:18:56 |     INFO | MarketingAdvantageAI | [WatcherIngestorV2] Background watcher started with FastAPI server.
+2026-02-28 14:18:56 |     INFO | MarketingAdvantageAI | [Scheduler] Starting validation scheduler | validation_interval=60s | conflict_interval=120s | temporal_interval=300s
+2026-02-28 14:18:56 |     INFO | MarketingAdvantageAI | [Scheduler] Started 4 background tasks (validation: True, conflict: True, temporal: True)
+2026-02-28 14:18:56 |     INFO | MarketingAdvantageAI | [WatcherIngestorV2] 👀 Watching folder: C:\ProjectK\MarketingAdvantage_AI_v1\static\uploads\manual
+2026-02-28 14:18:56 |     INFO | MarketingAdvantageAI | [agentic_validation] Worker started
+2026-02-28 14:18:56 |     INFO | MarketingAdvantageAI | [conflict_detection] Worker started
+2026-02-28 14:18:56 |     INFO | MarketingAdvantageAI | [temporal_revalidation] Worker started
+2026-02-28 14:18:56 |     INFO | MarketingAdvantageAI | [HealthMonitor] Health monitor started
+2026-02-28 14:19:56 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:19:56 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=69ms
+2026-02-28 14:20:56 |     INFO | MarketingAdvantageAI | [AgenticValidation] No rows pending validation.
+2026-02-28 14:20:56 |     INFO | MarketingAdvantageAI | [agentic_validation] ✅ Run complete | processed=0 | duration=4ms
+2026-02-28 14:21:06 |     INFO | MarketingAdvantageAI | [ConflictEngine] No rows pending conflict analysis.
+2026-02-28 14:21:06 |     INFO | MarketingAdvantageAI | [conflict_detection] ✅ Run complete | processed=0 | duration=6ms
+2026-02-28 14:21:17 |     INFO | MarketingAdvantageAI | [Scheduler] Initiating graceful shutdown...
+2026-02-28 14:21:17 |     INFO | MarketingAdvantageAI | [temporal_revalidation] Worker stopped
+2026-02-28 14:21:17 |     INFO | MarketingAdvantageAI | [HealthMonitor] Health monitor stopped
+2026-02-28 14:21:17 |     INFO | MarketingAdvantageAI | [agentic_validation] Worker stopped
+2026-02-28 14:21:17 |     INFO | MarketingAdvantageAI | [conflict_detection] Worker stopped
+2026-02-28 14:21:17 |     INFO | MarketingAdvantageAI | [Scheduler] All tasks completed gracefully
+2026-02-28 14:21:17 |     INFO | MarketingAdvantageAI | [Scheduler] Scheduler stopped
